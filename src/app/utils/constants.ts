@@ -89,37 +89,6 @@ export const pricingPlans = [
 ];
 
 
-export const pricingPlans2 = [
-    {
-        title: "Basic",
-        price: "$19/mo",
-        features: ["1 User", "10GB Storage"],
-        popular: false,
-    },
-    {
-        title: "Pro",
-        price: "$49/mo",
-        features: ["5 Users", "100GB Storage"],
-        popular: true,
-    },
-    {
-        title: "Enterprise",
-        price: "Contact Us",
-        features: ["Unlimited Users", "1TB Storage"],
-        popular: false,
-    },
-];
-
-
-export const services2 = [
-    { title: "Business Websites & Blogs", description: "Professional websites tailored to your business needs." },
-    { title: "E-commerce Stores", description: "Secure and scalable online stores with payment integration." },
-    { title: "Custom Web Applications", description: "Build custom solutions to streamline your business processes." },
-    { title: "Website Redesign & Upgrades", description: "Modernize and optimize your existing website." },
-    { title: "SEO & Mobile Optimization", description: "Improve your website's visibility and performance." },
-    { title: "School Registration Systems", description: "Efficient electronic registration systems for schools." },
-];
-
 export const services = {
     "For Chinese Nationals Visiting Ghana": [
         "Business Visa Assistance",
@@ -151,48 +120,6 @@ export const services = {
 };
 
 
-export const specialists = [
-    { name: "Marvin Nchena", role: "Senior Software Engineer", description: "Leads the design and development of scalable frontend and backend solutions, ensuring technical excellence and innovation." },
-    { name: "Gabriel Sikazwe", role: "Marketing Officer", description: "Drives strategic marketing initiatives and fosters seamless collaboration between product development and user experience teams." },
-    { name: "Webster Mwanza", role: "Product Officer", description: "Oversees the development of robust and secure web applications, focusing on delivering high-quality products that meet client needs." },
-    { name: "Lukas Monde", role: "Senior Test Engineer", description: "Ensures software quality and reliability through comprehensive testing strategies and continuous process improvement." },
-    { name: "Benson Mwale", role: "Junior Software Engineer", description: "Contributes to the development of secure and efficient web applications, supporting the team in delivering reliable solutions." },
-    { name: "Mbala Mulenga", role: "Cyber Security Consultant", description: "Assists in building and maintaining secure web applications, with a commitment to best practices and continuous learning." },
-    { name: "Mohammed Nasrat", role: "Software Engineer", description: "Develops and maintains robust web applications, ensuring security, performance, and scalability." },
-    { name: "Nikolas Tembo", role: "Senior Software Engineer", description: "Specializes in architecting and implementing secure, high-performance web solutions tailored to client requirements." },
-];
-
-export const techStacks = [
-    { title: "Frontend", technologies: "Angular, React, Vue.js, TypeScript, JavaScript, Tailwind CSS, Meteor, SpringBoot, Java, NodeJs, Kotlin" },
-    { title: "Backend", technologies: "Node.js, Express.js, NestJS" },
-    { title: "Databases", technologies: "PostgreSQL, MySQL, MongoDB" },
-    { title: "Hosting & Deployment", technologies: "AWS, Vercel, DigitalOcean" },
-    { title: "Support", technologies: "Twelve months free service for all product we offer" },
-    { title: "Maintanance", technologies: "Management of existing systems" },
-];
-
-
-
-// export companyHistory = "Company Background: Sir Louis and Gao Company Limited
-
-// Sir Louis and Gao Company Limited is a multinational enterprise strategically headquartered in Ghana and China, with operations and partnerships spanning across West, East, and Southern Africa.The company is a dynamic force in natural resource development, international trade facilitation, and cross - border investment consulting.
-
-// ⸻
-
-// ⛏ Mining & Minerals Division
-
-// Sir Louis and Gao has established a solid reputation in the African mining sector, with active exploration, trading, and support operations in Ghana, Zambia, and the Democratic Republic of Congo(DRC).Our company is involved in both small - scale and industrial mining projects, offering technical, legal, and logistical support for global stakeholders.
-
-// 🌍 Our Core Commodities:
-// 	•	Gold – sourcing and export from Ghana and Zambia
-// 	•	Gemstones – including emeralds, sapphires, and tourmaline
-// 	•	Copper – copper ore, copper concentration, and copper cathode from Zambia
-// 	•	Tin – small - scale tin mining and export facilitation
-// 	•	Coltan(Columbite - Tantalite) – procurement and trade from the DRC
-
-// We operate with full compliance under local mining laws and international due diligence guidelines(including the OECD framework), ensuring traceability, ethical sourcing, and investor protection.
-// "
-
 
 export const fotoNames = [
 
@@ -202,23 +129,20 @@ export const fotoNames = [
     '4. Strategic Defense Cooperation between Ghana and Chinese Investment Partners',
     '5. Gold Mining Operations •	Ownership and operation of licensed gold mines across West Africa',
     '6.  Advancing Science and Technology in Nigeria',
+    '7. Executive Profile: Mr. Louis Fosu Anane',
+    '8. Sir Louis & Gao Company CEO Visits Ghana’s House of Parliament',
 
-    '7. Meeting with former nigerian president oBASAnjo',
-    '8. Graduation',
-    '9. Meeting in ghama',
-    '10. Moffat',
-
-
+    '9. Visa Facilitation Dialogue with Chinese Immigration Officials',
+    '10. Experience at Inspur Data Center – HQ, China',
     '11. Ghana Army meeting',
-    '12. nIGERIAN meeting',
-    '13. Meeting with former nigerian president oBASAnjo',
-    '14. Graduation',
-    '15. Meeting in ghama',
-
-    '16. Moffat',
+    '12. Executive Meeting With the President of the Republic of Ghana | China 🇨🇳 Shandong October 2020] Mr. Louis Fosu Anane, Chief Executive Officer of Sir Louis & Gao Company Limited, held a high-level meeting with His Excellency Nana Addo Dankwa Akufo-Addo, President of the Republic of Ghana, at the Jubilee House in Accra',
+    '13. Signing of Memorandum of Understanding (MOU) Between Sir Louis & Gao Company Limited and Nanjing Chinese Investment Team',
+    '14. Life in China as a Foreigner: A Professional Perspective',
+    '15. Strategic Visit to Ghana’s Ministry of Trade and Industry Meeting with Hon.Alan Kwadwo Kyerematen',
+    '16. Chinese Investment Team Relocates to Africa for Strategic Multi-Country Projects Facilitated by Sir Louis & Gao Company Limited',
     '17. Ghana Army meeting',
-    '18. nIGERIAN meeting',
-    '19. Meeting with former nigerian president oBASAnjo',
-    '20. Graduation',
+    '18. Invitation to Attend and Collaborate on Upcoming Strategic Events Dear Mr.Akwasi Antwi(Ras Nene)',
+    '19. Honored by Dr. Thomas Mensah – Global Technology Pioneer A Moment of Recognition by the Inventor of Fiber Optic Technology',
+    '20. Ghana Independence Day Celebration Marking National Pride, Progress, and Unity Date: March 6th | Location: Nationwide, Ghana',
 
 ]

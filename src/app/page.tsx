@@ -12,6 +12,7 @@ import { COLOR_BLACK_METALIC, COLOR_GREEN_LIGHT, menuStyles } from "./utils/styl
 import ServicesSection from "./components/Departmt/ServicesDept";
 import { AcademicAchievement } from "./components/Departmt/AcademicAchieved";
 import { BusinessOpportunities } from "./components/Departmt/BusinessProspects";
+import CeoProfileWithPhoto from "./components/Departmt/BioCEO";
 
 const App: React.FC = () => {
   const headRef = useRef<HTMLDivElement>(null!);
@@ -96,6 +97,7 @@ const App: React.FC = () => {
         {/* <InvoicesSection /> */}
 
         {/* <VisitsList /> */}
+        <CeoProfileWithPhoto />
         <AcademicAchievement />
         <BusinessOpportunities />
         {/* <NewsletterSubscription /> */}
