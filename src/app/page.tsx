@@ -1,103 +1,107 @@
-import Image from "next/image";
+// "use client";
 
-export default function Home() {
+"use client";
+import { useRef } from "react";
+// import { ContactSection } from "./components/Contacts/ContactDept";
+import NavigationMenu from "./components/Menus/NavMenu";
+import { SocialSection } from "./components/Contacts/FooterMedia";
+// import { PricingSection } from "./components/Departmt/PricingDept";
+// import { ServicesSection } from "./components/Departmt/ServicesDept";
+import { HeadSection } from "./components/Menus/HeadSection";
+// import { SpecialistsSection } from "./components/Peoples/SpecialistDept";
+// import { TechStackSection } from "./components/Peoples/TectStack";
+// import ProjectSection from "./components/Peoples/TopProjects";
+import NewsletterVisits from "./components/Statistics/AddVisitations";
+import NewsletterSubscription from "./components/Statistics/NewsLetter";
+import { COLOR_BLACK_METALIC, COLOR_GREEN_LIGHT, menuStyles } from "./utils/stylesData";
+
+const App: React.FC = () => {
+  const headRef = useRef<HTMLDivElement>(null!);
+  const specialistsRef = useRef<HTMLDivElement>(null!);
+  const pricingRef = useRef<HTMLDivElement>(null!);
+  const projectsRef = useRef<HTMLDivElement>(null!);
+  const contactRef = useRef<HTMLDivElement>(null!);
+  const techRef = useRef<HTMLDivElement>(null!);
+  const servicesRef = useRef<HTMLDivElement>(null!);
+  const invoiceRef = useRef<HTMLDivElement>(null!);
+
+  const scrollToSection = (ref: React.RefObject<HTMLDivElement | null>) => {
+    if (ref.current) {
+      ref.current.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm/6 text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2 tracking-[-.01em]">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-[family-name:var(--font-geist-mono)] font-semibold">
-              src/app/page.tsx
-            </code>
-            .
-          </li>
-          <li className="tracking-[-.01em]">
-            Save and see your changes instantly.
-          </li>
-        </ol>
+    <div
+      style={{
+        maxWidth: 1400,
+        margin: "auto auto 0.5rem auto", // Adds 2rem bottom margin
+        padding: "0 1rem 2rem 1rem", // Optional: also adds bottom padding
+        fontFamily: "'Segoe UI', Tahoma, Geneva, Verdana, sans-serif",
+        borderRadius: "8px",
+        background: COLOR_BLACK_METALIC,
+      }}
+    >
+      <NavigationMenu
+        scrollToSection={scrollToSection}
+        refs={{
+          headRef,
+          specialistsRef,
+          pricingRef,
+          projectsRef,
+          contactRef,
+          techRef,
+          servicesRef,
+          invoiceRef,
+        }}
+      />
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
-        </div>
-      </main>
-      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
+      <div
+        ref={headRef}
+        style={{
+          marginBottom: 40,
+          minHeight: "50vh",
+          background: COLOR_GREEN_LIGHT,
+          borderRadius: "8px",
+        }}
+      >
+        <HeadSection scrollToSection={scrollToSection} contactRef={contactRef} />
+        <NewsletterVisits />
+      </div>
+
+      {/* <div ref={specialistsRef} style={menuStyles}>
+        <SpecialistsSection />
+      </div> */}
+
+      {/* <div ref={pricingRef} style={menuStyles}>
+        <PricingSection />
+      </div>
+
+      <div ref={servicesRef} style={menuStyles}>
+        <ServicesSection />
+      </div>
+
+      <div ref={techRef} style={menuStyles}>
+        <TechStackSection />
+      </div>
+
+      <div ref={projectsRef} style={menuStyles}>
+        <ProjectSection />
+      </div>
+
+      <div ref={contactRef} style={menuStyles}>
+        <ContactSection />
+      </div> */}
+
+      <div ref={invoiceRef} style={menuStyles}>
+        {/* <InvoicesSection /> */}
+        <NewsletterSubscription />
+        {/* <VisitsList /> */}
+      </div>
+
+      <SocialSection />
     </div>
   );
-}
+};
+
+export default App;
