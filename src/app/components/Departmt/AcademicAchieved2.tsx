@@ -6,8 +6,7 @@ export function AcademicAchievement() {
   return (
     <section className="p-6 md:p-12 max-w-4xl mx-auto space-y-10">
       <div>
-        <h2 className="text-3xl font-bold text-center mb-12">Meet Our Specialists</h2>
-        <h2 className="text-2xl font-bold mb-4">1. Academic Achievement</h2>
+        <h2 className="text-2xl font-bold mb-4">2. Academic Achievement</h2>
         <p className="text-gray-800">
           Mr. Louis Fosu Anane graduated as an Engineer in Project Management from <strong>Shandong University</strong>, one of China’s first-class and prestigious universities.
           Founded in 1901, Shandong University is recognized nationally and internationally for its excellence in research, engineering, and management education.

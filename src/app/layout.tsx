@@ -14,8 +14,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Lous and Jay Limited Ltd",
-  description: "Tourist and Tour App",
+  title: "Louis and Gao Ltd",
+  description: "Tourist and Mining App",
   icons: COMP_LOGO,
 };
 

@@ -198,11 +198,11 @@ export const fotoNames = [
 
     '1. CEO of Sir Louis and Gao Company Limited Meets Formal President of Nigeria president Olusegun Obasanjo',
     '2. Acadamic Achievement',
-    '3. Strategic Collaboration on Elecric Vehicle (EV) Manufacturing and Energy Stability in Nogeria',
-    '4. Moffat',
-    '5. Ghana Army meeting',
+    '3. Strategic Collaboration on Elecric Vehicle (EV) Manufacturing and Energy Stability in Nigeria',
+    '4. Strategic Defense Cooperation between Ghana and Chinese Investment Partners',
+    '5. Gold Mining Operations •	Ownership and operation of licensed gold mines across West Africa',
+    '6.  Advancing Science and Technology in Nigeria',
 
-    '6. nIGERIAN meeting',
     '7. Meeting with former nigerian president oBASAnjo',
     '8. Graduation',
     '9. Meeting in ghama',

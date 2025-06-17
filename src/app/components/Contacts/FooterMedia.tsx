@@ -4,7 +4,7 @@ import { FaLinkedin, FaWhatsapp, FaFacebook, FaDiscord } from "react-icons/fa";
 
 export function SocialSection() {
   return (
-    <footer className="bg-blue-700 text-black py-6 px-4 text-center flex flex-col items-center rounded-lg" style={{ marginBottom: "0.5rem" }}>
+    <footer className="bg-blue-200 text-black py-6 px-4 text-center flex flex-col items-center rounded-lg" style={{ marginBottom: "0.5rem" }}>
       {COMP_LOGO && (
         <div className="relative w-24 h-24 mb-4">
           <Image src={COMP_LOGO_BIG} alt="Company Logo" fill className="object-contain" priority />

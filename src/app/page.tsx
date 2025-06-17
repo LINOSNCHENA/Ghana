@@ -2,20 +2,16 @@
 
 "use client";
 import { useRef } from "react";
-// import { ContactSection } from "./components/Contacts/ContactDept";
 import NavigationMenu from "./components/Menus/NavMenu";
 import { SocialSection } from "./components/Contacts/FooterMedia";
-// import { PricingSection } from "./components/Departmt/PricingDept";
-// import { ServicesSection } from "./components/Departmt/ServicesDept";
 import { HeadSection } from "./components/Menus/HeadSection";
-// import { SpecialistsSection } from "./components/Peoples/SpecialistDept";
 import { TechStackSection } from "./components/Peoples/TectStack";
-// import ProjectSection from "./components/Peoples/TopProjects";
 import NewsletterVisits from "./components/Statistics/AddVisitations";
 // import NewsletterSubscription from "./components/Statistics/NewsLetter";
 import { COLOR_BLACK_METALIC, COLOR_GREEN_LIGHT, menuStyles } from "./utils/stylesData";
 import ServicesSection from "./components/Departmt/ServicesDept";
 import { AcademicAchievement } from "./components/Departmt/AcademicAchieved";
+import { BusinessOpportunities } from "./components/Departmt/BusinessProspects";
 
 const App: React.FC = () => {
   const headRef = useRef<HTMLDivElement>(null!);
@@ -98,9 +94,11 @@ const App: React.FC = () => {
 
       <div ref={invoiceRef} style={menuStyles}>
         {/* <InvoicesSection /> */}
-        {/* <NewsletterSubscription /> */}
+
         {/* <VisitsList /> */}
         <AcademicAchievement />
+        <BusinessOpportunities />
+        {/* <NewsletterSubscription /> */}
       </div>
 
       <SocialSection />
