@@ -9,11 +9,12 @@ import { SocialSection } from "./components/Contacts/FooterMedia";
 // import { ServicesSection } from "./components/Departmt/ServicesDept";
 import { HeadSection } from "./components/Menus/HeadSection";
 // import { SpecialistsSection } from "./components/Peoples/SpecialistDept";
-// import { TechStackSection } from "./components/Peoples/TectStack";
+import { TechStackSection } from "./components/Peoples/TectStack";
 // import ProjectSection from "./components/Peoples/TopProjects";
 import NewsletterVisits from "./components/Statistics/AddVisitations";
-import NewsletterSubscription from "./components/Statistics/NewsLetter";
+// import NewsletterSubscription from "./components/Statistics/NewsLetter";
 import { COLOR_BLACK_METALIC, COLOR_GREEN_LIGHT, menuStyles } from "./utils/stylesData";
+import ServicesSection from "./components/Departmt/ServicesDept";
 
 const App: React.FC = () => {
   const headRef = useRef<HTMLDivElement>(null!);
@@ -68,6 +69,13 @@ const App: React.FC = () => {
         <HeadSection scrollToSection={scrollToSection} contactRef={contactRef} />
         <NewsletterVisits />
       </div>
+      <div ref={servicesRef} style={menuStyles}>
+        <ServicesSection />
+      </div>
+
+      <div ref={techRef} style={menuStyles}>
+        <TechStackSection />
+      </div>
 
       {/* <div ref={specialistsRef} style={menuStyles}>
         <SpecialistsSection />
@@ -77,13 +85,7 @@ const App: React.FC = () => {
         <PricingSection />
       </div>
 
-      <div ref={servicesRef} style={menuStyles}>
-        <ServicesSection />
-      </div>
 
-      <div ref={techRef} style={menuStyles}>
-        <TechStackSection />
-      </div>
 
       <div ref={projectsRef} style={menuStyles}>
         <ProjectSection />
@@ -95,7 +97,7 @@ const App: React.FC = () => {
 
       <div ref={invoiceRef} style={menuStyles}>
         {/* <InvoicesSection /> */}
-        <NewsletterSubscription />
+        {/* <NewsletterSubscription /> */}
         {/* <VisitsList /> */}
       </div>
 

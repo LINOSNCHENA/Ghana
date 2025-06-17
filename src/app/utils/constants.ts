@@ -108,7 +108,7 @@ export const pricingPlans2 = [
 ];
 
 
-export const services = [
+export const services2 = [
     { title: "Business Websites & Blogs", description: "Professional websites tailored to your business needs." },
     { title: "E-commerce Stores", description: "Secure and scalable online stores with payment integration." },
     { title: "Custom Web Applications", description: "Build custom solutions to streamline your business processes." },
@@ -116,6 +116,27 @@ export const services = [
     { title: "SEO & Mobile Optimization", description: "Improve your website's visibility and performance." },
     { title: "School Registration Systems", description: "Efficient electronic registration systems for schools." },
 ];
+
+export const services = {
+  "For Chinese Nationals Visiting Ghana": [
+    "Business Visa Assistance",
+    "Company Registration (LLC, Rep Office)",
+    "Mining Licenses and Lease Acquisition",
+    "Real Estate and Property Acquisition",
+  ],
+  "For Ghanaians Going to China": [
+    "Student Visa Application",
+    "China Tourist & Business Visas",
+    "Scholarship Application & Support",
+  ],
+  "Documents We Provide": [
+    "Business & PU Invitation Letters",
+    "Admission Letters to Chinese Universities",
+    "Company Registration Certificates",
+    "Mining and Real Estate Legal Documents",
+  ],
+};
+
 
 export const specialists = [
     { name: "Marvin Nchena", role: "Senior Software Engineer", description: "Leads the design and development of scalable frontend and backend solutions, ensuring technical excellence and innovation." },
