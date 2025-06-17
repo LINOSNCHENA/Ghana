@@ -146,3 +146,5 @@ export const fotoNames = [
     '20. Ghana Independence Day Celebration Marking National Pride, Progress, and Unity Date: March 6th | Location: Nationwide, Ghana',
 
 ]
+
+export const specialists = ['20295', 'shfgf'];
