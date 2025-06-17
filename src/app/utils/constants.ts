@@ -14,14 +14,14 @@ export const COMP_LOGO_BIG = "/logos/1.jpg";
 export const COMP_NAME = 'Tourism Desk – Sir Louis and Gao Company Limited'
 export const COMP_EMAIL = 'chinaoffice@slghana.com'
 export const COMP_EMAIL2 = 'chinaoffice@slghana.com'
-export const COMP_SHORT = 'SOJ'
+export const COMP_SHORT = 'SLG'
 export const COMP_COPYRIGHT = new Date().getFullYear() + 'Tourism Desk – Sir Louis and Gao Company Limited. All rights reserved';
 export const COMP_PAGE1 = 'Tourism Desk – Sir Louis and Gao Company Limited'
 
 export const topWebsites: Website[] = [
-    { name: "Advertisements", url: "Tourism Desk – Sir Louis and Gao Company Limited" },
+    { name: "Advertisements", url: "Tourism Desk – Sir Louis and Gao Company Ltd" },
     { name: "Wise-Pink", url: "https://hpink-finance.netlify.app/" },
-    { name: "Money", url: "Tourism Desk – Sir Louis and Gao Company Limited" },
+    { name: "Money", url: "Tourism Desk – Sir Louis and Gao Company Ltd" },
     { name: "Finance Tracker", url: "https://fintrack.com" },
     { name: "Lending System", url: "https://lendingsystem.com" },
     { name: "HR Management", url: "https://hrmanage.com" },
