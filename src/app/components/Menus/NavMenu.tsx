@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Menu, X } from "lucide-react";
+import { COMP_SHORT } from "@/app/utils/constants";
 
 type NavigationMenuProps = {
   scrollToSection: (ref: React.RefObject<HTMLDivElement>) => void;
@@ -27,7 +28,7 @@ const NavigationMenu: React.FC<NavigationMenuProps> = ({ scrollToSection, refs }
     <nav className="bg-yellow-400 text-black fixed w-full max-w-[85%] sm:max-w-[80%] md:max-w-[75%] lg:max-w-[65%] xl:max-w-[1200px] left-1/2 -translate-x-1/2 top-0 z-50 px-4 rounded-lg">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
-          <div className="text-sm sm:text-lg md:text-xl lg:text-xl font-bold">Ghana 1.0.1</div>
+          <div className="text-sm sm:text-lg md:text-xl lg:text-xl font-bold">{COMP_SHORT}</div>
 
           {/* Mobile Menu Button */}
           <div className="md:hidden">

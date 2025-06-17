@@ -1,9 +1,10 @@
+import { fotoNames } from "@/app/utils/constants";
 import React from "react";
 
 export function TechStackSection() {
   const images = Array.from({ length: 20 }, (_, i) => ({
     src: `/fotos/${i + 1}.jpg`,
-    caption: `Foto ${i + 1}`,
+    caption: String(fotoNames[i]), // + `Foto ${i + 1}`,
   }));
 
   return (

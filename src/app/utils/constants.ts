@@ -7,11 +7,14 @@ type Website = {
     url: string;
 };
 
-export const whatsappNumber = "+233111923424";
-export const COMP_MOBILE = whatsappNumber;
+export const whatsappNumber = "+233559599892";
+export const COMP_MOBILE = "+4917641848967";
 export const COMP_LOGO = "/logos/1.ico";
+export const COMP_LOGO_BIG = "/logos/1.jpg";
 export const COMP_NAME = 'Tourism Desk – Sir Louis and Gao Company Limited'
-export const COMP_EMAIL = 'tourism@gmail.com'
+export const COMP_EMAIL = 'chinaoffice@slghana.com'
+export const COMP_EMAIL2 = 'chinaoffice@slghana.com'
+export const COMP_SHORT = 'SOJ'
 export const COMP_COPYRIGHT = new Date().getFullYear() + 'Tourism Desk – Sir Louis and Gao Company Limited. All rights reserved';
 export const COMP_PAGE1 = 'Tourism Desk – Sir Louis and Gao Company Limited'
 
@@ -118,23 +121,33 @@ export const services2 = [
 ];
 
 export const services = {
-  "For Chinese Nationals Visiting Ghana": [
-    "Business Visa Assistance",
-    "Company Registration (LLC, Rep Office)",
-    "Mining Licenses and Lease Acquisition",
-    "Real Estate and Property Acquisition",
-  ],
-  "For Ghanaians Going to China": [
-    "Student Visa Application",
-    "China Tourist & Business Visas",
-    "Scholarship Application & Support",
-  ],
-  "Documents We Provide": [
-    "Business & PU Invitation Letters",
-    "Admission Letters to Chinese Universities",
-    "Company Registration Certificates",
-    "Mining and Real Estate Legal Documents",
-  ],
+    "For Chinese Nationals Visiting Ghana": [
+        "Business Visa Assistance",
+        "Company Registration (LLC, Rep Office)",
+        "Mining Licenses and Lease Acquisition",
+        "Real Estate and Property Acquisition",
+    ],
+    "For Ghanaians Going to China": [
+        "Student Visa Application",
+        "China Tourist & Business Visas",
+        "Scholarship Application & Support",
+    ],
+    "Documents We Provide": [
+        "Business & PU Invitation Letters",
+        "Admission Letters to Chinese Universities",
+        "Company Registration Certificates",
+        "Mining and Real Estate Legal Documents",
+    ],
+    "Foreign Investments": ["Sir Louis and Gao serves as a trusted gateway for foreign investors seeking to enter the African minerals sector.We help international companies navigate:"
+    ],
+
+    "DRC Investments": ["Sir Louis and Gao serves as a trusted gateway for foreign investors seeking to enter the African minerals sector.We help international companies navigate:"
+    ],
+
+    "Ghana Investments": ["Sir Louis and Gao serves as a trusted gateway for foreign investors seeking to enter the African minerals sector.We help international companies navigate:"
+    ],
+    "Zambian Investments": ["Sir Louis and Gao serves as a trusted gateway for foreign investors seeking to enter the African minerals sector.We help international companies navigate:"
+    ]
 };
 
 
@@ -159,3 +172,53 @@ export const techStacks = [
 ];
 
 
+
+// export companyHistory = "Company Background: Sir Louis and Gao Company Limited
+
+// Sir Louis and Gao Company Limited is a multinational enterprise strategically headquartered in Ghana and China, with operations and partnerships spanning across West, East, and Southern Africa.The company is a dynamic force in natural resource development, international trade facilitation, and cross - border investment consulting.
+
+// ⸻
+
+// ⛏ Mining & Minerals Division
+
+// Sir Louis and Gao has established a solid reputation in the African mining sector, with active exploration, trading, and support operations in Ghana, Zambia, and the Democratic Republic of Congo(DRC).Our company is involved in both small - scale and industrial mining projects, offering technical, legal, and logistical support for global stakeholders.
+
+// 🌍 Our Core Commodities:
+// 	•	Gold – sourcing and export from Ghana and Zambia
+// 	•	Gemstones – including emeralds, sapphires, and tourmaline
+// 	•	Copper – copper ore, copper concentration, and copper cathode from Zambia
+// 	•	Tin – small - scale tin mining and export facilitation
+// 	•	Coltan(Columbite - Tantalite) – procurement and trade from the DRC
+
+// We operate with full compliance under local mining laws and international due diligence guidelines(including the OECD framework), ensuring traceability, ethical sourcing, and investor protection.
+// "
+
+
+export const fotoNames = [
+
+    '1. CEO of Sir Louis and Gao Company Limited Meets Formal President of Nigeria president Olusegun Obasanjo',
+    '2. Acadamic Achievement',
+    '3. Strategic Collaboration on Elecric Vehicle (EV) Manufacturing and Energy Stability in Nogeria',
+    '4. Moffat',
+    '5. Ghana Army meeting',
+
+    '6. nIGERIAN meeting',
+    '7. Meeting with former nigerian president oBASAnjo',
+    '8. Graduation',
+    '9. Meeting in ghama',
+    '10. Moffat',
+
+
+    '11. Ghana Army meeting',
+    '12. nIGERIAN meeting',
+    '13. Meeting with former nigerian president oBASAnjo',
+    '14. Graduation',
+    '15. Meeting in ghama',
+
+    '16. Moffat',
+    '17. Ghana Army meeting',
+    '18. nIGERIAN meeting',
+    '19. Meeting with former nigerian president oBASAnjo',
+    '20. Graduation',
+
+]

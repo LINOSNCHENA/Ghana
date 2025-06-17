@@ -15,6 +15,7 @@ import NewsletterVisits from "./components/Statistics/AddVisitations";
 // import NewsletterSubscription from "./components/Statistics/NewsLetter";
 import { COLOR_BLACK_METALIC, COLOR_GREEN_LIGHT, menuStyles } from "./utils/stylesData";
 import ServicesSection from "./components/Departmt/ServicesDept";
+import { AcademicAchievement } from "./components/Departmt/AcademicAchieved";
 
 const App: React.FC = () => {
   const headRef = useRef<HTMLDivElement>(null!);
@@ -99,6 +100,7 @@ const App: React.FC = () => {
         {/* <InvoicesSection /> */}
         {/* <NewsletterSubscription /> */}
         {/* <VisitsList /> */}
+        <AcademicAchievement />
       </div>
 
       <SocialSection />
