@@ -16,6 +16,8 @@ type NavigationMenuProps = {
     founderRef?: React.RefObject<HTMLDivElement>;
     academicRef?: React.RefObject<HTMLDivElement>;
     businessRef?: React.RefObject<HTMLDivElement>;
+
+    chinaRef?: React.RefObject<HTMLDivElement>;
   };
 };
 
@@ -75,7 +77,13 @@ const NavigationMenu: React.FC<NavigationMenuProps> = ({ scrollToSection, refs }
 
             <li>
               <button onClick={() => handleNavClick(refs.miningRef!)} className="hover:underline">
-                Mine Equiment Supply
+                Equiment Supply
+              </button>
+            </li>
+
+            <li>
+              <button onClick={() => handleNavClick(refs.chinaRef!)} className="hover:underline">
+                Life in China
               </button>
             </li>
           </ul>

@@ -12,7 +12,8 @@ import { AcademicAchievement } from "./components/Multimedia/AcademicAchieved";
 import { BusinessOpportunities } from "./components/Multimedia/BusinessProspects";
 import CeoProfileWithPhoto from "./components/Multimedia/BiographyOfCEO";
 import { GalaryFotos } from "./components/Peoples/GalaryFotos";
-// import { GalaryFotos } from "./components/Multimedia/MinningsOpportunity";
+import { CompanySlides } from "./components/Peoples/CompanySlides";
+import LifeInChina from "./components/Peoples/LiveInChina";
 
 const App: React.FC = () => {
   const headRef = useRef<HTMLDivElement>(null!);
@@ -25,6 +26,9 @@ const App: React.FC = () => {
   const founderRef = useRef<HTMLDivElement>(null!);
   const academicRef = useRef<HTMLDivElement>(null!);
   const businessRef = useRef<HTMLDivElement>(null!);
+
+  const chinaRef = useRef<HTMLDivElement>(null!);
+
 
   const scrollToSection = (ref: React.RefObject<HTMLDivElement | null>) => {
     if (ref.current) {
@@ -56,6 +60,7 @@ const App: React.FC = () => {
           founderRef,
           academicRef,
           businessRef,
+          chinaRef,
         }}
       />
 
@@ -84,9 +89,9 @@ const App: React.FC = () => {
         <GalaryFotos />
       </div>
 
-      {/* <div ref={miningRef} style={menuStyles}>
-        <GalaryFotos />
-      </div> */}
+      <div ref={miningRef} style={menuStyles}>
+        <CompanySlides />
+      </div>
 
       <div ref={founderRef} style={menuStyles}>
         <CeoProfileWithPhoto />
@@ -94,6 +99,9 @@ const App: React.FC = () => {
 
       <div ref={academicRef} style={menuStyles}>
         <AcademicAchievement />
+      </div>
+      <div ref={chinaRef} style={menuStyles}>
+          < LifeInChina/>
       </div>
 
       <SocialSection />
