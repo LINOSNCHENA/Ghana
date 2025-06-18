@@ -15,25 +15,14 @@ export function HeadSection({ scrollToSection, contactRef }: HeadSectionProps) {
       {/* Foreground Content */}
       <div className="relative z-10 max-w-4xl mx-auto">
         {/* Subtle floating elements */}
-        <div className="absolute -top-20 -left-20 w-40 h-40 rounded-full bg-blue-800/10 blur-xl animate-float"></div>
-        <div className="absolute bottom-10 -right-10 w-60 h-60 rounded-full bg-blue-800/10 blur-xl animate-float-delay"></div>
+        <div className="absolute -top-20 -left-20 w-40 h-40 rounded-full bg-gray-400/10 blur-xl animate-float"></div>
+        <div className="absolute bottom-10 -right-10 w-60 h-60 rounded-full bg-gray-400/10 blur-xl animate-float-delay"></div>
 
         <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold mb-6 leading-tight tracking-tight">
           <span className="bg-clip-text text-transparent bg-gradient-to-r from-blue-100 to-white">{COMP_NAME}</span>
         </h1>
 
         <p className="text-xl sm:text-2xl mb-8 max-w-2xl mx-auto text-blue-100/90 font-medium">Your trusted partner in Africa-China Tourism solutions</p>
-
-        {/* 
-        <button
-          onClick={() => scrollToSection(contactRef)}
-          className="relative px-8 py-3 sm:px-10 sm:py-4 bg-white text-blue-800 font-semibold rounded-full 
-                    hover:bg-blue-50 hover:scale-[1.02] transition-all duration-300 
-                    shadow-md hover:shadow-lg active:scale-100"
-        >
-          <span className="relative z-10">Contact Us</span>
-          <span className="absolute inset-0 rounded-full bg-white/30 opacity-0 hover:opacity-100 transition-opacity duration-300"></span>
-        </button> */}
 
         <button
           onClick={() => scrollToSection(contactRef)}

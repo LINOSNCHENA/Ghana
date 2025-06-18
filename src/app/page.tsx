@@ -1,7 +1,5 @@
 "use client";
 
-// import Image from "next/legacy/image";
-
 import Image from "next/image";
 import { useRef } from "react";
 import NavigationMenu from "./components/Menus/NavMenu";
