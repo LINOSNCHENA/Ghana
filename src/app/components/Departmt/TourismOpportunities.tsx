@@ -1,15 +1,22 @@
 import React from "react";
 import { FaGlobeAmericas, FaUmbrellaBeach, FaRoute, FaChartLine, FaHandsHelping } from "react-icons/fa";
+import WatermarkBackground from "../Menus/WaterMarks";
+import { COMP_MOTTO } from "@/app/utils/constants";
 
 const TourismServices = () => {
   return (
-    <section className="py-16 bg-white">
+    // <section className="py-16 bg-white">
+
+    <section className="max-w-7xl mx-auto px-6 md:px-12 py-10 space-y-10 relative">
+      {/* Image Watermark Background */}
+
+      <WatermarkBackground altText={COMP_MOTTO} />
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
           <h2 className="text-4xl font-bold text-gray-800 mb-4">Creating Destinations. Connecting Cultures. Delivering Experiences.</h2>
           <p className="text-xl text-gray-600 max-w-4xl mx-auto">
-            At Sir Louis & Gao Company Limited, our Tourism Services Division is dedicated to unlocking the rich cultural, ecological, and economic potential of Africa&apos;s and Asia&apos;s
-            tourism sectors.
+            At Sir Louis & Gao Company Limited, our Tourism Services Division is dedicated to unlocking the rich cultural, ecological, and economic potential of Africa&apos;s and
+            Asia&apos;s tourism sectors.
           </p>
         </div>
 
@@ -119,8 +126,8 @@ const TourismServices = () => {
         <div className="text-center mt-8 bg-green-50 rounded-xl p-8">
           <FaChartLine className="text-green-600 mx-auto mb-4" size={32} />
           <p className="text-lg text-gray-700 max-w-3xl mx-auto">
-            Whether you&apos;re a government agency aiming to boost national tourism, or a global investor looking to enter a growing market, Sir Louis & Gao Company Limited is your
-            trusted partner in tourism innovation, infrastructure, and investment.
+            Whether you&apos;re a government agency aiming to boost national tourism, or a global investor looking to enter a growing market, Sir Louis & Gao Company Limited is
+            your trusted partner in tourism innovation, infrastructure, and investment.
           </p>
         </div>
       </div>

@@ -22,7 +22,19 @@ export function GalaryFotos() {
 
         return (
           <figure key={item.id} className="text-center group relative">
-            <Image src={imgSrc} alt={item.title} width={400} height={300} className="w-full h-auto rounded-xl shadow-md object-cover" layout="responsive" />
+            <Image
+              src={imgSrc}
+              alt={item.title}
+              width={400}
+              height={300}
+              className="w-full h-auto rounded-xl shadow-md object-cover"
+              layout="responsive"
+              priority={item.id <= 4} // Only load first 4 images eagerly
+              onError={(e) => {
+                console.error(`Failed to load image: /fotos/${item.id}.jpg`);
+                e.currentTarget.src = "/logos/1.jpg"; // Add a fallback
+              }}
+            />
             <figcaption className="mt-2 text-sm text-gray-600 cursor-pointer" onClick={() => handleCaptionClick(item.id)}>
               {displayText}
             </figcaption>

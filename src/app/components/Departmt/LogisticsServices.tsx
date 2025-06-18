@@ -1,9 +1,15 @@
 import React from "react";
 import { FaGlobe, FaShippingFast, FaUsers, FaHandshake } from "react-icons/fa";
+import WatermarkBackground from "../Menus/WaterMarks";
+import { COMP_MOTTO } from "@/app/utils/constants";
 
 const LogisticsSection = () => {
   return (
-    <section className="py-16 bg-gray-50">
+    // <section className="py-16 bg-gray-50">
+    <section className="max-w-7xl mx-auto px-6 md:px-12 py-10 space-y-10 relative">
+      {/* Image Watermark Background */}
+
+      <WatermarkBackground altText={COMP_MOTTO} />
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
           <h2 className="text-4xl font-bold text-gray-800 mb-4">Global Reach. Client-Focused. Efficiency-Driven.</h2>

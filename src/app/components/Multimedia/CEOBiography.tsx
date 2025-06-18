@@ -62,11 +62,11 @@ export default function CeoProfileWithPhoto() {
               <span className="text-gray-600">Shandong University, China</span>
             </li>
 
-            <li className="pl-2">
+            {/* <li className="pl-2">
               <strong className="text-gray-900">M.Sc. in Engineering Project Management</strong>
               <br />
               <span className="text-gray-600">Shandong University, China</span>
-            </li>
+            </li> */}
 
             <li className="pl-2">
               <strong className="text-gray-900">Ph.D. in International Relations (Ongoing)</strong>
