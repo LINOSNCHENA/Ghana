@@ -1,7 +1,6 @@
-// "use client";
-
 "use client";
 
+import Image from "next/image";
 import { useRef } from "react";
 import NavigationMenu from "./components/Menus/NavMenu";
 import { SocialSection } from "./components/Contacts/FooterMedia";
@@ -14,6 +13,8 @@ import CeoProfileWithPhoto from "./components/Multimedia/BiographyOfCEO";
 import { GalaryFotos } from "./components/Peoples/GalaryFotos";
 import { CompanySlides } from "./components/Peoples/CompanySlides";
 import LifeInChina from "./components/Peoples/LiveInChina";
+import { COMP_LOGO_BIG } from "./utils/constants";
+import ReviewSection from "./components/Multimedia/ReviewPage";
 
 const App: React.FC = () => {
   const headRef = useRef<HTMLDivElement>(null!);
@@ -26,9 +27,7 @@ const App: React.FC = () => {
   const founderRef = useRef<HTMLDivElement>(null!);
   const academicRef = useRef<HTMLDivElement>(null!);
   const businessRef = useRef<HTMLDivElement>(null!);
-
   const chinaRef = useRef<HTMLDivElement>(null!);
-
 
   const scrollToSection = (ref: React.RefObject<HTMLDivElement | null>) => {
     if (ref.current) {
@@ -37,74 +36,108 @@ const App: React.FC = () => {
   };
 
   return (
-    <div
-      style={{
-        maxWidth: 1400,
-        margin: "auto auto 0.5rem auto", // Adds 2rem bottom margin
-        padding: "0 1rem 2rem 1rem", // Optional: also adds bottom padding
-        fontFamily: "'Segoe UI', Tahoma, Geneva, Verdana, sans-serif",
-        borderRadius: "8px",
-        background: COLOR_BLACK_METALIC,
-      }}
-    >
-      <NavigationMenu
-        scrollToSection={scrollToSection}
-        refs={{
-          headRef,
-          specialistsRef,
-          projectsRef,
-          contactRef,
-          fotoRef,
-          servicesRef,
-          miningRef,
-          founderRef,
-          academicRef,
-          businessRef,
-          chinaRef,
-        }}
-      />
-
+    <div style={{ position: "relative" }}>
+      {/* Watermark background - Fixed issues here */}
       <div
-        ref={headRef}
         style={{
-          marginBottom: 40,
-          minHeight: "50vh",
-          background: COLOR_BLUE_LIGHT,
-          borderRadius: "8px",
+          position: "fixed",
+          top: 0,
+          left: 0,
+          width: "100vw",
+          height: "100vh",
+          zIndex: 0,
+          opacity: 0.2, // Reduced opacity for better visibility
+          pointerEvents: "none",
+          background: COLOR_BLACK_METALIC,
         }}
       >
-        <HeadSection scrollToSection={scrollToSection} contactRef={contactRef} />
-        {/* <NewsletterVisits /> */}
+        <Image
+          src={COMP_LOGO_BIG}
+          alt="Watermark"
+          fill
+          style={{
+            objectFit: "contain",
+            objectPosition: "center",
+          }}
+          priority
+          quality={30} // Lower quality for better performance
+          onError={(e) => console.error("Watermark image failed to load", e)}
+        />
       </div>
 
-      <div ref={businessRef} style={menuStyles}>
-        <BusinessOpportunities />
-      </div>
+      {/* Main App Content */}
+      <div
+        style={{
+          maxWidth: 1400,
+          margin: "auto auto 0.5rem auto",
+          padding: "0 1rem 2rem 1rem",
+          fontFamily: "'Segoe UI', Tahoma, Geneva, Verdana, sans-serif",
+          borderRadius: "8px",
+          background: COLOR_BLACK_METALIC,
+          position: "relative",
+          zIndex: 1,
+        }}
+      >
+        <NavigationMenu
+          scrollToSection={scrollToSection}
+          refs={{
+            headRef,
+            specialistsRef,
+            projectsRef,
+            contactRef,
+            fotoRef,
+            servicesRef,
+            miningRef,
+            founderRef,
+            academicRef,
+            businessRef,
+            chinaRef,
+          }}
+        />
 
-      <div ref={servicesRef} style={menuStyles}>
-        <ServicesSection />
-      </div>
+        <div
+          ref={headRef}
+          style={{
+            marginBottom: 40,
+            minHeight: "50vh",
+            background: COLOR_BLUE_LIGHT,
+            borderRadius: "8px",
+          }}
+        >
+          <HeadSection scrollToSection={scrollToSection} contactRef={contactRef} />
+        </div>
 
-      <div ref={fotoRef} style={menuStyles}>
-        <GalaryFotos />
-      </div>
+        <div ref={businessRef} style={menuStyles}>
+          <BusinessOpportunities />
+        </div>
 
-      <div ref={miningRef} style={menuStyles}>
-        <CompanySlides />
-      </div>
+        <div ref={servicesRef}>
+          <ServicesSection />
+        </div>
 
-      <div ref={founderRef} style={menuStyles}>
-        <CeoProfileWithPhoto />
-      </div>
+        <div ref={fotoRef} style={menuStyles}>
+          <GalaryFotos />
+        </div>
 
-      <div ref={academicRef} style={menuStyles}>
-        <AcademicAchievement />
-      </div>
-      <div ref={chinaRef} style={menuStyles}>
-          < LifeInChina/>
-      </div>
+        <div ref={miningRef} style={menuStyles}>
+          <CompanySlides />
+        </div>
 
-      <SocialSection />
+        <div ref={founderRef} style={menuStyles}>
+          <CeoProfileWithPhoto />
+        </div>
+
+        <div ref={academicRef} style={menuStyles}>
+          <AcademicAchievement />
+        </div>
+
+        <div ref={chinaRef} style={menuStyles}>
+          <LifeInChina />
+          <ReviewSection />
+        </div>
+
+        <SocialSection />
+      </div>
     </div>
   );
 };

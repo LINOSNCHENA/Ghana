@@ -9,10 +9,10 @@ type Website = {
 
 export const whatsappNumber = "+233559599892";
 export const COMP_MOBILE = "+4917641848967";
-export const COMP_LOGO = "/logos/1.ico";
-export const COMP_LOGO_BIG = "/logos/1.jpg";
+export const COMP_LOGO = "/logos/2.ico";
+export const COMP_LOGO_BIG = "/logos/2.jpg";
 export const COMP_NAME = 'Tourism Desk – Sir Louis and Gao Company Limited'
-export const COMP_EMAIL = 'chinaoffice@slghana.com'
+export const COMP_EMAIL = 'louis@aafou.com'
 export const COMP_EMAIL2 = 'chinaoffice@slghana.com'
 export const COMP_SHORT = 'SLG'
 export const COMP_COPYRIGHT = new Date().getFullYear() + 'Tourism Desk – Sir Louis and Gao Company Limited. All rights reserved';
@@ -228,5 +228,80 @@ export const fotoData = [
     {
         id: 20,
         title: 'Ghana Independence Day Celebration — March 6th, Nationwide',
+    },
+];
+
+
+
+export const sampleReviews = [
+    {
+        name: "Jane Doe",
+        location: "Nairobi, Kenya",
+        review: "Excellent service! Very professional and friendly team.",
+        rating: 5,
+        avatarUrl: "https://randomuser.me/api/portraits/women/44.jpg",
+    },
+    {
+        name: "Michael Smith",
+        location: "Lagos, Nigeria",
+        review: "Quick response and efficient processing. Highly recommend!",
+        rating: 4,
+        avatarUrl: "https://randomuser.me/api/portraits/men/12.jpg",
+    },
+    {
+        name: "Fatima Ali",
+        location: "Cairo, Egypt",
+        review: "Great experience overall. The loan approval was smooth.",
+        rating: 5,
+        avatarUrl: "https://randomuser.me/api/portraits/women/30.jpg",
+    },
+    {
+        name: "David Kimani",
+        location: "Kigali, Rwanda",
+        review: "Good support but had some delays during processing.",
+        rating: 3,
+        avatarUrl: "https://randomuser.me/api/portraits/men/41.jpg",
+    },
+    {
+        name: "Grace Mutesi",
+        location: "Kampala, Uganda",
+        review: "Very transparent and helpful. Would use again!",
+        rating: 5,
+        avatarUrl: "https://randomuser.me/api/portraits/women/25.jpg",
+    },
+    {
+        name: "John Mwangi",
+        location: "Mombasa, Kenya",
+        review: "Not bad, but customer service can be improved.",
+        rating: 3,
+        avatarUrl: "https://randomuser.me/api/portraits/men/29.jpg",
+    },
+    {
+        name: "Esther Banda",
+        location: "Lusaka, Zambia",
+        review: "Loved the mobile interface and instant support.",
+        rating: 4,
+        avatarUrl: "https://randomuser.me/api/portraits/women/18.jpg",
+    },
+    {
+        name: "Abdi Yusuf",
+        location: "Mogadishu, Somalia",
+        review: "Fast, reliable, and stress-free. Thumbs up!",
+        rating: 5,
+        avatarUrl: "https://randomuser.me/api/portraits/men/23.jpg",
+    },
+    {
+        name: "Linda Njeri",
+        location: "Nakuru, Kenya",
+        review: "Easy loan options and very reasonable rates.",
+        rating: 4,
+        avatarUrl: "https://randomuser.me/api/portraits/women/14.jpg",
+    },
+    {
+        name: "Peter Odhiambo",
+        location: "Dar es Salaam, Tanzania",
+        review: "Service was okay but the app crashed once.",
+        rating: 3,
+        avatarUrl: "https://randomuser.me/api/portraits/men/50.jpg",
     },
 ];

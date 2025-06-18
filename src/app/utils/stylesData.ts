@@ -24,10 +24,10 @@ export const longButton =
 
 export const COLOR_GREEN_LIGHT1 = "#90ee90"; // Light green
 export const COLOR_BLUE_LIGHT2 = "#add8e6";  // Light blue
-export const COLOR_BLACK_METALIC = "#22292f";   // metallic Black
+export const COLOR_BLACK_METALIC = "#0D47A1"; // "#22292f";   // metallic Black
 
 export const COLOR_GREEN_LIGHT = "#4ade80"; // Tailwind green-400
-export const COLOR_BLUE_LIGHT = "#60a5fa";  // Tailwind blue-400
+export const COLOR_BLUE_LIGHT = "#ECEFF1"// "#60a5fa";  // Tailwind blue-400
 export const COLOR_RED_LIGHT = "#f87171";   // Tailwind red-400
 
 export const BUTTONS = { smallButton, baseButton, longButton, largeButton, topButton }

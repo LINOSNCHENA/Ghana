@@ -56,19 +56,16 @@ const NavigationMenu: React.FC<NavigationMenuProps> = ({ scrollToSection, refs }
             </li>
             <li>
               <button onClick={() => handleNavClick(refs.businessRef!)} className="hover:underline">
-                Overview
+                Reviews
               </button>
             </li>
-            <li>
+
+            {/* <li>
               <button onClick={() => handleNavClick(refs.projectsRef!)} className="hover:underline">
                 Projects
               </button>
-            </li>
-            <li>
-              <button onClick={() => handleNavClick(refs.contactRef)} className="hover:underline">
-                Contact
-              </button>
-            </li>
+            </li> */}
+
             <li>
               <button onClick={() => handleNavClick(refs.founderRef!)} className="hover:underline">
                 FoundingCEO
@@ -84,6 +81,18 @@ const NavigationMenu: React.FC<NavigationMenuProps> = ({ scrollToSection, refs }
             <li>
               <button onClick={() => handleNavClick(refs.chinaRef!)} className="hover:underline">
                 Life in China
+              </button>
+            </li>
+
+            <li>
+              <button onClick={() => handleNavClick(refs.businessRef!)} className="hover:underline">
+                Reviews
+              </button>
+            </li>
+
+            <li>
+              <button onClick={() => handleNavClick(refs.contactRef)} className="hover:underline">
+                Contact
               </button>
             </li>
           </ul>
