@@ -2,7 +2,8 @@
 
 import { useState } from "react";
 import { Star } from "lucide-react";
-import Image from "next/legacy/image";
+// import Image from "next/legacy/image";
+import Image from "next/image";
 import WatermarkBackground from "../Menus/WaterMarks";
 import { COMP_MOTTO, sampleReviews } from "@/app/utils/constants";
 

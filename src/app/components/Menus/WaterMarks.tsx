@@ -1,7 +1,8 @@
 "use client";
 
 import React from "react";
-import Image from "next/legacy/image";
+// import Image from "next/legacy/image";
+import Image from "next/image";
 import { COMP_LOGO_BIG } from "@/app/utils/constants";
 
 interface WatermarkBackgroundProps {

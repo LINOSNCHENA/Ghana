@@ -1,7 +1,8 @@
 "use client";
 
 import React, { useRef, useState, useEffect } from "react";
-import Image from "next/legacy/image";
+// import Image from "next/legacy/image";
+import Image from "next/image";
 import { fotoData } from "@/app/utils/constants";
 import { ChevronLeft, ChevronRight, X } from "lucide-react";
 

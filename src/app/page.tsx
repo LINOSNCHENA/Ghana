@@ -1,6 +1,8 @@
 "use client";
 
-import Image from "next/legacy/image";
+// import Image from "next/legacy/image";
+
+import Image from "next/image";
 import { useRef } from "react";
 import NavigationMenu from "./components/Menus/NavMenu";
 import { SocialSection } from "./components/Contacts/FooterMedia";
@@ -68,6 +70,8 @@ const App: React.FC = () => {
           quality={30} 
           onError={(e) => console.error("Watermark image failed to load", e)}
         />
+
+
       </div>
 
       {/* Main App Content */}
