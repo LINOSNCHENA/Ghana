@@ -1,10 +1,15 @@
 "use client";
 
+import { COMP_MOTTO } from "@/app/utils/constants";
 import React from "react";
+import WatermarkBackground from "../Menus/WatermarkBackground";
 
 export function AcademicAchievement() {
   return (
-    <section className="p-6 md:p-12 max-w-4xl mx-auto space-y-10">
+
+         <section className="max-w-7xl mx-auto px-6 md:px-12 py-10 space-y-10 relative">
+            {/* Image Watermark Background */}      
+            <WatermarkBackground altText={COMP_MOTTO} />
       <div>
         <h2 className="text-3xl font-bold text-center mb-12">Meet Our Specialists</h2>
         <h2 className="text-2xl font-bold mb-4">1.Chief Executive Officer ! Academic Achievement</h2>

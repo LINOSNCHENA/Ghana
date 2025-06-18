@@ -29,6 +29,11 @@ const App: React.FC = () => {
   const businessRef = useRef<HTMLDivElement>(null!);
   const chinaRef = useRef<HTMLDivElement>(null!);
 
+
+  const reviewsRef = useRef<HTMLDivElement>(null!);
+
+
+
   const scrollToSection = (ref: React.RefObject<HTMLDivElement | null>) => {
     if (ref.current) {
       ref.current.scrollIntoView({ behavior: "smooth" });
@@ -92,6 +97,7 @@ const App: React.FC = () => {
             academicRef,
             businessRef,
             chinaRef,
+            reviewsRef,
           }}
         />
 
@@ -111,7 +117,7 @@ const App: React.FC = () => {
           <BusinessOpportunities />
         </div>
 
-        <div ref={servicesRef}>
+        <div ref={servicesRef}  style={menuStyles}>
           <ServicesSection />
         </div>
 
@@ -132,7 +138,10 @@ const App: React.FC = () => {
         </div>
 
         <div ref={chinaRef} style={menuStyles}>
-          <LifeInChina />
+          <LifeInChina />        
+        </div>
+
+        <div ref={reviewsRef} style={menuStyles}>      
           <ReviewSection />
         </div>
 

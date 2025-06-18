@@ -1,9 +1,14 @@
-import { services } from "@/app/utils/constants";
+import { COMP_MOTTO, services } from "@/app/utils/constants";
 import React from "react";
+import WatermarkBackground from "../Menus/WatermarkBackground";
 
 const ServicesSection: React.FC = () => {
   return (
-    <section className="max-w-6xl mx-auto px-4 py-12">
+    // <section className="max-w-6xl mx-auto px-4 py-12">
+
+    <section className="max-w-7xl mx-auto px-6 md:px-12 py-10 space-y-10 relative">
+      {/* Image Watermark Background */}
+      <WatermarkBackground altText={COMP_MOTTO} />
       <h2 className="text-4xl font-bold text-center mb-10">Our Services</h2>
       <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
         {Object.entries(services).map(([category, items]) => (

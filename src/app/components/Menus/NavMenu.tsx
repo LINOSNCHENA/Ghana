@@ -18,6 +18,7 @@ type NavigationMenuProps = {
     businessRef?: React.RefObject<HTMLDivElement>;
 
     chinaRef?: React.RefObject<HTMLDivElement>;
+    reviewsRef?: React.RefObject<HTMLDivElement>;
   };
 };
 
@@ -85,7 +86,7 @@ const NavigationMenu: React.FC<NavigationMenuProps> = ({ scrollToSection, refs }
             </li>
 
             <li>
-              <button onClick={() => handleNavClick(refs.businessRef!)} className="hover:underline">
+              <button onClick={() => handleNavClick(refs.reviewsRef!)} className="hover:underline">
                 Reviews
               </button>
             </li>

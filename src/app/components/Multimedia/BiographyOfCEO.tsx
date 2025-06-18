@@ -3,28 +3,14 @@
 import React from "react";
 import Image from "next/image";
 import WatermarkBackground from "../Menus/WatermarkBackground";
-// import { COMP_LOGO_BIG } from "@/app/utils/constants";
-// import WatermarkBackground from "../Menus/WaterMarkBackground";
+import { COMP_MOTTO } from "@/app/utils/constants";
 
 export default function CeoProfileWithPhoto() {
   return (
     <section className="max-w-7xl mx-auto px-6 md:px-12 py-10 space-y-10 relative">
       {/* Image Watermark Background */}
-      {/* <div className="absolute inset-0 pointer-events-none z-0 overflow-hidden">
-        <Image
-          src={COMP_LOGO_BIG}
-          alt="Mr. Louis Fosu Anane"
-          fill
-          className="object-contain opacity-[0.05]"
-          // style={{
-          //   transform: "rotate(-15deg)",
-          //   filter: "grayscale(100%) brightness(0.1)",
-          // }}
-          quality={30}
-          priority={false}
-        />
-      </div> */}
-      <WatermarkBackground altText="Mr. Louis Fosu Anane" />
+
+      <WatermarkBackground altText={COMP_MOTTO} />
 
       {/* Main Content */}
       <div className="relative max-w-7xl max-auto z-10 bg1-red-200 bg1-opacity-90 rounded-lg p-6 md:p-8 shadow-sm">

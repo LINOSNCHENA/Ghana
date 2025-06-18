@@ -15,6 +15,7 @@ export const COMP_NAME = 'Tourism Desk – Sir Louis and Gao Company Limited'
 export const COMP_EMAIL = 'louis@aafou.com'
 export const COMP_EMAIL2 = 'chinaoffice@slghana.com'
 export const COMP_SHORT = 'SLG'
+export const COMP_MOTTO = 'SLG Images to be Uploaded'
 export const COMP_COPYRIGHT = new Date().getFullYear() + 'Tourism Desk – Sir Louis and Gao Company Limited. All rights reserved';
 export const COMP_PAGE1 = 'Tourism Desk – Sir Louis and Gao Company Limited'
 
