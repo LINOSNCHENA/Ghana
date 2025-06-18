@@ -1,6 +1,6 @@
 import { COMP_MOTTO, services } from "@/app/utils/constants";
 import React from "react";
-import WatermarkBackground from "../Menus/WatermarkBackground";
+import WatermarkBackground from "../Menus/WaterMarks";
 
 const ServicesSection: React.FC = () => {
   return (

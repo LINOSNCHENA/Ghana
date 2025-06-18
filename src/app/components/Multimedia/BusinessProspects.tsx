@@ -1,5 +1,5 @@
 import React from "react";
-import WatermarkBackground from "../Menus/WatermarkBackground";
+import WatermarkBackground from "../Menus/WaterMarks";
 import { COMP_MOTTO } from "@/app/utils/constants";
 
 export const BusinessOpportunities: React.FC = () => {

@@ -2,7 +2,7 @@
 
 import React from "react";
 import Image from "next/image";
-import WatermarkBackground from "../Menus/WatermarkBackground";
+import WatermarkBackground from "../Menus/WaterMarks";
 import { COMP_MOTTO } from "@/app/utils/constants";
 
 export default function CeoProfileWithPhoto() {
@@ -29,7 +29,8 @@ export default function CeoProfileWithPhoto() {
           <p className="text-gray-800 leading-relaxed">
             Mr. Louis Fosu Anane is an accomplished technology and infrastructure executive with an international background in software engineering, engineering project
             management, and international relations. He currently serves as the CEO of Sir Louis & Gao Company Limited, a multinational company engaged in strategic investments
-            across sectors including gold mining, technology infrastructure, defense equipment, and transport innovation.
+            across sectors including gold mining, technology infrastructure, defense equipment, and transport innovation. A diversified enterprise specializing in gold production,
+            tourism development, and logistics services across Africa and Asia
           </p>
         </div>
 
@@ -38,21 +39,42 @@ export default function CeoProfileWithPhoto() {
           <h3 className="text-xl font-semibold border-b pb-2 text-gray-700">🎓 Educational Background</h3>
           <ul className="list-disc list-inside text-gray-800 space-y-2 marker:text-gray-400">
             <li className="pl-2">
+              <strong className="text-gray-900">Diploma in Information Technology & Business Skills</strong>
+              <br />
+              <span className="text-gray-600"> – NIIT, Kumasi, Ghana</span>
+            </li>
+
+            <li className="pl-2">
+              <strong className="text-gray-900">National Certificate in Computing & Electronics (NCCE) </strong>
+              <br />
+              <span className="text-gray-600"> IPMC, Labone, Accra, Ghana</span>
+            </li>
+
+            <li className="pl-2">
               <strong className="text-gray-900">B.Sc. in Software Engineering</strong>
               <br />
               <span className="text-gray-600">Bohai University, Jinzhou, Liaoning Province, China</span>
             </li>
+
             <li className="pl-2">
               <strong className="text-gray-900">M.Sc. in Engineering Project Management</strong>
               <br />
               <span className="text-gray-600">Shandong University, China</span>
             </li>
+
+            <li className="pl-2">
+              <strong className="text-gray-900">M.Sc. in Engineering Project Management</strong>
+              <br />
+              <span className="text-gray-600">Shandong University, China</span>
+            </li>
+
             <li className="pl-2">
               <strong className="text-gray-900">Ph.D. in International Relations (Ongoing)</strong>
               <br />
               <span className="text-gray-600">University of Pécs, Hungary</span>
             </li>
           </ul>
+
           <p className="text-gray-800 mt-3 leading-relaxed">
             Mr. Anane&apos;s academic path reflects a rare combination of technical depth, project execution expertise, and geopolitical awareness, equipping him to lead both
             business and diplomatic engagements globally.
@@ -67,8 +89,11 @@ export default function CeoProfileWithPhoto() {
               <strong className="text-gray-900">Former Role at Inspur Group, China:</strong>
               <br />
               <span className="text-gray-600">
-                Mr. Anane previously worked with Inspur, one of China&apos;s largest and most advanced data center and cloud computing companies. His role involved exposure to
-                next-generation digital infrastructure, enterprise IT systems, and international technology deployment.
+                Mr. Anane brings over a decade of international project management, IT, and investment facilitation experience: • Database Administrator – Inspur Group HQ, Jinan,
+                Shandong, China Managed enterprise-level database systems at one of China’s leading technology companies. • Project Manager – Dongyuan Louis Trading Company Limited
+                Oversaw cross-border trade operations and logistical coordination between China and West Africa. • Country Manager – SMART-HKG Hong Kong Co. Limited Served as a key
+                liaison, introducing Chinese and foreign investors to African government leaders to promote investment opportunities in copper mining, infrastructure, and energy
+                sectors.
               </span>
             </li>
             <li className="pl-2">

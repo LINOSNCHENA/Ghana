@@ -15,24 +15,24 @@ import { CompanySlides } from "./components/Peoples/CompanySlides";
 import LifeInChina from "./components/Peoples/LiveInChina";
 import { COMP_LOGO_BIG } from "./utils/constants";
 import ReviewSection from "./components/Multimedia/ReviewPage";
+import MiningServices from "./components/Multimedia/MiningOpportunities";
+import TourismServices from "./components/Multimedia/TourismOpportunities";
 
 const App: React.FC = () => {
   const headRef = useRef<HTMLDivElement>(null!);
-  const specialistsRef = useRef<HTMLDivElement>(null!);
-  const projectsRef = useRef<HTMLDivElement>(null!);
-  const contactRef = useRef<HTMLDivElement>(null!);
+  const homeRef = useRef<HTMLDivElement>(null!);
   const fotoRef = useRef<HTMLDivElement>(null!);
-  const servicesRef = useRef<HTMLDivElement>(null!);
+  const servicesRef = useRef<HTMLDivElement>(null!);  
+
   const miningRef = useRef<HTMLDivElement>(null!);
+  const educationRef = useRef<HTMLDivElement>(null!);
+  const tourismRef = useRef<HTMLDivElement>(null!);
+  const logisticsRef = useRef<HTMLDivElement>(null!);
+
   const founderRef = useRef<HTMLDivElement>(null!);
-  const academicRef = useRef<HTMLDivElement>(null!);
-  const businessRef = useRef<HTMLDivElement>(null!);
-  const chinaRef = useRef<HTMLDivElement>(null!);
-
-
   const reviewsRef = useRef<HTMLDivElement>(null!);
-
-
+  const contactsRef = useRef<HTMLDivElement>(null!);
+  const contactRef = useRef<HTMLDivElement>(null!);
 
   const scrollToSection = (ref: React.RefObject<HTMLDivElement | null>) => {
     if (ref.current) {
@@ -65,7 +65,7 @@ const App: React.FC = () => {
             objectPosition: "center",
           }}
           priority
-          quality={30} // Lower quality for better performance
+          quality={30} 
           onError={(e) => console.error("Watermark image failed to load", e)}
         />
       </div>
@@ -87,17 +87,20 @@ const App: React.FC = () => {
           scrollToSection={scrollToSection}
           refs={{
             headRef,
-            specialistsRef,
-            projectsRef,
-            contactRef,
+            homeRef,
+
             fotoRef,
-            servicesRef,
+            servicesRef,        
+
             miningRef,
+            educationRef,
+            logisticsRef,
+            tourismRef,
+
             founderRef,
-            academicRef,
-            businessRef,
-            chinaRef,
             reviewsRef,
+            contactsRef,
+            contactRef,
           }}
         />
 
@@ -110,14 +113,14 @@ const App: React.FC = () => {
             borderRadius: "8px",
           }}
         >
-          <HeadSection scrollToSection={scrollToSection} contactRef={contactRef} />
+          <HeadSection scrollToSection={scrollToSection} contactRef={contactsRef} />
         </div>
 
-        <div ref={businessRef} style={menuStyles}>
+        <div ref={homeRef} style={menuStyles}>
           <BusinessOpportunities />
         </div>
 
-        <div ref={servicesRef}  style={menuStyles}>
+        <div ref={servicesRef} style={menuStyles}>
           <ServicesSection />
         </div>
 
@@ -133,19 +136,31 @@ const App: React.FC = () => {
           <CeoProfileWithPhoto />
         </div>
 
-        <div ref={academicRef} style={menuStyles}>
+        <div ref={educationRef} style={menuStyles}>
           <AcademicAchievement />
         </div>
 
-        <div ref={chinaRef} style={menuStyles}>
-          <LifeInChina />        
+        <div ref={educationRef} style={menuStyles}>
+          <LifeInChina />
         </div>
 
-        <div ref={reviewsRef} style={menuStyles}>      
+        <div ref={miningRef} style={menuStyles}>
+          <MiningServices />
+        </div>
+
+        <div ref={tourismRef} style={menuStyles}>
+          <TourismServices />
+        </div>
+
+        <div ref={reviewsRef} style={menuStyles}>
           <ReviewSection />
         </div>
 
-        <SocialSection />
+        <div ref={contactsRef} style={menuStyles}>
+          <SocialSection />
+        </div>
+
+        {/* <SocialSection /> */}
       </div>
     </div>
   );

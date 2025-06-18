@@ -9,16 +9,21 @@ type NavigationMenuProps = {
     headRef: React.RefObject<HTMLDivElement>;
     specialistsRef?: React.RefObject<HTMLDivElement>;
     projectsRef?: React.RefObject<HTMLDivElement>;
-    contactRef: React.RefObject<HTMLDivElement>;
+
     fotoRef: React.RefObject<HTMLDivElement>;
     servicesRef?: React.RefObject<HTMLDivElement>;
     miningRef?: React.RefObject<HTMLDivElement>;
     founderRef?: React.RefObject<HTMLDivElement>;
-    academicRef?: React.RefObject<HTMLDivElement>;
-    businessRef?: React.RefObject<HTMLDivElement>;
+    educationRef?: React.RefObject<HTMLDivElement>;
+    logisticsRef?: React.RefObject<HTMLDivElement>;
 
     chinaRef?: React.RefObject<HTMLDivElement>;
     reviewsRef?: React.RefObject<HTMLDivElement>;
+    tourismRef?: React.RefObject<HTMLDivElement>;
+    offeringsRef?: React.RefObject<HTMLDivElement>;
+
+    contactsRef?: React.RefObject<HTMLDivElement>;
+    contactRef?: React.RefObject<HTMLDivElement>;
   };
 };
 
@@ -51,37 +56,37 @@ const NavigationMenu: React.FC<NavigationMenuProps> = ({ scrollToSection, refs }
               </button>
             </li>
             <li>
-              <button onClick={() => handleNavClick(refs.specialistsRef!)} className="hover:underline">
-                Services
+              <button onClick={() => handleNavClick(refs.offeringsRef!)} className="hover:underline">
+                Offerings
               </button>
             </li>
             <li>
-              <button onClick={() => handleNavClick(refs.businessRef!)} className="hover:underline">
-                Reviews
-              </button>
-            </li>
-
-            {/* <li>
-              <button onClick={() => handleNavClick(refs.projectsRef!)} className="hover:underline">
-                Projects
-              </button>
-            </li> */}
-
-            <li>
-              <button onClick={() => handleNavClick(refs.founderRef!)} className="hover:underline">
-                FoundingCEO
+              <button onClick={() => handleNavClick(refs.logisticsRef!)} className="hover:underline">
+                Logistics
               </button>
             </li>
 
             <li>
               <button onClick={() => handleNavClick(refs.miningRef!)} className="hover:underline">
-                Equiment Supply
+                Mining services
               </button>
             </li>
 
             <li>
-              <button onClick={() => handleNavClick(refs.chinaRef!)} className="hover:underline">
-                Life in China
+              <button onClick={() => handleNavClick(refs.tourismRef!)} className="hover:underline">
+                Tourism services
+              </button>
+            </li>
+
+            <li>
+              <button onClick={() => handleNavClick(refs.educationRef!)} className="hover:underline">
+                Education Services
+              </button>
+            </li>
+
+            <li>
+              <button onClick={() => handleNavClick(refs.founderRef!)} className="hover:underline">
+                Founder CEO
               </button>
             </li>
 
@@ -92,7 +97,7 @@ const NavigationMenu: React.FC<NavigationMenuProps> = ({ scrollToSection, refs }
             </li>
 
             <li>
-              <button onClick={() => handleNavClick(refs.contactRef)} className="hover:underline">
+              <button onClick={() => handleNavClick(refs.contactsRef!)} className="hover:underline">
                 Contact
               </button>
             </li>
@@ -109,13 +114,13 @@ const NavigationMenu: React.FC<NavigationMenuProps> = ({ scrollToSection, refs }
           <button onClick={() => handleNavClick(refs.specialistsRef!)} className="block w-full text-left hover:underline">
             Specialists
           </button>
-          <button onClick={() => handleNavClick(refs.businessRef!)} className="block w-full text-left hover:underline">
+          <button onClick={() => handleNavClick(refs.educationRef!)} className="block w-full text-left hover:underline">
             Overview
           </button>
           <button onClick={() => handleNavClick(refs.projectsRef!)} className="block w-full text-left hover:underline">
             Projects
           </button>
-          <button onClick={() => handleNavClick(refs.contactRef)} className="block w-full text-left hover:underline">
+          <button onClick={() => handleNavClick(refs.contactsRef!)} className="block w-full text-left hover:underline">
             Contact
           </button>
         </div>

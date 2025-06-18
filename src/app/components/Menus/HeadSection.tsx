@@ -2,39 +2,9 @@
 // HeadSections
 //
 
-// import { COMP_LOGO_BIG, COMP_NAME } from "@/app/utils/constants";
-// import { BUTTONS } from "@/app/utils/stylesData";
-// import { RefObject } from "react";
-// import Image from "next/image";
-
-// interface HeadSectionProps {
-//   scrollToSection: (ref: RefObject<HTMLDivElement>) => void;
-//   contactRef: RefObject<HTMLDivElement>;
-// }
-
-// export function HeadSection({ scrollToSection, contactRef }: HeadSectionProps) {
-//   return (
-//     <section className="relative text-center py-16 px-4 sm:py-20 sm:px-8 bg11-blue-200 text-black rounded-lg overflow-hidden">
-//       {/* Watermark Logo */}
-//       <div className="absolute inset-0 z-0 opacity-10">
-//         <Image src={COMP_LOGO_BIG} alt="Company Logo Watermark" fill className="object-contain" priority />
-//       </div>
-
-//       {/* Foreground Content */}
-//       <div className="relative z-10">
-//         <h1 className="text-2xl sm:text-2xl md:text-5xl font-bold mb-4 leading-snug">{COMP_NAME}</h1>
-//         <p className="text-lg sm:text-xl mb-4">Your trusted partner in Africa-China Tourism solutions.</p>
-//         <button className={BUTTONS.topButton} onClick={() => scrollToSection(contactRef)}>
-//           Contact Us!
-//         </button>
-//       </div>
-//     </section>
-//   );
-// }
-
-import { COMP_LOGO_BIG, COMP_NAME } from "@/app/utils/constants";
+import { COMP_MOTTO, COMP_NAME } from "@/app/utils/constants";
 import { RefObject } from "react";
-import Image from "next/image";
+import WatermarkBackground from "./WaterMarks";
 
 interface HeadSectionProps {
   scrollToSection: (ref: RefObject<HTMLDivElement>) => void;
@@ -43,12 +13,8 @@ interface HeadSectionProps {
 
 export function HeadSection({ scrollToSection, contactRef }: HeadSectionProps) {
   return (
-    <section className="relative text-center py-16 px-4 sm:py-24 sm:px-8 rounded-lg overflow-hidden bg-gradient-to-br from-blue-600 to-blue-800 text-white">
-      {/* Watermark Logo with subtle gradient overlay */}
-      <div className="absolute inset-0 z-0 opacity-5">
-        <div className="absolute inset-0 bg-gradient-to-br from-blue-500/10 to-blue-900/10"></div>
-        <Image src={COMP_LOGO_BIG} alt="Company Logo Watermark" fill className="object-contain" style={{ filter: "brightness(0) invert(1) opacity(0.7)" }} priority />
-      </div>
+    <section className="relative text-center py-16 px-4 sm:py-24 sm:px-8 rounded-lg overflow-hidden bg-gradient-to-br from-blue-200 to-blue-400 text-white">
+      <WatermarkBackground altText={COMP_MOTTO} />
 
       {/* Foreground Content */}
       <div className="relative z-10 max-w-4xl mx-auto">
