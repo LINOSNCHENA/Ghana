@@ -4,15 +4,18 @@ import { COMP_SHORT } from "@/app/utils/constants";
 
 type NavigationMenuProps = {
   scrollToSection: (ref: React.RefObject<HTMLDivElement>) => void;
+
   refs: {
     headRef: React.RefObject<HTMLDivElement>;
-    specialistsRef: React.RefObject<HTMLDivElement>;
-    pricingRef: React.RefObject<HTMLDivElement>;
-    projectsRef: React.RefObject<HTMLDivElement>;
+    specialistsRef?: React.RefObject<HTMLDivElement>;
+    projectsRef?: React.RefObject<HTMLDivElement>;
     contactRef: React.RefObject<HTMLDivElement>;
-    techRef?: React.RefObject<HTMLDivElement>;
+    fotoRef: React.RefObject<HTMLDivElement>;
     servicesRef?: React.RefObject<HTMLDivElement>;
-    invoiceRef?: React.RefObject<HTMLDivElement>;
+    miningRef?: React.RefObject<HTMLDivElement>;
+    founderRef?: React.RefObject<HTMLDivElement>;
+    academicRef?: React.RefObject<HTMLDivElement>;
+    businessRef?: React.RefObject<HTMLDivElement>;
   };
 };
 
@@ -25,7 +28,7 @@ const NavigationMenu: React.FC<NavigationMenuProps> = ({ scrollToSection, refs }
   };
 
   return (
-    <nav className="bg-yellow-400 text-black fixed w-full max-w-[85%] sm:max-w-[80%] md:max-w-[75%] lg:max-w-[65%] xl:max-w-[1200px] left-1/2 -translate-x-1/2 top-0 z-50 px-4 rounded-lg">
+    <nav className="bg-blue-200 text-black fixed w-full max-w-[85%] sm:max-w-[80%] md:max-w-[75%] lg:max-w-[65%] xl:max-w-[1200px] left-1/2 -translate-x-1/2 top-0 z-50 px-4 rounded-lg">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           <div className="text-sm sm:text-lg md:text-xl lg:text-xl font-bold">{COMP_SHORT}</div>
@@ -45,17 +48,17 @@ const NavigationMenu: React.FC<NavigationMenuProps> = ({ scrollToSection, refs }
               </button>
             </li>
             <li>
-              <button onClick={() => handleNavClick(refs.specialistsRef)} className="hover:underline">
+              <button onClick={() => handleNavClick(refs.specialistsRef!)} className="hover:underline">
                 Services
               </button>
             </li>
             <li>
-              <button onClick={() => handleNavClick(refs.pricingRef)} className="hover:underline">
-                Pricing
+              <button onClick={() => handleNavClick(refs.businessRef!)} className="hover:underline">
+                Overview
               </button>
             </li>
             <li>
-              <button onClick={() => handleNavClick(refs.projectsRef)} className="hover:underline">
+              <button onClick={() => handleNavClick(refs.projectsRef!)} className="hover:underline">
                 Projects
               </button>
             </li>
@@ -64,10 +67,15 @@ const NavigationMenu: React.FC<NavigationMenuProps> = ({ scrollToSection, refs }
                 Contact
               </button>
             </li>
+            <li>
+              <button onClick={() => handleNavClick(refs.founderRef!)} className="hover:underline">
+                FoundingCEO
+              </button>
+            </li>
 
             <li>
-              <button onClick={() => handleNavClick(refs.invoiceRef!)} className="hover:underline">
-                Newsletter
+              <button onClick={() => handleNavClick(refs.miningRef!)} className="hover:underline">
+                Mine Equiment Supply
               </button>
             </li>
           </ul>
@@ -76,17 +84,17 @@ const NavigationMenu: React.FC<NavigationMenuProps> = ({ scrollToSection, refs }
 
       {/* Mobile Menu Dropdown */}
       {isOpen && (
-        <div className="md:hidden bg-blue-700 px-4 py-2 space-y-2">
+        <div className="md:hidden bg-blue-200 px-4 py-2 space-y-2">
           <button onClick={() => handleNavClick(refs.headRef)} className="block w-full text-left hover:underline">
             Home
           </button>
-          <button onClick={() => handleNavClick(refs.specialistsRef)} className="block w-full text-left hover:underline">
+          <button onClick={() => handleNavClick(refs.specialistsRef!)} className="block w-full text-left hover:underline">
             Specialists
           </button>
-          <button onClick={() => handleNavClick(refs.pricingRef)} className="block w-full text-left hover:underline">
-            Pricing
+          <button onClick={() => handleNavClick(refs.businessRef!)} className="block w-full text-left hover:underline">
+            Overview
           </button>
-          <button onClick={() => handleNavClick(refs.projectsRef)} className="block w-full text-left hover:underline">
+          <button onClick={() => handleNavClick(refs.projectsRef!)} className="block w-full text-left hover:underline">
             Projects
           </button>
           <button onClick={() => handleNavClick(refs.contactRef)} className="block w-full text-left hover:underline">

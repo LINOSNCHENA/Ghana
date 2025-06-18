@@ -19,15 +19,15 @@ export const COMP_COPYRIGHT = new Date().getFullYear() + 'Tourism Desk – Sir L
 export const COMP_PAGE1 = 'Tourism Desk – Sir Louis and Gao Company Limited'
 
 export const topWebsites: Website[] = [
-    { name: "Advertisements", url: "Tourism Desk – Sir Louis and Gao Company Ltd" },
-    { name: "Wise-Pink", url: "https://hpink-finance.netlify.app/" },
-    { name: "Money", url: "Tourism Desk – Sir Louis and Gao Company Ltd" },
+    { name: "Advertisements", url: "https://slghana.com/" },
+    { name: "Wise-Pink", url: "https://slghana.com/" },
+    { name: "Money", url: "https://slghana.com/" },
     { name: "Finance Tracker", url: "https://fintrack.com" },
-    { name: "Lending System", url: "https://lendingsystem.com" },
-    { name: "HR Management", url: "https://hrmanage.com" },
-    { name: "E-commerce Dashboard", url: "https://ecomdash.com" },
-    { name: "Marketing Suite", url: "https://marketingsuite.com" },
-    { name: "Support Portal", url: "https://supportportal.com" },
+    { name: "Lending System", url: "https://slghana.com/" },
+    { name: "HR Management", url: "https://slghana.com/" },
+    { name: "E-commerce Dashboard", url: "https://slghana.com/" },
+    { name: "Marketing Suite", url: "https://slghana.com/" },
+    { name: "Support Portal", url: "https://slghana.com/" },
 
 ];
 
@@ -146,3 +146,87 @@ export const fotoNames = [
     '20. Ghana Independence Day Celebration Marking National Pride, Progress, and Unity Date: March 6th | Location: Nationwide, Ghana',
 
 ]
+
+
+export const fotoData = [
+    {
+        id: 1,
+        title: 'CEO of Sir Louis and Gao Company Limited Meets Former President of Nigeria, Olusegun Obasanjo',
+    },
+    {
+        id: 2,
+        title: 'Academic Achievement',
+    },
+    {
+        id: 3,
+        title: 'Strategic Collaboration on Electric Vehicle (EV) Manufacturing and Energy Stability in Nigeria',
+    },
+    {
+        id: 4,
+        title: 'Strategic Defense Cooperation Between Ghana and Chinese Investment Partners',
+    },
+    {
+        id: 5,
+        title: 'Gold Mining Operations – Ownership and Operation of Licensed Gold Mines Across West Africa',
+    },
+    {
+        id: 6,
+        title: 'Advancing Science and Technology in Nigeria',
+    },
+    {
+        id: 7,
+        title: 'Executive Profile: Mr. Louis Fosu Anane',
+    },
+    {
+        id: 8,
+        title: 'Sir Louis & Gao Company CEO Visits Ghana’s House of Parliament',
+    },
+    {
+        id: 9,
+        title: 'Visa Facilitation Dialogue with Chinese Immigration Officials',
+    },
+    {
+        id: 10,
+        title: 'Experience at Inspur Data Center – HQ, China',
+    },
+    {
+        id: 11,
+        title: 'Ghana Army Meeting',
+    },
+    {
+        id: 12,
+        title: 'Executive Meeting With the President of Ghana — China 🇨🇳, Shandong, October 2020',
+    },
+    {
+        id: 13,
+        title: 'Signing of Memorandum of Understanding (MOU) with Nanjing Chinese Investment Team',
+    },
+    {
+        id: 14,
+        title: 'Life in China as a Foreigner: A Professional Perspective',
+    },
+    {
+        id: 15,
+        title: 'Strategic Visit to Ghana’s Ministry of Trade and Industry — Meeting with Hon. Alan Kwadwo Kyerematen',
+    },
+    {
+        id: 16,
+        title: 'Chinese Investment Team Relocates to Africa for Strategic Projects Facilitated by Sir Louis & Gao Co.',
+    },
+    {
+        id: 17,
+        title: 'Ghana Army Meeting',
+    },
+    {
+        id: 18,
+        title: 'Invitation to Attend Strategic Events — To Mr. Akwasi Antwi (Ras Nene)',
+    },
+    {
+        id: 19,
+        title: 'Honored by Dr. Thomas Mensah — Inventor of Fiber Optic Technology',
+    },
+    {
+        id: 20,
+        title: 'Ghana Independence Day Celebration — March 6th, Nationwide',
+    },
+];

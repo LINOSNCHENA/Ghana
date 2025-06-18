@@ -1,4 +1,3 @@
-// import { specialists } from "@/app/utils/constants";
 
 import { pricingPlans } from "@/app/utils/constants";
 

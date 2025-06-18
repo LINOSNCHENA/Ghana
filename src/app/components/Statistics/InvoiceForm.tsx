@@ -32,9 +32,6 @@ function SendInvoice() {
         className="w-full border p-2 rounded mb-4"
         placeholder="e.g., mabvuto@example.com or +26012345678"
       />
-      {/* <button onClick={handleSend} className="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700">
-        Newsletter Subscription
-      </button> */}
     </div>
   );
 }

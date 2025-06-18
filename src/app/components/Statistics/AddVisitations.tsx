@@ -7,16 +7,12 @@ function NewsletterVisits() {
     const logVisit = async () => {
       const alreadyVisited = localStorage.getItem("hasVisited");
 
-      console.log(alreadyVisited);
-
       if (alreadyVisited) return;
-
       try {
         const res = await fetch("https://ipapi.co/json/");
         const info = await res.json();
         console.clear();
-        console.log("===============|19|=============");
-        console.log(info);
+
         const visitData = {
           ip: info.ip,
           location: `${info.city}, ${info.country_name}`,

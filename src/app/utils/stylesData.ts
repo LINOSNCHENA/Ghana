@@ -3,7 +3,6 @@
 // FAST STYLES
 //
 
-
 export const baseButton =
     "font-semibold rounded-lg transition duration-200 focus:outline-none flex justify-center items-center mx-auto bg-blue-600 text-white w-1/2 m-2 p-2";
 
@@ -33,4 +32,4 @@ export const COLOR_RED_LIGHT = "#f87171";   // Tailwind red-400
 
 export const BUTTONS = { smallButton, baseButton, longButton, largeButton, topButton }
 
-export const menuStyles = { marginBottom: 40, background: COLOR_GREEN_LIGHT, borderRadius: "8px" };
+export const menuStyles = { marginBottom: 40, background: COLOR_BLUE_LIGHT, borderRadius: "8px" };

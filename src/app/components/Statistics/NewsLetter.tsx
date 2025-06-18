@@ -69,17 +69,9 @@ function NewsletterSubscription() {
     <section className="py-12 px-4 sm:px-6 lg:px-12">
       <div className="max-w-7xl mx-auto w-full">
         <h2 className="text-lg font-semibold mb-9 text-center text-black">Newsletter Subscription</h2>
-
         <input type="text" name="name" placeholder="Your name" className="w-full p-2 mb-2 border rounded bg-white" value={form.name} onChange={handleChange} />
 
         <input type="email" name="email" placeholder="Your email / Whatsapp" className="w-full p-2 mb-2 border rounded bg-white" value={form.email} onChange={handleChange} />
-
-        {/* <input type="text" name="location" placeholder="Your location" className="w-full p-2 mb-2 border rounded" value={form.location} onChange={handleChange} /> */}
-
-        {/* <button onClick={handleSubmit} disabled={loading} className="w-full bg-blue-600 text-white p-2 rounded hover:bg-blue-700">
-        {loading ? "Submitting..." : "Subscribe free newletter"}
-      </button> */}
-
         <button onClick={handleSubmit} disabled={loading} className={BUTTONS.largeButton}>
           {loading ? "Submitting..." : "Subscribe free newletter"}
         </button>

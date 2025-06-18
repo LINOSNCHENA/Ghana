@@ -1,28 +1,30 @@
 // "use client";
 
 "use client";
+
 import { useRef } from "react";
 import NavigationMenu from "./components/Menus/NavMenu";
 import { SocialSection } from "./components/Contacts/FooterMedia";
 import { HeadSection } from "./components/Menus/HeadSection";
-import { TechStackSection } from "./components/Peoples/TectStack";
-import NewsletterVisits from "./components/Statistics/AddVisitations";
-// import NewsletterSubscription from "./components/Statistics/NewsLetter";
-import { COLOR_BLACK_METALIC, COLOR_GREEN_LIGHT, menuStyles } from "./utils/stylesData";
+import { COLOR_BLACK_METALIC, COLOR_BLUE_LIGHT, menuStyles } from "./utils/stylesData";
 import ServicesSection from "./components/Departmt/ServicesDept";
-import { AcademicAchievement } from "./components/Departmt/AcademicAchieved";
-import { BusinessOpportunities } from "./components/Departmt/BusinessProspects";
-import CeoProfileWithPhoto from "./components/Departmt/BioCEO";
+import { AcademicAchievement } from "./components/Multimedia/AcademicAchieved";
+import { BusinessOpportunities } from "./components/Multimedia/BusinessProspects";
+import CeoProfileWithPhoto from "./components/Multimedia/BiographyOfCEO";
+import { GalaryFotos } from "./components/Peoples/GalaryFotos";
+// import { GalaryFotos } from "./components/Multimedia/MinningsOpportunity";
 
 const App: React.FC = () => {
   const headRef = useRef<HTMLDivElement>(null!);
   const specialistsRef = useRef<HTMLDivElement>(null!);
-  const pricingRef = useRef<HTMLDivElement>(null!);
   const projectsRef = useRef<HTMLDivElement>(null!);
   const contactRef = useRef<HTMLDivElement>(null!);
-  const techRef = useRef<HTMLDivElement>(null!);
+  const fotoRef = useRef<HTMLDivElement>(null!);
   const servicesRef = useRef<HTMLDivElement>(null!);
-  const invoiceRef = useRef<HTMLDivElement>(null!);
+  const miningRef = useRef<HTMLDivElement>(null!);
+  const founderRef = useRef<HTMLDivElement>(null!);
+  const academicRef = useRef<HTMLDivElement>(null!);
+  const businessRef = useRef<HTMLDivElement>(null!);
 
   const scrollToSection = (ref: React.RefObject<HTMLDivElement | null>) => {
     if (ref.current) {
@@ -46,12 +48,14 @@ const App: React.FC = () => {
         refs={{
           headRef,
           specialistsRef,
-          pricingRef,
           projectsRef,
           contactRef,
-          techRef,
+          fotoRef,
           servicesRef,
-          invoiceRef,
+          miningRef,
+          founderRef,
+          academicRef,
+          businessRef,
         }}
       />
 
@@ -60,47 +64,36 @@ const App: React.FC = () => {
         style={{
           marginBottom: 40,
           minHeight: "50vh",
-          background: COLOR_GREEN_LIGHT,
+          background: COLOR_BLUE_LIGHT,
           borderRadius: "8px",
         }}
       >
         <HeadSection scrollToSection={scrollToSection} contactRef={contactRef} />
-        <NewsletterVisits />
+        {/* <NewsletterVisits /> */}
       </div>
+
+      <div ref={businessRef} style={menuStyles}>
+        <BusinessOpportunities />
+      </div>
+
       <div ref={servicesRef} style={menuStyles}>
         <ServicesSection />
       </div>
 
-      <div ref={techRef} style={menuStyles}>
-        <TechStackSection />
+      <div ref={fotoRef} style={menuStyles}>
+        <GalaryFotos />
       </div>
 
-      {/* <div ref={specialistsRef} style={menuStyles}>
-        <SpecialistsSection />
+      {/* <div ref={miningRef} style={menuStyles}>
+        <GalaryFotos />
       </div> */}
 
-      {/* <div ref={pricingRef} style={menuStyles}>
-        <PricingSection />
-      </div>
-
-
-
-      <div ref={projectsRef} style={menuStyles}>
-        <ProjectSection />
-      </div>
-
-      <div ref={contactRef} style={menuStyles}>
-        <ContactSection />
-      </div> */}
-
-      <div ref={invoiceRef} style={menuStyles}>
-        {/* <InvoicesSection /> */}
-
-        {/* <VisitsList /> */}
+      <div ref={founderRef} style={menuStyles}>
         <CeoProfileWithPhoto />
+      </div>
+
+      <div ref={academicRef} style={menuStyles}>
         <AcademicAchievement />
-        <BusinessOpportunities />
-        {/* <NewsletterSubscription /> */}
       </div>
 
       <SocialSection />
