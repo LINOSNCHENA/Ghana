@@ -1,4 +1,4 @@
-import Image from "next/legacy/image";
+import Image from "next/image";
 import { COMP_MOBILE, COMP_LOGO, COMP_NAME, COMP_LOGO_BIG } from "@/app/utils/constants";
 import { FaLinkedin, FaWhatsapp, FaFacebook, FaDiscord, FaTiktok, FaInstagram, FaWeixin } from "react-icons/fa";
 
