@@ -7,16 +7,16 @@ import { SocialSection } from "./components/Contacts/FooterMedia";
 import { HeadSection } from "./components/Menus/HeadSection";
 import { COLOR_BLACK_METALIC, COLOR_BLUE_LIGHT, menuStyles } from "./utils/stylesData";
 import ServicesSection from "./components/Departmt/ServicesDept";
-import { AcademicAchievement } from "./components/Multimedia/AcademicAchieved";
-import { BusinessOpportunities } from "./components/Multimedia/BusinessProspects";
-import CeoProfileWithPhoto from "./components/Multimedia/BiographyOfCEO";
-import { GalaryFotos } from "./components/Peoples/GalaryFotos";
-import { CompanySlides } from "./components/Peoples/CompanySlides";
-import LifeInChina from "./components/Peoples/LiveInChina";
+import { AcademicAchievement } from "./components/Multimedia/CEOEducation";
+import { BusinessOpportunities } from "./components/Departmt/BusinessProspects";
+import CeoProfileWithPhoto from "./components/Multimedia/CEOBiography";
+import { GalaryFotos } from "./components/Multimedia/GalaryFotos";
+import { CompanySlides } from "./components/Multimedia/CompanySlides";
+import LifeInChina from "./components/Departmt/EducationChina";
 import { COMP_LOGO_BIG } from "./utils/constants";
-import ReviewSection from "./components/Multimedia/ReviewPage";
-import MiningServices from "./components/Multimedia/MiningOpportunities";
-import TourismServices from "./components/Multimedia/TourismOpportunities";
+import ReviewSection from "./components/Departmt/ReviewPage";
+import MiningServices from "./components/Departmt/MiningOpportunities";
+import TourismServices from "./components/Departmt/TourismOpportunities";
 
 const App: React.FC = () => {
   const headRef = useRef<HTMLDivElement>(null!);
@@ -88,7 +88,6 @@ const App: React.FC = () => {
           refs={{
             headRef,
             homeRef,
-
             fotoRef,
             servicesRef,        
 

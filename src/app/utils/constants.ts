@@ -8,18 +8,12 @@ export const COMP_LOGO = "/logos/2.ico";
 export const COMP_LOGO_BIG = "/logos/2.jpg";
 export const COMP_NAME = 'Sir Louis and Gao Company Limited';
 export const COMP_MOTTO2 = "Mining & Tourism Logistics Consultant";
-
-
 export const COMP_EMAIL = 'louis@aafou.com'
 export const COMP_EMAIL2 = 'chinaoffice@slghana.com'
 export const COMP_SHORT = 'SLG'
 export const COMP_MOTTO = 'SLG Images to be Uploaded'
 export const COMP_COPYRIGHT = new Date().getFullYear() + 'Mining & Tourism Logistics Consultant – Sir Louis and Gao Company Limited. All rights reserved';
-
-
-
 export const COMP_PAGE1 = 'Mining & Tourism Logistics Consultant – Sir Louis and Gao Company Limited'
-
 
 export const services = {
     "For Chinese Nationals Visiting Ghana": [
@@ -39,14 +33,6 @@ export const services = {
         "Company Registration Certificates",
         "Mining & Real Estate Legal Documentation",
     ],
-
-    // "Foreign Investments": [
-    //     "End-to-end support for entering Africa's minerals sector",
-    //     "Market research & due diligence",
-    //     "Legal & regulatory advisory",
-    //     "Local stakeholder engagement",
-    // ],
-
     "DRC Investments": [
         "Mining concession acquisition",
         "Regulatory compliance assistance",
@@ -219,5 +205,4 @@ export const sampleReviews = [
         rating: 3,
         avatarUrl: "https://randomuser.me/api/portraits/men/50.jpg",
     },
-
 ];

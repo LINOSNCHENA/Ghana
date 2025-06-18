@@ -7,7 +7,7 @@ type NavigationMenuProps = {
 
   refs: {
     headRef: React.RefObject<HTMLDivElement>;
-    specialistsRef?: React.RefObject<HTMLDivElement>;
+    homeRef?: React.RefObject<HTMLDivElement>;
     projectsRef?: React.RefObject<HTMLDivElement>;
 
     fotoRef: React.RefObject<HTMLDivElement>;
@@ -111,7 +111,7 @@ const NavigationMenu: React.FC<NavigationMenuProps> = ({ scrollToSection, refs }
           <button onClick={() => handleNavClick(refs.headRef)} className="block w-full text-left hover:underline">
             Home
           </button>
-          <button onClick={() => handleNavClick(refs.specialistsRef!)} className="block w-full text-left hover:underline">
+          <button onClick={() => handleNavClick(refs.homeRef!)} className="block w-full text-left hover:underline">
             Specialists
           </button>
           <button onClick={() => handleNavClick(refs.educationRef!)} className="block w-full text-left hover:underline">

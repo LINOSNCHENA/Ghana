@@ -1,93 +1,101 @@
-import { useState } from "react";
-import { COMP_MOBILE, COMP_NAME, COMP_EMAIL, COMP_PAGE1 } from "@/app/utils/constants";
-import { BUTTONS } from "@/app/utils/stylesData";
+import Image from "next/image";
+import { COMP_MOBILE, COMP_LOGO, COMP_NAME, COMP_LOGO_BIG } from "@/app/utils/constants";
+import { FaLinkedin, FaWhatsapp, FaFacebook, FaDiscord, FaTiktok, FaInstagram, FaWeixin } from "react-icons/fa";
 
-export function ContactSection() {
-  const [messageSent, setMessageSent] = useState(false);
-
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    setMessageSent(true);
-    setTimeout(() => setMessageSent(false), 3000); // Hide message after 3s
-  };
-
+export function SocialSection() {
   return (
-    <section className="py-12 px-4 sm:px-6 lg:px-12">
-      <div className="max-w-7xl mx-auto w-full">
-        {/* Section Heading */}
-        <div className="w-full text-center mb-8">
-          <h2 className="text-2xl font-extrabold mb-4">Get in Touch Today!</h2>
-          <p className="text-lg opacity-90 max-w-6xl mx-auto">We&apos;re here to help! Reach out to us for any inquiries or support. {COMP_NAME}</p>
+    <footer className="bg-blue-200 text-black py-6 px-4 text-center flex flex-col items-center rounded-lg mb-2">
+      {COMP_LOGO && (
+        <div className="relative w-40 h-40 mb-4">
+          <Image src={COMP_LOGO_BIG} alt="Company Logo" fill className="object-contain" priority />
         </div>
+      )}
 
-        {/* Contact Info Card */}
-        <div className="bg-white text-gray-900 rounded-xl shadow-lg p-6 md:p-8 mb-10 mx-auto w-full max-w-6xl">
-          <div className="space-y-4">
-            {/* WhatsApp & Call: Responsive layout */}
-            <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-2 text-base font-semibold">
-              {/* WhatsApp on left (or top on mobile) */}
-              <div>
-                💬 WhatsApp:{" "}
-                <a href={`https://wa.me/${COMP_MOBILE.replace(/\D/g, "")}`} className="text-green-600 underline" target="_blank" rel="noopener noreferrer">
-                  Chat
-                </a>
-              </div>
+      <p className="mb-4 font-medium">
+        &copy; {new Date().getFullYear()} {COMP_NAME || "Our Company"}, Ghana. All rights reserved.
+      </p>
 
-              {/* Phone on right (or below on mobile) */}
-              <div>
-                📞 Call:{" "}
-                <a href={`tel:${COMP_MOBILE}`} className="text-blue-600 underline">
-                  {COMP_MOBILE}
-                </a>
-              </div>
-            </div>
-
-            {/* Email */}
-            <p className="text-base font-semibold  text-black">
-              ✉️ Email:
-              <a href={`mailto:${COMP_EMAIL}`} className="text-blue-600 hover:underline ml-1">
-                {COMP_EMAIL}
-              </a>
-            </p>
-
-            {/* Location */}
-            <p className="text-base font-semibold">
-              📍 Visit Us:{" "}
-              <a href={COMP_PAGE1} target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">
-                China | Ghana | Zambia
-              </a>
-            </p>
-          </div>
-        </div>
-
-        {/* Contact Form */}
-        <form onSubmit={handleSubmit} className="bg-white p-6 md:p-8 rounded-xl shadow-lg space-y-6 mx-auto w-full max-w-6xl">
-          {messageSent && <div className="p-4 bg-green-100 text-green-700 rounded-lg text-center font-semibold">✅ Your message has been sent successfully!</div>}
-          <input
-            type="text"
-            placeholder="Your Name"
-            className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:outline-none text-gray-900"
-            required
-          />
-          <input
-            type="email"
-            placeholder="Your Email"
-            className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:outline-none text-gray-900"
-            required
-          />
-          <textarea
-            placeholder="Your Message"
-            rows={4}
-            className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:outline-none text-gray-900"
-            required
-          ></textarea>
-
-          <button type="submit" className={BUTTONS.smallButton}>
-            {" "}
-            Send Message 📩{" "}
-          </button>
-        </form>
+      <div className="mb-4">
+        <p className="font-semibold">Contact us:</p>
+        <a href={`tel:${COMP_MOBILE}`} className="text-blue-600 hover:underline">
+          {COMP_MOBILE}
+        </a>
       </div>
-    </section>
+
+      <div className="flex justify-center items-center flex-wrap gap-6 text-base text-black max-w-4xl">
+        {/* LinkedIn */}
+        <a
+          href={`https://www.linkedin.com/${COMP_NAME}`}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-black hover:text-blue-700 text-3xl transition-colors"
+          title="LinkedIn"
+        >
+          <FaLinkedin />
+        </a>
+
+        {/* WhatsApp */}
+        <a href={`https://wa.me/${COMP_MOBILE}`} target="_blank" rel="noopener noreferrer" className="text-black hover:text-green-600 text-3xl transition-colors" title="WhatsApp">
+          <FaWhatsapp />
+        </a>
+
+        {/* Facebook */}
+        <a
+          href={`https://www.facebook.com/${COMP_NAME}`}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-black hover:text-blue-600 text-3xl transition-colors"
+          title="Facebook"
+        >
+          <FaFacebook />
+        </a>
+
+        {/* TikTok */}
+        <a
+          href={`https://www.tiktok.com/@${COMP_NAME}`}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-black hover:text-gray-900 text-3xl transition-colors"
+          title="TikTok"
+        >
+          <FaTiktok />
+        </a>
+
+        {/* Instagram */}
+        <a
+          href={`https://www.instagram.com/${COMP_NAME}`}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-black hover:text-pink-600 text-3xl transition-colors"
+          title="Instagram"
+        >
+          <FaInstagram />
+        </a>
+
+        {/* WeChat */}
+        <a
+          href={`https://weixin.qq.com/${COMP_NAME}`}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-black hover:text-green-500 text-3xl transition-colors"
+          title="WeChat"
+        >
+          <FaWeixin />
+        </a>
+
+        {/* Discord */}
+        <a
+          href={`https://discord.gg/${COMP_NAME}`}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-black hover:text-indigo-600 text-3xl transition-colors"
+          title="Discord"
+        >
+          <FaDiscord />
+        </a>
+      </div>
+
+      <p className="mt-4 text-sm text-gray-700">Follow us on social media for updates and promotions</p>
+    </footer>
   );
 }
