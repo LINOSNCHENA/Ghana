@@ -1,6 +1,7 @@
 import { COMP_MOTTO, COMP_NAME } from "@/app/utils/constants";
 import { RefObject } from "react";
-import WatermarkBackground from "./WaterMarks";
+import WatermarkBackground from "../WaterMarks";
+import TopBar from "./ToBar";
 
 interface HeadSectionProps {
   scrollToSection: (ref: RefObject<HTMLDivElement>) => void;
@@ -11,6 +12,7 @@ export function HeadSection({ scrollToSection, contactRef }: HeadSectionProps) {
   return (
     <section className="relative text-center py-16 px-4 sm:py-24 sm:px-8 rounded-lg overflow-hidden bg-gradient-to-br from-blue-900 to-blue-700 text-white">
       <WatermarkBackground altText={COMP_MOTTO} />
+      <TopBar />
 
       {/* Foreground Content */}
       <div className="relative z-10 max-w-4xl mx-auto">

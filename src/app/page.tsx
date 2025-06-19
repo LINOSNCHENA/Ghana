@@ -2,27 +2,27 @@
 
 import Image from "next/image";
 import { useRef } from "react";
-import NavigationMenu from "./components/Menus/NavMenu";
-import { SocialSection } from "./components/Contacts/FooterMedia";
-import { HeadSection } from "./components/Menus/HeadSection";
+import NavigationMenu from "./components/Menus/Tops/TopNavigators";
+import { SocialSection } from "./components/Menus/FooterMedia";
+import { HeadSection } from "./components/Menus/Tops/HeadSection";
 import { COLOR_BLACK_METALIC, COLOR_BLUE_LIGHT, menuStyles } from "./utils/stylesData";
-import ServicesSection from "./components/Departmt/ServicesDept";
-import { AcademicAchievement } from "./components/Multimedia/CEOEducation";
-import { BusinessOpportunities } from "./components/Departmt/BusinessProspects";
+import { BusinessOpportunities } from "./components/Departments/BusinessOverviews";
+import LifeInChina from "./components/Departments/EducationChina";
+import MiningServices from "./components/Departments/MiningOpportunities";
+import ServicesSection from "./components/Departments/ServicesDept";
+import TourismServices from "./components/Departments/TourismOpportunities";
 import CeoProfileWithPhoto from "./components/Multimedia/CEOBiography";
+import { AcademicAchievement } from "./components/Multimedia/CEOEducation";
 import { GalaryFotos } from "./components/Multimedia/GalaryFotos";
-import { CompanySlides } from "./components/Multimedia/CompanySlides";
-import LifeInChina from "./components/Departmt/EducationChina";
+import { CompanySlides } from "./components/Multimedia/GalaxySlides";
+import ReviewSection from "./components/Statistics/ReviewPage";
 import { COMP_LOGO_BIG } from "./utils/constants";
-import ReviewSection from "./components/Departmt/ReviewPage";
-import MiningServices from "./components/Departmt/MiningOpportunities";
-import TourismServices from "./components/Departmt/TourismOpportunities";
 
 const App: React.FC = () => {
   const headRef = useRef<HTMLDivElement>(null!);
   const homeRef = useRef<HTMLDivElement>(null!);
   const fotoRef = useRef<HTMLDivElement>(null!);
-  const servicesRef = useRef<HTMLDivElement>(null!);  
+  const servicesRef = useRef<HTMLDivElement>(null!);
 
   const miningRef = useRef<HTMLDivElement>(null!);
   const educationRef = useRef<HTMLDivElement>(null!);
@@ -65,11 +65,9 @@ const App: React.FC = () => {
             objectPosition: "center",
           }}
           priority
-          quality={30} 
+          quality={30}
           onError={(e) => console.error("Watermark image failed to load", e)}
         />
-
-
       </div>
 
       {/* Main App Content */}
@@ -91,7 +89,7 @@ const App: React.FC = () => {
             headRef,
             homeRef,
             fotoRef,
-            servicesRef,        
+            servicesRef,
 
             miningRef,
             educationRef,
@@ -115,6 +113,7 @@ const App: React.FC = () => {
           }}
         >
           <HeadSection scrollToSection={scrollToSection} contactRef={contactsRef} />
+          
         </div>
 
         <div ref={homeRef} style={menuStyles}>

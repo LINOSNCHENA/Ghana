@@ -1,0 +1,120 @@
+import React, { useState } from "react";
+import { Menu, X } from "lucide-react";
+import { COMP_SHORT } from "@/app/utils/constants";
+
+type NavigationMenuProps = {
+  scrollToSection: (ref: React.RefObject<HTMLDivElement>) => void;
+  refs: {
+    headRef: React.RefObject<HTMLDivElement>;
+    homeRef?: React.RefObject<HTMLDivElement>;
+    projectsRef?: React.RefObject<HTMLDivElement>;
+    fotoRef: React.RefObject<HTMLDivElement>;
+    servicesRef?: React.RefObject<HTMLDivElement>;
+    miningRef?: React.RefObject<HTMLDivElement>;
+    founderRef?: React.RefObject<HTMLDivElement>;
+    educationRef?: React.RefObject<HTMLDivElement>;
+    logisticsRef?: React.RefObject<HTMLDivElement>;
+    chinaRef?: React.RefObject<HTMLDivElement>;
+    reviewsRef?: React.RefObject<HTMLDivElement>;
+    tourismRef?: React.RefObject<HTMLDivElement>;
+    offeringsRef?: React.RefObject<HTMLDivElement>;
+    contactsRef?: React.RefObject<HTMLDivElement>;
+    contactRef?: React.RefObject<HTMLDivElement>;
+  };
+};
+
+const NavigationMenu: React.FC<NavigationMenuProps> = ({ scrollToSection, refs }) => {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const handleNavClick = (ref: React.RefObject<HTMLDivElement>) => {
+    scrollToSection(ref);
+    setIsOpen(false);
+  };
+
+  return (
+    <nav className="bg-blue-200 text-black fixed w-[92%] sm:w-[90%] md:w-[85%] lg:w-[80%] xl:w-[1200px] left-1/2 -translate-x-1/2 top-6 z-50 px-4 py-2 rounded-xl shadow-md">
+      <div className="flex items-center justify-between">
+        <div className="text-base sm:text-lg md:text-xl lg:text-xl font-semibold tracking-wide">{COMP_SHORT}</div>
+
+        {/* Mobile Menu Toggle */}
+        <div className="md:hidden">
+          <button onClick={() => setIsOpen(!isOpen)} className="text-black focus:outline-none" aria-label="Toggle menu">
+            {isOpen ? <X size={28} /> : <Menu size={28} />}
+          </button>
+        </div>
+
+        {/* Desktop Menu */}
+        <ul className="hidden md:flex gap-5 lg:gap-6 text-sm lg:text-base font-medium">
+          <li>
+            <button onClick={() => handleNavClick(refs.headRef)} className="hover:underline">
+              Home
+            </button>
+          </li>
+          <li>
+            <button onClick={() => handleNavClick(refs.offeringsRef!)} className="hover:underline">
+              Offerings
+            </button>
+          </li>
+          <li>
+            <button onClick={() => handleNavClick(refs.logisticsRef!)} className="hover:underline">
+              Logistics
+            </button>
+          </li>
+          <li>
+            <button onClick={() => handleNavClick(refs.miningRef!)} className="hover:underline">
+              Mining
+            </button>
+          </li>
+          <li>
+            <button onClick={() => handleNavClick(refs.tourismRef!)} className="hover:underline">
+              Tourism
+            </button>
+          </li>
+          <li>
+            <button onClick={() => handleNavClick(refs.educationRef!)} className="hover:underline">
+              Education
+            </button>
+          </li>
+          <li>
+            <button onClick={() => handleNavClick(refs.founderRef!)} className="hover:underline">
+              Founder
+            </button>
+          </li>
+          <li>
+            <button onClick={() => handleNavClick(refs.reviewsRef!)} className="hover:underline">
+              Reviews
+            </button>
+          </li>
+          <li>
+            <button onClick={() => handleNavClick(refs.contactsRef!)} className="hover:underline">
+              Contact
+            </button>
+          </li>
+        </ul>
+      </div>
+
+      {/* Mobile Dropdown */}
+      {isOpen && (
+        <div className="md:hidden mt-3 space-y-2 bg-blue-100 rounded-lg px-4 py-3 shadow-inner text-sm font-medium">
+          <button onClick={() => handleNavClick(refs.headRef)} className="block w-full text-left hover:underline">
+            Home
+          </button>
+          <button onClick={() => handleNavClick(refs.homeRef!)} className="block w-full text-left hover:underline">
+            Specialists
+          </button>
+          <button onClick={() => handleNavClick(refs.educationRef!)} className="block w-full text-left hover:underline">
+            Overview
+          </button>
+          <button onClick={() => handleNavClick(refs.projectsRef!)} className="block w-full text-left hover:underline">
+            Projects
+          </button>
+          <button onClick={() => handleNavClick(refs.contactsRef!)} className="block w-full text-left hover:underline">
+            Contact
+          </button>
+        </div>
+      )}
+    </nav>
+  );
+};
+
+export default NavigationMenu;
