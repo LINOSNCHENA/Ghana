@@ -91,7 +91,7 @@ const App: React.FC = () => {
             homeRef,
             fotoRef,
             servicesRef,
-
+            
             miningRef,
             educationRef,
             logisticsRef,
@@ -132,18 +132,6 @@ const App: React.FC = () => {
           <CompanySlides />
         </div>
 
-        <div ref={founderRef} style={menuStyles}>
-          <CeoProfileWithPhoto />
-        </div>
-
-        <div ref={educationRef} style={menuStyles}>
-          <AcademicAchievement />
-        </div>
-
-        <div ref={educationRef} style={menuStyles}>
-          <LifeInChina />
-        </div>
-
         <div ref={miningRef} style={menuStyles}>
           <MiningServices />
         </div>
@@ -159,29 +147,27 @@ const App: React.FC = () => {
         <div ref={reviewsRef} style={menuStyles}>
           <ReviewSection />
         </div>
-        {/* 
-        <div className="p-4">
-          <h1 className="text-xl font-bold mb-4">Sample Video</h1>
-          <VideoPlayer
-            src="/videos/1.mp4"
-            autoPlay={false}
-            loop={false}
-            muted={false}
-            controls
-            poster="/images/thumbnail.jpg"
-            width="640"
-            height="360"
-            className="rounded-xl shadow-md"
-          />
-        </div> */}
+
+        <div ref={founderRef} style={menuStyles}>
+          <CeoProfileWithPhoto />
+        </div>
+
+        <div ref={educationRef} style={menuStyles}>
+          <AcademicAchievement />
+        </div>
+
+        <div ref={educationRef} style={menuStyles}>
+          <LifeInChina />
+        </div>
 
         <div ref={contactsRef} style={menuStyles}>
           <SocialSection />
         </div>
 
-        <div className="w-full">
-          <span className="text-sm italic text-purple-600 float-right">{WEB_MASTER}</span>
+        <div className="w-full md:w-3/4 lg:w-1/2">
+          <span className="text-xs md:text-sm italic text-purple-600 float-right">{WEB_MASTER}</span>
         </div>
+
       </div>
     </div>
   );
