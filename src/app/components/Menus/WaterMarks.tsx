@@ -10,7 +10,7 @@ interface WatermarkBackgroundProps {
   rotateDeg?: number;
 }
 
-export default function WatermarkBackground({ altText = "Background Watermark", opacity = 0.1, rotateDeg = 90 }: WatermarkBackgroundProps) {
+export default function WatermarkBackground({ altText = "Background Watermark", opacity = 0.1, rotateDeg = 0 }: WatermarkBackgroundProps) {
   return (
     <div className="absolute inset-0 pointer-events-none z-0 overflow-hidden">
       <Image
