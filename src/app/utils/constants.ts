@@ -2,17 +2,11 @@
 //  TROOPERS INFORTECT CONSTANTS
 //
 
-export const COMP_TIKTOK = 'SLGHANA1'
-export const COMP_WECHAT = 'SLGHANA'
-export const COMP_FB = 'SLGHANA'
-export const COMP_LINKEDIN = 'SL GHANA'
-
-
-export const COMP_ADDRESS = "Ghana, Accra 10101";
-export const COMP_ADDRESS1 = "China, Peking, 10101";
-export const COMP_ADDRESS2 = "Nigeria, Lagos 10101";
-export const COMP_ADDRESS3 = "Zambia, Kitwe 10101";
-
+export const COMP_TIKTOK = 'SLGHANA1';
+export const COMP_WECHAT = 'SLGHANA';
+export const COMP_FB = 'SLGHANA';
+export const COMP_LINKEDIN = 'sl-ghana-4082078a';
+export const COMP_ADDRESS = "Ghana, Kumasi, 10101";
 export const COMP_WHATSAPP = "+233559599892";
 export const COMP_MOBILE = "+4917641848967";
 export const COMP_EMAIL = 'louis@aafou.com'

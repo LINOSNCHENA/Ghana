@@ -17,6 +17,7 @@ import { GalaryFotos } from "./components/Multimedia/GalaryFotos";
 import { CompanySlides } from "./components/Multimedia/GalaxySlides";
 import ReviewSection from "./components/Statistics/ReviewPage";
 import { COMP_LOGO_BIG } from "./utils/constants";
+import LogisticsSection from "./components/Departments/LogisticsServices";
 
 const App: React.FC = () => {
   const headRef = useRef<HTMLDivElement>(null!);
@@ -113,7 +114,6 @@ const App: React.FC = () => {
           }}
         >
           <HeadSection scrollToSection={scrollToSection} contactRef={contactsRef} />
-          
         </div>
 
         <div ref={homeRef} style={menuStyles}>
@@ -150,6 +150,10 @@ const App: React.FC = () => {
 
         <div ref={tourismRef} style={menuStyles}>
           <TourismServices />
+        </div>
+
+        <div ref={logisticsRef} style={menuStyles}>
+                  <LogisticsSection />
         </div>
 
         <div ref={reviewsRef} style={menuStyles}>

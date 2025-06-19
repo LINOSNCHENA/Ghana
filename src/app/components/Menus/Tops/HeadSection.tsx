@@ -55,6 +55,7 @@ import { COMP_MOTTO, COMP_NAME } from "@/app/utils/constants";
 import { RefObject } from "react";
 import WatermarkBackground from "../WaterMarks";
 import TopBar from "./ToBar";
+import LeftIcon from "./LogoLeft";
 
 interface HeadSectionProps {
   scrollToSection: (ref: RefObject<HTMLDivElement>) => void;
@@ -75,13 +76,11 @@ export function HeadSection({ scrollToSection, contactRef }: HeadSectionProps) {
         {/* Decorative Blurs */}
         <div className="absolute -top-20 -left-20 w-40 h-40 rounded-full bg-sky-200/10 blur-xl animate-float"></div>
         <div className="absolute bottom-10 -right-10 w-60 h-60 rounded-full bg-sky-400/10 blur-xl animate-float-delay"></div>
-
         <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold mb-6 leading-tight tracking-tight">
           <span className="bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-cyan-400">{COMP_NAME}</span>
         </h1>
-
-        <p className="text-xl sm:text-2xl mb-8 max-w-2xl mx-auto text-slate-600 font-medium">Your trusted partner in Africa-China Tourism solutions</p>
-
+        <p className="text-xl sm:text-2xl mb-8 max-w-2xl mx-auto text-slate-600 font-medium">{COMP_MOTTO}</p>
+        <LeftIcon/>
         <button onClick={() => scrollToSection(contactRef)} className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 rounded-md shadow-sm transition font-medium">
           Contact Us
         </button>

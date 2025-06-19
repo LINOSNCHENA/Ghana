@@ -1,7 +1,6 @@
 import Image from "next/image";
-import { FaLinkedin, FaWhatsapp, FaFacebook, FaDiscord, FaTiktok } from "react-icons/fa";
-
-import { COMP_LOGO_BIG, COMP_NAME, COMP_ADDRESS, COMP_COPYRIGHT, COMP_FB, COMP_LINKEDIN, COMP_WHATSAPP, COMP_MOTTO, COMP_TIKTOK } from "@/app/utils/constants";
+import { FaLinkedin, FaWhatsapp, FaFacebook, FaTiktok } from "react-icons/fa";
+import { COMP_LOGO_BIG, COMP_ADDRESS, COMP_COPYRIGHT, COMP_FB, COMP_LINKEDIN, COMP_WHATSAPP, COMP_MOTTO, COMP_TIKTOK } from "@/app/utils/constants";
 
 export function SocialSection() {
   return (
@@ -12,7 +11,8 @@ export function SocialSection() {
         </div>
       )}
 
-      <p className="mb-2 text-sm sm:text-base">&copy; {COMP_COPYRIGHT}.</p>
+      {/* <p className="mb-2 text-sm sm:text-base">&copy; {COMP_COPYRIGHT}.</p> */}
+      <p className="mb-2 text-sm sm:text-base">&copy;&nbsp;{COMP_COPYRIGHT}.</p>
 
       <p className="mb-4 text-sm sm:text-base">📍 {COMP_ADDRESS}</p>
 
@@ -50,7 +50,7 @@ export function SocialSection() {
           <FaFacebook />
         </a>
 
-        <a
+        {/* <a
           href={`https://discord.gg/${COMP_NAME}`}
           target="_blank"
           rel="noopener noreferrer"
@@ -59,7 +59,7 @@ export function SocialSection() {
           className="text-black hover:text-indigo-600 transition-transform duration-200 hover:scale-110"
         >
           <FaDiscord />
-        </a>
+        </a> */}
 
         <a
           href={`https://www.tiktok.com/@${COMP_TIKTOK}`}
