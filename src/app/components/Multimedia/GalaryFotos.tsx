@@ -28,7 +28,6 @@ export function GalaryFotos() {
               width={400}
               height={300}
               className="w-full h-auto rounded-xl shadow-md object-cover"
-              layout="responsive"
               priority={item.id <= 4} // Only load first 4 images eagerly
               onError={(e) => {
                 console.error(`Failed to load image: /fotos/${item.id}.jpg`);

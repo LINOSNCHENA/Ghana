@@ -2,33 +2,38 @@
 //  TROOPERS INFORTECT CONSTANTS
 //
 
+export const COMP_TIKTOK = 'SLGHANA1'
+export const COMP_WECHAT = 'SLGHANA'
+export const COMP_FB = 'SLGHANA'
+export const COMP_LINKEDIN = 'SL GHANA'
 
-export const COMP_TIKTOK = 'TIKTOK@slghana.com'
-export const COMP_LINKEDIN = 'TIKTOK@slghana.com'
-export const COMP_FB = 'TIKTOK@slghana.com'
-export const COMP_WECHAT = 'WECHAT@slghana.com'
+
 export const COMP_ADDRESS = "Ghana, Accra 10101";
 export const COMP_ADDRESS1 = "China, Peking, 10101";
 export const COMP_ADDRESS2 = "Nigeria, Lagos 10101";
+export const COMP_ADDRESS3 = "Zambia, Kitwe 10101";
+
 export const COMP_WHATSAPP = "+233559599892";
 export const COMP_MOBILE = "+4917641848967";
-export const COMP_LOGO = "/logos/2.ico";
-export const COMP_LOGO_BIG = "/logos/2.jpg";
-export const COMP_ICON = "/logos/2.ico";
-export const COMP_NAME = 'Sir Louis and Gao Company Limited';
-export const COMP_MOTTO2 = "Mining & Tourism Logistics Consultant";
 export const COMP_EMAIL = 'louis@aafou.com'
-export const COMP_EMAIL2 = 'chinaoffice@slghana.com'
+
 export const COMP_SHORT = 'SLG'
-export const COMP_MOTTO = 'SLG Images to be Uploaded'
-export const COMP_COPYRIGHT = new Date().getFullYear() + 'Mining & Tourism Logistics Consultant – Sir Louis and Gao Company Limited. All rights reserved';
-export const COMP_PAGE1 = 'Mining & Tourism Logistics Consultant – Sir Louis and Gao Company Limited'
+export const COMP_NAME = 'Sir Louis and Gao Company Limited';
+export const COMP_MOTTO = "Mining & Tourism Logistics Consultant";
+export const COMP_MOTTO_BIG = COMP_MOTTO + ' – Sir Louis and Gao Company Limited'
+export const COMP_COPYRIGHT = new Date().getFullYear() + COMP_MOTTO_BIG + '. All rights reserved';
+
+
 export const today = new Date().toLocaleDateString("en-US", {
     weekday: "short",
     month: "short",
     day: "numeric",
     year: "numeric",
 });
+export const COMP_MISSING = 'SLG Images to be Uploaded'
+export const COMP_LOGO = "/logos/2.ico";
+export const COMP_LOGO_BIG = "/logos/2.jpg";
+export const COMP_ICON = "/logos/2.ico";
 
 export const services = {
     "For Chinese Nationals Visiting Ghana": [

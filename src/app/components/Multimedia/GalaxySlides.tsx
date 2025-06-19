@@ -70,9 +70,11 @@ export function CompanySlides() {
           <button onClick={() => setModalImageId(null)} className="absolute top-6 right-6 text-white bg-gray-800 p-2 rounded-full hover:bg-red-500" aria-label="Close Modal">
             <X className="w-6 h-6" />
           </button>
+          
           <div className="relative w-[90vw] h-[80vh] max-w-5xl">
             <Image src={`/fotos/${modalImageId}.jpg`} alt="Modal Preview" fill className="object-contain rounded-xl" sizes="90vw" />
           </div>
+
         </div>
       )}
     </section>
