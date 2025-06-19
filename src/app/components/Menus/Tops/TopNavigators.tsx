@@ -106,7 +106,13 @@ const NavigationMenu: React.FC<NavigationMenuProps> = ({ scrollToSection, refs }
           <button onClick={() => handleNavClick(refs.headRef)} className="block w-full text-left hover:underline">
             Home
           </button>
-          <button onClick={() => handleNavClick(refs.logisticsRef!)} className="block w-full text-left hover:underline">
+          <button onClick={() => handleNavClick(refs.servicesRef!)} className="block w-full text-left hover:underline">
+            Services
+          </button>
+          <button onClick={() => handleNavClick(refs.servicesRef!)} className="block w-full text-left hover:underline">
+            Tourism
+          </button>
+          <button onClick={() => handleNavClick(refs.tourismRef!)} className="block w-full text-left hover:underline">
             Logistics
           </button>
           <button onClick={() => handleNavClick(refs.educationRef!)} className="block w-full text-left hover:underline">
@@ -114,6 +120,9 @@ const NavigationMenu: React.FC<NavigationMenuProps> = ({ scrollToSection, refs }
           </button>
           <button onClick={() => handleNavClick(refs.servicesRef!)} className="block w-full text-left hover:underline">
             Services
+          </button>
+          <button onClick={() => handleNavClick(refs.founderRef!)} className="block w-full text-left hover:underline">
+            Founder
           </button>
           <button onClick={() => handleNavClick(refs.contactsRef!)} className="block w-full text-left hover:underline">
             Contact

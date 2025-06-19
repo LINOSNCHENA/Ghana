@@ -10,7 +10,7 @@ export const BusinessOpportunities: React.FC = () => {
       <div className="max-w-5xl mx-auto px-4 py-10 space-y-12">
         {/* Heading */}
         <section>
-          <h1 className="text-4xl font-bold text-gray-800 mb-4">Business Overview</h1>
+          <h1 className="text-3xl font-bold text-gray-800 mb-4">Business Overview</h1>
           <p className="text-lg text-gray-700">
             We are a leading operator in the gold mining and precious metals sector, focused on the extraction, processing, and export of gold in large quantities. With active
             mining operations across key gold-rich regions, our company is committed to high-yield production, environmental responsibility, and international trade excellence.
