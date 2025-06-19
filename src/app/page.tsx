@@ -1,6 +1,6 @@
 "use client";
 
-import Image from "next/image";
+// import Image from "next/image";
 import { useRef } from "react";
 import NavigationMenu from "./components/Menus/Tops/TopNavigators";
 import { SocialSection } from "./components/Menus/FooterMedia";
@@ -9,28 +9,26 @@ import { COLOR_BLACK_METALIC, COLOR_BLUE_LIGHT, menuStyles } from "./utils/style
 import { BusinessOpportunities } from "./components/Departments/BusinessOverviews";
 import LifeInChina from "./components/Departments/EducationChina";
 import MiningServices from "./components/Departments/MiningOpportunities";
-import ServicesSection from "./components/Emails/ServicesDept";
+import ServicesSection from "./components/Departments/ServicesDept";
 import TourismServices from "./components/Departments/TourismOpportunities";
 import CeoProfileWithPhoto from "./components/Multimedia/CEOBiography";
 import { AcademicAchievement } from "./components/Multimedia/CEOEducation";
 import { GalaryFotos } from "./components/Multimedia/GalaryFotos";
-
 import ReviewSection from "./components/Statistics/ReviewPage";
-import { COMP_LOGO_BIG, WEB_MASTER } from "./utils/constants";
+import { WEB_MASTER } from "./utils/constants";
 import LogisticsSection from "./components/Departments/LogisticsServices";
 import { CompanySlides } from "./components/Multimedia/GalaxySlides";
+import SendEmailForm from "./components/Emails/SendEmailForm";
 
 const App: React.FC = () => {
   const headRef = useRef<HTMLDivElement>(null!);
   const homeRef = useRef<HTMLDivElement>(null!);
   const fotoRef = useRef<HTMLDivElement>(null!);
   const servicesRef = useRef<HTMLDivElement>(null!);
-
   const miningRef = useRef<HTMLDivElement>(null!);
   const educationRef = useRef<HTMLDivElement>(null!);
   const tourismRef = useRef<HTMLDivElement>(null!);
   const logisticsRef = useRef<HTMLDivElement>(null!);
-
   const founderRef = useRef<HTMLDivElement>(null!);
   const reviewsRef = useRef<HTMLDivElement>(null!);
   const contactsRef = useRef<HTMLDivElement>(null!);
@@ -38,40 +36,21 @@ const App: React.FC = () => {
 
   const scrollToSection = (ref: React.RefObject<HTMLDivElement | null>) => {
     if (ref.current) {
-      ref.current.scrollIntoView({ behavior: "smooth" });
+      const element = ref.current;
+      const offset = 80;
+      const bodyRect = document.body.getBoundingClientRect().top;
+      const elementRect = element.getBoundingClientRect().top;
+      const elementPosition = elementRect - bodyRect;
+      const offsetPosition = elementPosition - offset;
+      window.scrollTo({
+        top: offsetPosition,
+        behavior: "smooth",
+      });
     }
   };
 
   return (
     <div style={{ position: "relative" }}>
-      {/* Watermark background - Fixed issues here */}
-      <div
-        style={{
-          position: "fixed",
-          top: 0,
-          left: 0,
-          width: "100vw",
-          height: "100vh",
-          zIndex: 0,
-          opacity: 0.2, // Reduced opacity for better visibility
-          pointerEvents: "none",
-          background: COLOR_BLACK_METALIC,
-        }}
-      >
-        <Image
-          src={COMP_LOGO_BIG}
-          alt="Watermark"
-          fill
-          style={{
-            objectFit: "contain",
-            objectPosition: "center",
-          }}
-          priority
-          quality={30}
-          onError={(e) => console.error("Watermark image failed to load", e)}
-        />
-      </div>
-
       {/* Main App Content */}
       <div
         style={{
@@ -92,7 +71,7 @@ const App: React.FC = () => {
             homeRef,
             fotoRef,
             servicesRef,
-            
+
             miningRef,
             educationRef,
             logisticsRef,
@@ -133,6 +112,10 @@ const App: React.FC = () => {
           <CompanySlides />
         </div>
 
+        <div ref={logisticsRef} style={menuStyles}>
+          <LogisticsSection />
+        </div>
+
         <div ref={miningRef} style={menuStyles}>
           <MiningServices />
         </div>
@@ -141,24 +124,24 @@ const App: React.FC = () => {
           <TourismServices />
         </div>
 
-        <div ref={logisticsRef} style={menuStyles}>
-          <LogisticsSection />
-        </div>
-
-        <div ref={reviewsRef} style={menuStyles}>
-          <ReviewSection />
+        <div ref={educationRef} style={menuStyles}>
+          <LifeInChina />
         </div>
 
         <div ref={founderRef} style={menuStyles}>
           <CeoProfileWithPhoto />
         </div>
 
-        <div ref={educationRef} style={menuStyles}>
+        <div style={menuStyles}>
           <AcademicAchievement />
         </div>
 
-        <div ref={educationRef} style={menuStyles}>
-          <LifeInChina />
+        <div ref={reviewsRef} style={menuStyles}>
+          <ReviewSection />
+        </div>
+
+        <div style={menuStyles}>
+          <SendEmailForm />
         </div>
 
         <div ref={contactsRef} style={menuStyles}>
@@ -168,7 +151,6 @@ const App: React.FC = () => {
         <div className="w-full md:w-3/4 lg:w-1/2">
           <span className="text-xs md:text-sm italic text-purple-600 float-right">{WEB_MASTER}</span>
         </div>
-
       </div>
     </div>
   );

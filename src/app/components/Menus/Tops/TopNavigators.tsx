@@ -59,7 +59,7 @@ const NavigationMenu: React.FC<NavigationMenuProps> = ({ scrollToSection, refs }
           </li>
           <li>
             <button onClick={() => handleNavClick(refs.servicesRef!)} className="hover:underline">
-              Offerings
+              Services
             </button>
           </li>
           <li>

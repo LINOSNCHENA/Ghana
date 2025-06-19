@@ -1,4 +1,5 @@
-import EmailTemplate from "@/app/components/Emails/EmailTemplate";
+import EmailTemplate from "@/app/components/Emails/TextData/EmailTemplate";
+import { EMAIL_TEST } from "@/app/utils/ApiRoutes";
 import { NextResponse } from "next/server";
 import { Resend } from "resend";
 
@@ -7,6 +8,7 @@ const resend = new Resend(process.env.RESEND_API_KEY!);
 interface RequestBody {
     email: string;
     username: string;
+    message: string;
 }
 
 // 1. Define proper response types
@@ -47,14 +49,16 @@ async function sendEmail(params: {
 
 export async function POST(request: Request) {
     try {
-        const { email, username }: RequestBody = await request.json();
+        const { email, message, username }: RequestBody = await request.json();
 
         const result = await sendEmail({
             from: "Acme <onboarding@resend.dev>",
-            to: [email],
-            subject: "Welcome!",
-            react: EmailTemplate({ username }),
+            to: [EMAIL_TEST],
+            subject: "Welcome!" + email,
+            react: EmailTemplate({ username, message }),
         });
+        console.log(Request)
+        console.log(result)
 
         if (result.error) {
             throw new Error(result.error.message);
