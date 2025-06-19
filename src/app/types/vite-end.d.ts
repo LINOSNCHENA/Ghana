@@ -25,3 +25,11 @@ interface ImportMetaEnv {
 interface ImportMeta {
     readonly env: ImportMetaEnv;
 }
+
+
+// types/resend.d.ts
+declare module "resend" {
+    interface CreateEmailResponse {
+        id: string;
+    }
+}

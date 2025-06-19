@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Menu, X } from "lucide-react";
-import { COMP_SHORT } from "@/app/utils/constants";
+import { COMP_ICON, COMP_SHORT } from "@/app/utils/constants";
+import Image from "next/image";
 
 type NavigationMenuProps = {
   scrollToSection: (ref: React.RefObject<HTMLDivElement>) => void;
@@ -13,7 +14,6 @@ type NavigationMenuProps = {
     founderRef?: React.RefObject<HTMLDivElement>;
     educationRef?: React.RefObject<HTMLDivElement>;
     logisticsRef?: React.RefObject<HTMLDivElement>;
-    chinaRef?: React.RefObject<HTMLDivElement>;
     reviewsRef?: React.RefObject<HTMLDivElement>;
     tourismRef?: React.RefObject<HTMLDivElement>;
     contactsRef?: React.RefObject<HTMLDivElement>;
@@ -30,9 +30,18 @@ const NavigationMenu: React.FC<NavigationMenuProps> = ({ scrollToSection, refs }
   };
 
   return (
-    <nav className="bg-blue-200 text-black fixed w-[92%] sm:w-[90%] md:w-[85%] lg:w-[80%] xl:w-[1200px] left-1/2 -translate-x-1/2 top-6 z-50 px-4 py-2 rounded-xl shadow-md">
+    <nav className="bg-blue-100 text-black fixed w-[92%] sm:w-[90%] md:w-[85%] lg:w-[80%] xl:w-[1200px] left-1/2 -translate-x-1/2 top-6 z-50 px-4 py-2 rounded-xl shadow-md">
       <div className="flex items-center justify-between">
-        <div className="text-base sm:text-lg md:text-xl lg:text-xl font-semibold tracking-wide">{COMP_SHORT}</div>
+        <Image
+          src={COMP_ICON}
+          alt="Company Logo"
+          width={20}
+          height={20}
+          className="w-4 h-4 sm:w-5 sm:h-5 object-contain"
+          priority // Ensures fast LCP
+        />
+
+        <div className="text-sm sm:text-base md:text-lg lg:text-xl font-semibold tracking-wide">{COMP_SHORT}</div>
 
         {/* Mobile Menu Toggle */}
         <div className="md:hidden">
@@ -42,7 +51,7 @@ const NavigationMenu: React.FC<NavigationMenuProps> = ({ scrollToSection, refs }
         </div>
 
         {/* Desktop Menu */}
-        <ul className="hidden md:flex gap-5 lg:gap-6 text-sm lg:text-base font-medium">
+        <ul className="hidden md:flex gap-5 lg:gap-6 text-sm lg:text-xs font-medium">
           <li>
             <button onClick={() => handleNavClick(refs.headRef)} className="hover:underline">
               Home

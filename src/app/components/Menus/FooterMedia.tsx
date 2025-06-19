@@ -10,10 +10,7 @@ export function SocialSection() {
           <Image src={COMP_LOGO_BIG} alt={COMP_MOTTO} fill className="object-contain" priority />
         </div>
       )}
-
-      {/* <p className="mb-2 text-sm sm:text-base">&copy; {COMP_COPYRIGHT}.</p> */}
       <p className="mb-2 text-sm sm:text-base">&copy;&nbsp;{COMP_COPYRIGHT}.</p>
-
       <p className="mb-4 text-sm sm:text-base">📍 {COMP_ADDRESS}</p>
 
       <div className="flex flex-wrap justify-center gap-6 text-2xl">
@@ -49,17 +46,6 @@ export function SocialSection() {
         >
           <FaFacebook />
         </a>
-
-        {/* <a
-          href={`https://discord.gg/${COMP_NAME}`}
-          target="_blank"
-          rel="noopener noreferrer"
-          aria-label="Discord"
-          title="Discord"
-          className="text-black hover:text-indigo-600 transition-transform duration-200 hover:scale-110"
-        >
-          <FaDiscord />
-        </a> */}
 
         <a
           href={`https://www.tiktok.com/@${COMP_TIKTOK}`}
