@@ -1,26 +1,114 @@
+// import EmailTemplate from "@/app/components/Emails/EmailTemplate";
+// import { NextResponse } from "next/server";
+// import { Resend } from "resend";
+
+// const resend = new Resend(process.env.RESEND_API_KEY!);
+
+// interface RequestBody {
+//     email: string;
+//     username: string;
+// }
+
+// // Define proper types for Resend response
+// type ResendResponse = {
+//     data?: {
+//         id: string;
+//     };
+//     error?: {
+//         message: string;
+//         name: string;
+//         statusCode: number;
+//     };
+// };
+
+// export async function POST(request: Request) {
+//     try {
+//         const { email, username }: RequestBody = await request.json();
+
+//         const result: ResendResponse = await resend.emails.send({
+//             from: "Acme <onboarding@resend.dev>",
+//             to: [email],
+//             subject: "Welcome!",
+//             react: EmailTemplate({ username }),
+//         });
+
+//         if (result.error) {
+//             throw new Error(result.error.message);
+//         }
+
+//         return NextResponse.json(result.data);
+//     } catch (error: unknown) {
+//         return NextResponse.json(
+//             { error: error instanceof Error ? error.message : "Unknown error" },
+//             { status: 500 }
+//         );
+//     }
+// }
+
+
 import EmailTemplate from "@/app/components/Emails/EmailTemplate";
 import { NextResponse } from "next/server";
-import { Resend } from "resend"; // ✅ named import
+import { Resend } from "resend";
 
 const resend = new Resend(process.env.RESEND_API_KEY!);
-
 
 interface RequestBody {
     email: string;
     username: string;
 }
 
+// 1. Define proper response types
+type ResendSuccess = {
+    id: string;
+};
+
+type ResendError = {
+    name: string;
+    message: string;
+    statusCode: number;
+};
+
+type ResendResponse =
+    | { data: ResendSuccess; error?: never }
+    | { data?: never; error: ResendError };
+
+// 2. Type-safe email sending function
+async function sendEmail(params: {
+    from: string;
+    to: string[];
+    subject: string;
+    react: React.ReactElement;
+}): Promise<ResendResponse> {
+    try {
+        const response = await resend.emails.send(params);
+        return response as ResendResponse;
+    } catch (error) {
+        return {
+            error: {
+                name: "ResendError",
+                message: error instanceof Error ? error.message : "Unknown error",
+                statusCode: 500
+            }
+        };
+    }
+}
+
 export async function POST(request: Request) {
     try {
         const { email, username }: RequestBody = await request.json();
-        const data = await resend.emails.send({
+
+        const result = await sendEmail({
             from: "Acme <onboarding@resend.dev>",
-            to: email,
-            subject: "Welcome to Next.js + Resend!",
+            to: [email],
+            subject: "Welcome!",
             react: EmailTemplate({ username }),
         });
 
-        return NextResponse.json(data);
+        if (result.error) {
+            throw new Error(result.error.message);
+        }
+
+        return NextResponse.json(result.data);
     } catch (error: unknown) {
         return NextResponse.json(
             { error: error instanceof Error ? error.message : "Unknown error" },
