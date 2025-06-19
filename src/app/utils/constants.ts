@@ -295,3 +295,31 @@ export const sampleReviews1 = [
         avatarUrl: "https://randomuser.me/api/portraits/men/50.jpg",
     },
 ];
+
+
+export const sectors = [
+    {
+        title: "Mining",
+        src: "/videos/1.mp4",
+        poster: "/videons/images/1.jpg",
+        commentary: `“Through our responsible mineral extraction and trade operations across Africa, we’ve seen communities grow stronger and economies thrive. Our copper and gold exports set new benchmarks in both quality and sustainability.”`,
+    },
+    {
+        title: "Tourism",
+        src: "/videos/2.mp4",
+        poster: "/videons/images/2.jpg",
+        commentary: `“Tourism is not just travel—it's transformation. From the savannas of East Africa to the coastal wonders of West Africa, we craft experiences that connect people, culture, and nature in unforgettable ways.”`,
+    },
+    {
+        title: "Education",
+        src: "/videos/3.mp4",
+        poster: "/videons/images/3.jpg",
+        commentary: `“Education is our bridge to the future. With partnerships in China, Ghana, and the U.S., we’re training the next generation of leaders in technology, policy, and innovation.”`,
+    },
+    {
+        title: "Logistics",
+        src: "/videos/4.mp4",
+        poster: "/videons/images/4.jpg",
+        commentary: `“Moving minerals, people, and ideas—our logistics network is the backbone of trade across Africa. With bonded warehouses in Zambia and optimized routes to Dar es Salaam and Durban, we ensure secure and timely delivery.”`,
+    },
+  ];

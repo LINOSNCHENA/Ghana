@@ -3,7 +3,6 @@
 import React, { useState } from "react";
 import Head from "next/head";
 import Link from "next/link";
-import VideoPlayer from "../components/Multimedia/VideoPalyer";
 
 const ContactPage = () => {
   const [form, setForm] = useState({
@@ -124,66 +123,6 @@ const ContactPage = () => {
             <Link href="/" className="bg-blue-600 hover:bg-blue-700 text-white text-sm font-medium px-6 py-2 rounded-md transition inline-block">
               Home
             </Link>
-          </div>
-
-          <div className="p-4">
-            <h1 className="text-xl font-bold mb-4">Sample Video</h1>
-            <VideoPlayer
-              src="/videos/1.mp4"
-              autoPlay={false}
-              loop={false}
-              muted={false}
-              controls
-              poster="/images/thumbnail.jpg"
-              width="640"
-              height="360"
-              className="rounded-xl shadow-md"
-            />
-          </div>
-
-          <div className="p-4">
-            <h1 className="text-xl font-bold mb-4">Sample Video</h1>
-            <VideoPlayer
-              src="/videos/2.mp4"
-              autoPlay={false}
-              loop={false}
-              muted={false}
-              controls
-              poster="/images/thumbnail.jpg"
-              width="640"
-              height="360"
-              className="rounded-xl shadow-md"
-            />
-          </div>
-
-          <div className="p-4">
-            <h1 className="text-xl font-bold mb-4">Sample Video</h1>
-            <VideoPlayer
-              src="/videos/3.mp4"
-              autoPlay={false}
-              loop={false}
-              muted={false}
-              controls
-              poster="/images/thumbnail.jpg"
-              width="640"
-              height="360"
-              className="rounded-xl shadow-md"
-            />
-          </div>
-
-          <div className="p-4">
-            <h1 className="text-xl font-bold mb-4">Sample Video</h1>
-            <VideoPlayer
-              src="/videos/4.mp4"
-              autoPlay={false}
-              loop={false}
-              muted={false}
-              controls
-              poster="/images/thumbnail.jpg"
-              width="640"
-              height="360"
-              className="rounded-xl shadow-md"
-            />
           </div>
         </form>
       </main>
