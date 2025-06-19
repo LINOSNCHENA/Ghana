@@ -18,7 +18,6 @@ import { CompanySlides } from "./components/Multimedia/GalaxySlides";
 import ReviewSection from "./components/Statistics/ReviewPage";
 import { COMP_LOGO_BIG, WEB_MASTER } from "./utils/constants";
 import LogisticsSection from "./components/Departments/LogisticsServices";
-import VideoPlayer from "./mining/page";
 
 const App: React.FC = () => {
   const headRef = useRef<HTMLDivElement>(null!);
@@ -160,7 +159,7 @@ const App: React.FC = () => {
         <div ref={reviewsRef} style={menuStyles}>
           <ReviewSection />
         </div>
-
+        {/* 
         <div className="p-4">
           <h1 className="text-xl font-bold mb-4">Sample Video</h1>
           <VideoPlayer
@@ -174,7 +173,7 @@ const App: React.FC = () => {
             height="360"
             className="rounded-xl shadow-md"
           />
-        </div>
+        </div> */}
 
         <div ref={contactsRef} style={menuStyles}>
           <SocialSection />
