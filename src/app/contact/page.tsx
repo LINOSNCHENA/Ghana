@@ -3,7 +3,7 @@
 import React, { useState } from "react";
 import Head from "next/head";
 import Link from "next/link";
-import VideoPlayer from "../mining/page";
+import VideoPlayer from "../components/Multimedia/VideoPalyer";
 
 const ContactPage = () => {
   const [form, setForm] = useState({

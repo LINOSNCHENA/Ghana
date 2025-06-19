@@ -129,6 +129,13 @@ const TourismServices = () => {
             your trusted partner in tourism innovation, infrastructure, and investment.
           </p>
         </div>
+
+        <div className="mt-6">
+          <a href="/tourism" className="inline-block bg-blue-600 hover:bg-blue-700 text-white text-sm font-medium px-6 py-2 rounded-md transition">
+            Learn More
+          </a>
+        </div>
+
       </div>
     </section>
   );

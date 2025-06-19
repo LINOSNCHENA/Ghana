@@ -9,7 +9,7 @@ import { COLOR_BLACK_METALIC, COLOR_BLUE_LIGHT, menuStyles } from "./utils/style
 import { BusinessOpportunities } from "./components/Departments/BusinessOverviews";
 import LifeInChina from "./components/Departments/EducationChina";
 import MiningServices from "./components/Departments/MiningOpportunities";
-import ServicesSection from "./components/Departments/ServicesDept";
+import ServicesSection from "./components/Emails/ServicesDept";
 import TourismServices from "./components/Departments/TourismOpportunities";
 import CeoProfileWithPhoto from "./components/Multimedia/CEOBiography";
 import { AcademicAchievement } from "./components/Multimedia/CEOEducation";
