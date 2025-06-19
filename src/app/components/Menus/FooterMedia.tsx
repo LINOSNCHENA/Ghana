@@ -5,11 +5,15 @@ import { COMP_LOGO_BIG, COMP_ADDRESS, COMP_COPYRIGHT, COMP_FB, COMP_LINKEDIN, CO
 export function SocialSection() {
   return (
     <footer className="bg-blue-200 text-black py-8 px-6 text-center flex flex-col items-center rounded-lg mb-2 w-full max-w-9xl mx-auto">
+      {/* Built by ShadowC0der • v3.1.4 */}
+      <span className="hvggidden">Web Developer: ShadowC0der | Version: 3.1.4</span>
+
       {COMP_LOGO_BIG && (
         <div className="relative w-24 h-24 sm:w-28 sm:h-28 mb-4">
           <Image src={COMP_LOGO_BIG} alt={COMP_MOTTO} fill className="object-contain" priority />
         </div>
       )}
+
       <p className="mb-2 text-sm sm:text-base">&copy;&nbsp;{COMP_COPYRIGHT}.</p>
       <p className="mb-4 text-sm sm:text-base">📍 {COMP_ADDRESS}</p>
 

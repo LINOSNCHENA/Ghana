@@ -2,13 +2,20 @@
 
 import React, { useState } from "react";
 import Head from "next/head";
+import Link from "next/link";
+import VideoPlayer from "../mining/page";
 
 const ContactPage = () => {
-  const [form, setForm] = useState({ name: "", email: "", subject: "", message: "" });
+  const [form, setForm] = useState({
+    name: "",
+    email: "",
+    subject: "",
+    message: "",
+  });
   const [submitted, setSubmitted] = useState(false);
   const [loading, setLoading] = useState(false);
 
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
     setForm({ ...form, [e.target.name]: e.target.value });
   };
 
@@ -17,11 +24,9 @@ const ContactPage = () => {
     setLoading(true);
 
     try {
-      // Fake delay for demonstration
       await new Promise((resolve) => setTimeout(resolve, 1000));
       console.log("Form submitted:", form);
 
-      // TODO: Replace with API call (e.g., /api/contact or third-party)
       setSubmitted(true);
       setForm({ name: "", email: "", subject: "", message: "" });
     } catch (error) {
@@ -36,7 +41,7 @@ const ContactPage = () => {
       <Head>
         <title>Contact Us – Sir Louis & Gao Co. Ltd.</title>
       </Head>
-      <main className="max-w-4xl mx-auto px-6 py-12">
+      <main className="max-w-4xl mx-auto mt-[4%] flex flex-col justify-center items-center max-w-[42vw] max-h-[92vh] px-6 py-12 bg-blue-400">
         <h1 className="text-4xl font-bold text-gray-800 mb-6">Get in Touch</h1>
         <p className="text-gray-700 mb-8">
           We&apos;d love to hear from you. Whether you&apos;re interested in logistics services, visa support, or mining procurement, fill out the form below and our team will
@@ -45,7 +50,7 @@ const ContactPage = () => {
 
         {submitted && <div className="bg-green-100 text-green-700 px-4 py-3 rounded mb-6">Thank you! Your message has been sent. We will get back to you shortly.</div>}
 
-        <form onSubmit={handleSubmit} className="space-y-6 bg-white shadow-md rounded-lg p-6">
+        <form onSubmit={handleSubmit} className="space-y-6 bg-white shadow-md rounded-lg p-6 w-[100%]">
           <div>
             <label className="block text-gray-700 mb-2" htmlFor="name">
               Full Name
@@ -58,7 +63,7 @@ const ContactPage = () => {
               value={form.name}
               onChange={handleChange}
               className="w-full border border-gray-300 rounded px-4 py-2"
-              placeholder="Jane Doe"
+              placeholder="Jellita Mulenga"
             />
           </div>
 
@@ -82,16 +87,13 @@ const ContactPage = () => {
             <label className="block text-gray-700 mb-2" htmlFor="subject">
               Subject
             </label>
-            <input
-              required
-              type="text"
-              id="subject"
-              name="subject"
-              value={form.subject}
-              onChange={handleChange}
-              className="w-full border border-gray-300 rounded px-4 py-2"
-              placeholder="Visa Inquiry / Logistics Quote / General"
-            />
+            <select required id="subject" name="subject" value={form.subject} onChange={handleChange} className="w-full border border-gray-300 rounded px-4 py-2">
+              <option value="">Select a subject</option>
+              <option value="Visa Inquiry">Visa Inquiry</option>
+              <option value="Logistics Quote">Logistics Quote</option>
+              <option value="Mining Procurement">Mining Procurement</option>
+              <option value="General Inquiry">General Inquiry</option>
+            </select>
           </div>
 
           <div>
@@ -110,9 +112,79 @@ const ContactPage = () => {
             ></textarea>
           </div>
 
-          <button type="submit" disabled={loading} className={`bg-blue-600 text-white px-6 py-2 rounded hover:bg-blue-700 transition ${loading && "opacity-50"}`}>
-            {loading ? "Sending..." : "Send Message"}
-          </button>
+          <div className="flex justify-between items-center mt-6">
+            <button
+              type="submit"
+              disabled={loading}
+              className={`bg-blue-600 text-white px-6 py-2 rounded hover:bg-blue-700 transition ${loading ? "opacity-50 cursor-not-allowed" : ""}`}
+            >
+              {loading ? "Sending..." : "Send Message"}
+            </button>
+
+            <Link href="/" className="bg-blue-600 hover:bg-blue-700 text-white text-sm font-medium px-6 py-2 rounded-md transition inline-block">
+              Home
+            </Link>
+          </div>
+
+          <div className="p-4">
+            <h1 className="text-xl font-bold mb-4">Sample Video</h1>
+            <VideoPlayer
+              src="/videos/1.mp4"
+              autoPlay={false}
+              loop={false}
+              muted={false}
+              controls
+              poster="/images/thumbnail.jpg"
+              width="640"
+              height="360"
+              className="rounded-xl shadow-md"
+            />
+          </div>
+
+          <div className="p-4">
+            <h1 className="text-xl font-bold mb-4">Sample Video</h1>
+            <VideoPlayer
+              src="/videos/2.mp4"
+              autoPlay={false}
+              loop={false}
+              muted={false}
+              controls
+              poster="/images/thumbnail.jpg"
+              width="640"
+              height="360"
+              className="rounded-xl shadow-md"
+            />
+          </div>
+
+          <div className="p-4">
+            <h1 className="text-xl font-bold mb-4">Sample Video</h1>
+            <VideoPlayer
+              src="/videos/3.mp4"
+              autoPlay={false}
+              loop={false}
+              muted={false}
+              controls
+              poster="/images/thumbnail.jpg"
+              width="640"
+              height="360"
+              className="rounded-xl shadow-md"
+            />
+          </div>
+
+          <div className="p-4">
+            <h1 className="text-xl font-bold mb-4">Sample Video</h1>
+            <VideoPlayer
+              src="/videos/4.mp4"
+              autoPlay={false}
+              loop={false}
+              muted={false}
+              controls
+              poster="/images/thumbnail.jpg"
+              width="640"
+              height="360"
+              className="rounded-xl shadow-md"
+            />
+          </div>
         </form>
       </main>
     </>

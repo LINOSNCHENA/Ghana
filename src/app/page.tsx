@@ -16,8 +16,9 @@ import { AcademicAchievement } from "./components/Multimedia/CEOEducation";
 import { GalaryFotos } from "./components/Multimedia/GalaryFotos";
 import { CompanySlides } from "./components/Multimedia/GalaxySlides";
 import ReviewSection from "./components/Statistics/ReviewPage";
-import { COMP_LOGO_BIG } from "./utils/constants";
+import { COMP_LOGO_BIG, WEB_MASTER } from "./utils/constants";
 import LogisticsSection from "./components/Departments/LogisticsServices";
+import VideoPlayer from "./mining/page";
 
 const App: React.FC = () => {
   const headRef = useRef<HTMLDivElement>(null!);
@@ -153,18 +154,35 @@ const App: React.FC = () => {
         </div>
 
         <div ref={logisticsRef} style={menuStyles}>
-                  <LogisticsSection />
+          <LogisticsSection />
         </div>
 
         <div ref={reviewsRef} style={menuStyles}>
           <ReviewSection />
         </div>
 
+        <div className="p-4">
+          <h1 className="text-xl font-bold mb-4">Sample Video</h1>
+          <VideoPlayer
+            src="/videos/1.mp4"
+            autoPlay={false}
+            loop={false}
+            muted={false}
+            controls
+            poster="/images/thumbnail.jpg"
+            width="640"
+            height="360"
+            className="rounded-xl shadow-md"
+          />
+        </div>
+
         <div ref={contactsRef} style={menuStyles}>
           <SocialSection />
         </div>
 
-        {/* <SocialSection /> */}
+        <div className="w-full">
+          <span className="text-sm italic text-purple-600 float-right">{WEB_MASTER}</span>
+        </div>
       </div>
     </div>
   );
