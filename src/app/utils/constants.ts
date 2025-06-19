@@ -66,7 +66,6 @@ export const services = {
     ],
 };
 
-
 export const fotoData = [
     {
         id: 1,
@@ -222,104 +221,29 @@ export const sampleReviews = [
     },
 ];
 
-
-export const sampleReviews1 = [
-    {
-        name: "Mambwe Jane",
-        location: "Nairobi, Kenya",
-        review: "Excellent service! Very professional and friendly team.",
-        rating: 5,
-        avatarUrl: "https://randomuser.me/api/portraits/women/44.jpg",
-    },
-    {
-        name: "Michael Smith",
-        location: "Lagos, Nigeria",
-        review: "Quick response and efficient processing. Highly recommend!",
-        rating: 4,
-        avatarUrl: "https://randomuser.me/api/portraits/men/12.jpg",
-    },
-    {
-        name: "Fatima Ali",
-        location: "Cairo, Egypt",
-        review: "Great experience overall. The loan approval was smooth.",
-        rating: 5,
-        avatarUrl: "https://randomuser.me/api/portraits/women/30.jpg",
-    },
-    {
-        name: "David Kimani",
-        location: "Kigali, Rwanda",
-        review: "Good support but had some delays during processing.",
-        rating: 3,
-        avatarUrl: "https://randomuser.me/api/portraits/men/41.jpg",
-    },
-    {
-        name: "Grace Mutesi",
-        location: "Kampala, Uganda",
-        review: "Very transparent and helpful. Would use again!",
-        rating: 5,
-        avatarUrl: "https://randomuser.me/api/portraits/women/25.jpg",
-    },
-    {
-        name: "John Mwangi",
-        location: "Mombasa, Kenya",
-        review: "Not bad, but customer service can be improved.",
-        rating: 3,
-        avatarUrl: "https://randomuser.me/api/portraits/men/29.jpg",
-    },
-    {
-        name: "Esther Banda",
-        location: "Lusaka, Zambia",
-        review: "Loved the mobile interface and instant support.",
-        rating: 4,
-        avatarUrl: "https://randomuser.me/api/portraits/women/18.jpg",
-    },
-    {
-        name: "Abdi Yusuf",
-        location: "Mogadishu, Somalia",
-        review: "Fast, reliable, and stress-free. Thumbs up!",
-        rating: 5,
-        avatarUrl: "https://randomuser.me/api/portraits/men/23.jpg",
-    },
-    {
-        name: "Linda Njeri",
-        location: "Nakuru, Kenya",
-        review: "Easy loan options and very reasonable rates.",
-        rating: 4,
-        avatarUrl: "https://randomuser.me/api/portraits/women/14.jpg",
-    },
-    {
-        name: "Peter Odhiambo",
-        location: "Dar es Salaam, Tanzania",
-        review: "Service was okay but the app crashed once.",
-        rating: 3,
-        avatarUrl: "https://randomuser.me/api/portraits/men/50.jpg",
-    },
-];
-
-
 export const sectors = [
     {
         title: "Mining",
         src: "/videos/1.mp4",
-        poster: "/videons/images/1.jpg",
+        poster: "/videos/images/1.jpg",
         commentary: `“Through our responsible mineral extraction and trade operations across Africa, we’ve seen communities grow stronger and economies thrive. Our copper and gold exports set new benchmarks in both quality and sustainability.”`,
     },
     {
         title: "Tourism",
         src: "/videos/2.mp4",
-        poster: "/videons/images/2.jpg",
+        poster: "/videos/images/2.jpg",
         commentary: `“Tourism is not just travel—it's transformation. From the savannas of East Africa to the coastal wonders of West Africa, we craft experiences that connect people, culture, and nature in unforgettable ways.”`,
     },
     {
         title: "Education",
         src: "/videos/3.mp4",
-        poster: "/videons/images/3.jpg",
+        poster: "/videos/images/3.jpg",
         commentary: `“Education is our bridge to the future. With partnerships in China, Ghana, and the U.S., we’re training the next generation of leaders in technology, policy, and innovation.”`,
     },
     {
         title: "Logistics",
         src: "/videos/4.mp4",
-        poster: "/videons/images/4.jpg",
+        poster: "/videos/images/4.jpg",
         commentary: `“Moving minerals, people, and ideas—our logistics network is the backbone of trade across Africa. With bonded warehouses in Zambia and optimized routes to Dar es Salaam and Durban, we ensure secure and timely delivery.”`,
     },
-  ];
+];

@@ -31,9 +31,6 @@ export function CompanySlides() {
 
   return (
     <section className="relative w-full py-10 overflow-hidden bg-gray-50">
-      {/* Title */}
-      <h2 className="text-3xl font-bold text-center mb-10 text-gray-800">Memories of the Company</h2>
-
       {/* Navigation Arrows */}
       <button
         onClick={() => scroll("left")}
@@ -53,8 +50,8 @@ export function CompanySlides() {
       {/* Slider */}
       <div ref={scrollRef} className="flex overflow-x-auto scroll-smooth space-x-8 px-6 scrollbar-hide snap-x snap-mandatory">
         {fotoData.map((item) => (
-          <div key={item.id} className="flex-shrink-0 w-[90vw] max-w-[90vw] snap-center rounded-2xl overflow-hidden shadow-xl bg-white mx-auto">
-            <div className="relative w-full h-[70vh] min-h-[300px] max-h-[80vh] cursor-pointer flex items-center justify-center" onClick={() => setModalImageId(item.id)}>
+          <div key={item.id} className="flex-shrink-0 w-[90vw] max-w-[90vw] snap-center rounded-2xl overflow-hidden shadow-xl bg-white">
+            <div className="relative w-full h-[70vh] min-h-[300px] max-h-[80vh] cursor-pointer" onClick={() => setModalImageId(item.id)}>
               <Image src={`/fotos/${item.id}.jpg`} alt={item.title} fill className="object-contain" sizes="(max-width: 768px) 100vw, 90vw" priority={item.id === 1} />
             </div>
             <p
@@ -73,10 +70,11 @@ export function CompanySlides() {
           <button onClick={() => setModalImageId(null)} className="absolute top-6 right-6 text-white bg-gray-800 p-2 rounded-full hover:bg-red-500" aria-label="Close Modal">
             <X className="w-6 h-6" />
           </button>
-
-          <div className="relative w-[90vw] h-[80vh] max-w-5xl flex items-center justify-center">
+          
+          <div className="relative w-[90vw] h-[80vh] max-w-5xl">
             <Image src={`/fotos/${modalImageId}.jpg`} alt="Modal Preview" fill className="object-contain rounded-xl" sizes="90vw" />
           </div>
+
         </div>
       )}
     </section>
