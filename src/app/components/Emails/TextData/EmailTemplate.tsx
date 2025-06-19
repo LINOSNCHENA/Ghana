@@ -1,5 +1,5 @@
 import { DOMAIN1X } from "@/app/utils/ApiRoutes";
-import { COMP_ADDRESS, COMP_LOGO_BIG, COMP_NAME } from "@/app/utils/constants";
+import { COMP_ADDRESS, COMP_MOTTO, COMP_NAME, COMP_URL } from "@/app/utils/constants";
 import { Html, Button, Text, Head, Body, Container, Section, Row, Column, Img, Hr } from "@react-email/components";
 
 interface EmailTemplateProps {
@@ -21,10 +21,10 @@ export default function EmailTemplate({ username, message, senderEmail }: EmailT
             <Row>
               <Column align="center">
                 <Img
-                  src={COMP_LOGO_BIG} // Replace with your logo URL
+                  src={COMP_URL} // Replace with your logo URL
                   width="120"
                   height="auto"
-                  alt="Company Logo"
+                  alt={COMP_MOTTO}
                   style={logo}
                 />
               </Column>
@@ -116,7 +116,7 @@ const header = {
   backgroundColor: "#2563eb",
 };
 
-const logo = {
+export const logo = {
   margin: "0 auto",
 };
 

@@ -5,6 +5,8 @@ import { API_POST } from "@/app/utils/ApiRoutes";
 import { COMP_MOTTO } from "@/app/utils/constants";
 import React, { useState } from "react";
 import WatermarkBackground from "../Menus/WaterMarks";
+// import { Img } from "@react-email/components";
+// import { logo } from "./TextData/EmailTemplate";
 
 const SendEmailForm = () => {
   const [formData, setFormData] = useState({
@@ -167,6 +169,16 @@ const SendEmailForm = () => {
             {status.text}
           </div>
         )}
+
+        {/*         <div>
+          <Img
+            src={COMP_URL} // Replace with your logo URL
+            width="120"
+            height="auto"
+            alt={COMP_MOTTO}
+            style={logo}
+          />
+        </div> */}
       </div>
     </section>
   );

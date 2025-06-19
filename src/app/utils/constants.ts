@@ -29,6 +29,9 @@ export const COMP_LOGO = "/logos/2.ico";
 export const COMP_LOGO3 = "/logos/3.jpg";
 export const COMP_LOGO_BIG = "/logos/2.jpg";
 export const COMP_ICON = "/logos/2.ico";
+export const COMP_UR8L = 'https://github.com/LINOSNCHENA/Ghana/blob/main/public/logos/3.jpg'
+export const COMP_URL = 'https://raw.githubusercontent.com/LINOSNCHENA/Ghana/main/public/logos/3.jpg';
+
 export const WEB_MASTER = "Developers: TroopersCODER | vn: 1.0.2";
 
 export const services = {
