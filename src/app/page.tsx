@@ -14,10 +14,11 @@ import TourismServices from "./components/Departments/TourismOpportunities";
 import CeoProfileWithPhoto from "./components/Multimedia/CEOBiography";
 import { AcademicAchievement } from "./components/Multimedia/CEOEducation";
 import { GalaryFotos } from "./components/Multimedia/GalaryFotos";
-import { CompanySlides } from "./components/Multimedia/GalaxySlides";
+
 import ReviewSection from "./components/Statistics/ReviewPage";
 import { COMP_LOGO_BIG, WEB_MASTER } from "./utils/constants";
 import LogisticsSection from "./components/Departments/LogisticsServices";
+import { CompanySlides } from "./components/Multimedia/GalaxySlides";
 
 const App: React.FC = () => {
   const headRef = useRef<HTMLDivElement>(null!);
