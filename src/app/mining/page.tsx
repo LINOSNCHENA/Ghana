@@ -20,6 +20,21 @@ const MiningProfilePage = () => {
         <button onClick={goHome} className="mb-8 px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700 transition">
           Go Back to Home Page
         </button>
+       
+      <div className="w-full bg-gray-200 py-4 mt-10 rounded-md">
+        <div className="container mx-auto flex justify-evenly items-center ">
+          <div>
+            <a href="/torism" className="inline-block bg-blue-600 hover:bg-blue-700 text-white text-sm font-medium px-6 py-2 rounded-md transition">
+              Learn More Mining
+            </a>
+          </div>
+          <div>
+            <a href="/tourism" className="inline-block bg-blue-600 hover:bg-blue-700 text-white text-sm font-medium px-6 py-2 rounded-md transition">
+              Learn More Toursim
+            </a>
+          </div>
+        </div>
+      </div>
 
         <section className="mb-12">
           <h1 className="text-4xl font-bold text-blue-800 mb-6">Mining Operations Profile</h1>

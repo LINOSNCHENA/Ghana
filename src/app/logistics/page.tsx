@@ -10,6 +10,21 @@ const LogisticsDetails = () => {
         <title>Logistics Services – Sir Louis & Gao Co. Ltd.</title>
       </Head>
       <main className="max-w-6xl mx-auto px-4 py-12">
+ 
+      <div className="w-full bg-gray-200 py-4 mt-10 rounded-md">
+        <div className="container mx-auto flex justify-evenly items-center ">
+          <div>
+            <a href="/torism" className="inline-block bg-blue-600 hover:bg-blue-700 text-white text-sm font-medium px-6 py-2 rounded-md transition">
+              Learn More Mining
+            </a>
+          </div>
+          <div>
+            <a href="/tourism" className="inline-block bg-blue-600 hover:bg-blue-700 text-white text-sm font-medium px-6 py-2 rounded-md transition">
+              Learn More Toursim
+            </a>
+          </div>
+        </div>
+      </div>
         <h1 className="text-4xl font-bold text-gray-800 mb-6">Comprehensive Logistics Services Across Africa and Beyond</h1>
         <p className="text-gray-700 text-lg mb-6 leading-relaxed">
           At <strong>Sir Louis & Gao Company Limited</strong>, logistics is not just about moving cargo—it’s about delivering confidence, creating trade connections, and enabling

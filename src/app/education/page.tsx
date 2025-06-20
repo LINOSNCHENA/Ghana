@@ -69,7 +69,21 @@ It is important to work with legal or immigration consultants if you’re doing 
   ];
 
   return (
-    <section className="max-w-7xl mx-auto px-6 md:px-12 py-10 space-y-10 relative">
+    <section className="min-w-7xl mx-auto px-4 md:px-10 py-12 space-y-12 bg-gray-400 w-4/5 p-9 m-9 rounded-md">
+      <div className="w-full bg-gray-200 py-4 mt-10 rounded-md">
+        <div className="container mx-auto flex justify-evenly items-center ">
+          <div>
+            <a href="/torism" className="inline-block bg-blue-600 hover:bg-blue-700 text-white text-sm font-medium px-6 py-2 rounded-md transition">
+              Learn More Mining
+            </a>
+          </div>
+          <div>
+            <a href="/tourism" className="inline-block bg-blue-600 hover:bg-blue-700 text-white text-sm font-medium px-6 py-2 rounded-md transition">
+              Learn More Toursim
+            </a>
+          </div>
+        </div>
+      </div>
       <WatermarkBackground altText={COMP_MOTTO} />
       <h1 className="text-3xl font-bold text-center text-gray-800 mb-6">Life in China as a Foreigner: A Professional Perspective</h1>
 
