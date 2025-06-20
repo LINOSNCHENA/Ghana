@@ -2,31 +2,35 @@
 
 import React from "react";
 import Head from "next/head";
-
+import WatermarkBackground from "../components/Menus/WaterMarks";
+import { COMP_MOTTO } from "../utils/constants";
 
 const MiningProfilePage = () => {
-
   return (
     <>
       <Head>
         <title>Mining Profile – Sir Louis & Gao Co. Ltd.</title>
       </Head>
-      <main className="min-h-screen bg-white px-6 py-12 max-w-5xl mx-auto">
-      
-      <div className="w-full bg-gray-200 py-4 mt-10 rounded-md">
-        <div className="container mx-auto flex justify-evenly items-center ">
-          <div>
-            <a href="/logistics" className="inline-block bg-blue-600 hover:bg-blue-700 text-white text-sm font-medium px-6 py-2 rounded-md transition">
-              Learn More Logistics
-            </a>
-          </div>
-          <div>
-            <a href="/tourism" className="inline-block bg-blue-600 hover:bg-blue-700 text-white text-sm font-medium px-6 py-2 rounded-md transition">
-              Learn More Toursim
-            </a>
+      {/* <main className="min-h-screen bg-white px-6 py-12 max-w-8xl mx-auto"> */}
+
+
+      <main className="min-h-screen bg-white text-gray-900 px-6 py-12">
+        <WatermarkBackground altText={COMP_MOTTO} />
+
+        <div className="w-full bg-gray-200 py-4 mt-10 rounded-md">
+          <div className="container mx-auto flex justify-evenly items-center ">
+            <div>
+              <a href="/logistics" className="inline-block bg-blue-600 hover:bg-blue-700 text-white text-sm font-medium px-6 py-2 rounded-md transition">
+                Learn More Logistics
+              </a>
+            </div>
+            <div>
+              <a href="/tourism" className="inline-block bg-blue-600 hover:bg-blue-700 text-white text-sm font-medium px-6 py-2 rounded-md transition">
+                Learn More Toursim
+              </a>
+            </div>
           </div>
         </div>
-      </div>
 
         <section className="mb-12">
           <h1 className="text-4xl font-bold text-blue-800 mb-6">Mining Operations Profile</h1>

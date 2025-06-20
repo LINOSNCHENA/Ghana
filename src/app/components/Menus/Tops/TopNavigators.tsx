@@ -41,7 +41,7 @@ const NavigationMenu: React.FC<NavigationMenuProps> = ({ scrollToSection, refs }
           priority // Ensures fast LCP
         />
 
-        <div className="text-sm sm:text-base md:text-lg lg:text-xl font-semibold tracking-wide">{COMP_SHORT}</div>
+        <div className="text-sm sm:text-base md:text-sm lg:text-sm font-semibold tracking-wide">{COMP_SHORT}</div>
 
         {/* Mobile Menu Toggle */}
         <div className="md:hidden">

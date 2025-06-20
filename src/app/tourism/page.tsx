@@ -7,8 +7,10 @@ import { COMP_MOTTO } from "../utils/constants";
 export default function TourismPage() {
   return (
     <main className="min-h-screen bg-white text-gray-900 px-6 py-12">
-      <div className="max-w-5xl mx-auto">
-        <div className="w-full bg-gray-200 py-4 mt-10 rounded-md">
+      <div className="max-w-7xl mx-auto bg-gray-200 p-9">
+        <WatermarkBackground altText={COMP_MOTTO} />
+        
+        <div className="w-full bg-gray-100 py-4 mt-10 rounded-md">
           <div className="container mx-auto flex justify-evenly items-center ">
             <div>
               <a href="/mining" className="inline-block bg-blue-600 hover:bg-blue-700 text-white text-sm font-medium px-6 py-2 rounded-md transition">
@@ -22,7 +24,7 @@ export default function TourismPage() {
             </div>
           </div>
         </div>
-        <WatermarkBackground altText={COMP_MOTTO} />
+
         <h1 className="text-4xl font-bold mb-4 text-center">Tourism Services at Sir Louis & Gao Company Limited</h1>
         <p className="text-center text-lg text-gray-600 mb-10">Creating Destinations. Connecting Cultures. Delivering Experiences.</p>
 

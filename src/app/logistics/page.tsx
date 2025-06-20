@@ -2,6 +2,8 @@
 
 import React from "react";
 import Head from "next/head";
+import WatermarkBackground from "../components/Menus/WaterMarks";
+import { COMP_MOTTO } from "../utils/constants";
 
 const LogisticsDetails = () => {
   return (
@@ -9,7 +11,9 @@ const LogisticsDetails = () => {
       <Head>
         <title>Logistics Services – Sir Louis & Gao Co. Ltd.</title>
       </Head>
-      <main className="max-w-6xl mx-auto px-4 py-12">
+      {/* <main className="max-w-6xl mx-auto px-4 py-12"> */}
+      <main className="min-h-screen bg-white text-gray-900 px-6 py-12">
+              <WatermarkBackground altText={COMP_MOTTO} />
  
       <div className="w-full bg-gray-200 py-4 mt-10 rounded-md">
         <div className="container mx-auto flex justify-evenly items-center ">

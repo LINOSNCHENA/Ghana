@@ -15,7 +15,7 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "Louis and Gao Ltd",
-  description: "Tourist and Mining App",
+  description: "We Mine, Educate & Tour App",
   icons: COMP_LOGO,
 };
 
