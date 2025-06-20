@@ -5,7 +5,7 @@ type EmailTemplateProps = {
   message: string;
 };
 
-export default function EmailTemplate({ username, message }: EmailTemplateProps) {
+export default function EmailTemplate1({ username, message }: EmailTemplateProps) {
   return (
     <div style={{ fontFamily: "Arial, sans-serif", lineHeight: "1.5", color: "#333" }}>
       <h2 style={{ color: "#0070f3" }}>Welcome, {username}!</h2>
