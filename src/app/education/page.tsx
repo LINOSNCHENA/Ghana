@@ -73,7 +73,7 @@ It is important to work with legal or immigration consultants if you’re doing 
       <div className="w-full bg-gray-200 py-4 mt-10 rounded-md">
         <div className="container mx-auto flex justify-evenly items-center ">
           <div>
-            <a href="/torism" className="inline-block bg-blue-600 hover:bg-blue-700 text-white text-sm font-medium px-6 py-2 rounded-md transition">
+            <a href="/mining" className="inline-block bg-blue-600 hover:bg-blue-700 text-white text-sm font-medium px-6 py-2 rounded-md transition">
               Learn More Mining
             </a>
           </div>
@@ -85,7 +85,7 @@ It is important to work with legal or immigration consultants if you’re doing 
         </div>
       </div>
       <WatermarkBackground altText={COMP_MOTTO} />
-      <h1 className="text-3xl font-bold text-center text-gray-800 mb-6">Life in China as a Foreigner: A Professional Perspective</h1>
+      <h1 className="text-3xl font-bold text-center text-gray-800 mb-6">Education : Life in China as a Foreigner: A Professional Perspective</h1>
 
       {sections.map((sec, idx) => (
         <div key={idx} className="bg-white rounded-xl shadow p-6 transition hover:shadow-lg">

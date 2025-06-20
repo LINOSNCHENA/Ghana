@@ -7,6 +7,7 @@ import { NextResponse } from "next/server";
 import { Resend } from "resend";
 import { EmailResponse } from "./types";
 import EmailTemplate from "@/app/components/Emails/TextData/EmailTemplate";
+import EmailTemplate0 from "@/app/components/Emails/TextData/EmailTemplate0";
 const email = EMAIL_DEV
 const key = dataKey1
 // ==================================================
@@ -15,20 +16,15 @@ const resend = new Resend(idData.key);
 
 export async function POST(request: Request) {
     try {
-        const { username, message, email } = await request.json();
+        const { username, message, email, email: senderEmail } = await request.json();
         const react = EmailTemplate({ username, message });
+        const react1 = EmailTemplate0({ username, message, senderEmail });
         const x = await resend.emails.send({
             from: 'onboarding@resend.dev',
             to: [idData.email],
             subject: String('Welcome Package : ' + email),
-            react: EmailTemplate({ username, message }),
+            react: react1,// EmailTemplate({ username, message }),
         });
-        // const x = await resend.emails.send({
-        //     from: 'onboarding@resend.dev',
-        //     to: [EMAIL_TEST],
-        //     subject: String('Welcome Package : By Email : ' + email),
-        //     html: '<p>Congrats on sending your <strong>first email</strong>!</p>'
-        // });
         const emailData: EmailResponse = {
             id: String(x.id),
             from: 'onboarding@resend.dev',

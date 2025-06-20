@@ -10,7 +10,7 @@ const LogisticsSection = () => {
       <WatermarkBackground altText={COMP_MOTTO} />
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
-          <h2 className="text-3xl font-bold text-gray-800 mb-4">Global Reach. Client-Focused. Efficiency-Driven.</h2>
+          <h2 className="text-3xl font-bold text-gray-800 mb-4">Logistics | Global Reach, Client-Focused, and Efficiency-Driven.</h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
             At Sir Louis & Gao Company Limited, logistics is more than transportation — it is the strategic engine that powers global commerce.
           </p>
@@ -112,8 +112,6 @@ const LogisticsSection = () => {
             Learn More
           </a>
         </div>
-
-        
       </div>
     </section>
   );

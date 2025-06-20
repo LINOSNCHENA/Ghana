@@ -53,7 +53,7 @@ export function GalaryFotos() {
       </div>
 
       {/* Button Section Outside Grid */}
-      <div className="w-full bg-red-200 py-4 mt-10">
+      <div className="w-full bg-gray-200 py-4 mt-10">
         <div className="container mx-auto flex justify-evenly items-center">
           <div>
             <a href="/videos" className="inline-block bg-blue-600 hover:bg-blue-700 text-white text-sm font-medium px-6 py-2 rounded-md transition">

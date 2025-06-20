@@ -2,14 +2,9 @@
 
 import React from "react";
 import Head from "next/head";
-import { useRouter } from "next/navigation";
+
 
 const MiningProfilePage = () => {
-  const router = useRouter();
-
-  const goHome = () => {
-    router.push("/");
-  };
 
   return (
     <>
@@ -17,15 +12,12 @@ const MiningProfilePage = () => {
         <title>Mining Profile – Sir Louis & Gao Co. Ltd.</title>
       </Head>
       <main className="min-h-screen bg-white px-6 py-12 max-w-5xl mx-auto">
-        <button onClick={goHome} className="mb-8 px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700 transition">
-          Go Back to Home Page
-        </button>
-       
+      
       <div className="w-full bg-gray-200 py-4 mt-10 rounded-md">
         <div className="container mx-auto flex justify-evenly items-center ">
           <div>
-            <a href="/torism" className="inline-block bg-blue-600 hover:bg-blue-700 text-white text-sm font-medium px-6 py-2 rounded-md transition">
-              Learn More Mining
+            <a href="/logistics" className="inline-block bg-blue-600 hover:bg-blue-700 text-white text-sm font-medium px-6 py-2 rounded-md transition">
+              Learn More Logistics
             </a>
           </div>
           <div>

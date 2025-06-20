@@ -11,7 +11,7 @@ const MiningServices = () => {
       <WatermarkBackground altText={COMP_MOTTO} />
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
-          <h2 className="text-3xl font-bold text-gray-800 mb-4">All Minerals. All Markets. All the Way.</h2>
+          <h2 className="text-3xl font-bold text-gray-800 mb-4">Mining | All Minerals. All Markets. All the Way.</h2>
           <p className="text-xl text-gray-600 max-w-4xl mx-auto">
             At Sir Louis & Gao Company Limited, our Mining Services Division is committed to delivering comprehensive, high-impact solutions across the entire mineral value chain.
           </p>

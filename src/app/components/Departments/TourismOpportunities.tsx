@@ -5,14 +5,12 @@ import { COMP_MOTTO } from "@/app/utils/constants";
 
 const TourismServices = () => {
   return (
-    // <section className="py-16 bg-white">
-
-    <section className="max-w-7xl mx-auto px-6 md:px-12 py-10 space-y-10 relative">
+     <section className="max-w-7xl mx-auto px-6 md:px-12 py-10 space-y-10 relative">
       {/* Image Watermark Background */}
       <WatermarkBackground altText={COMP_MOTTO} />
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
-          <h2 className="text-3xl font-bold text-gray-800 mb-4">Creating Destinations. Connecting Cultures. Delivering Experiences.</h2>
+          <h2 className="text-3xl font-bold text-gray-800 mb-4">Tourism | Creating Destinations. Connecting Cultures. Delivering Experiences.</h2>
           <p className="text-xl text-gray-600 max-w-4xl mx-auto">
             At Sir Louis & Gao Company Limited, our Tourism Services Division is dedicated to unlocking the rich cultural, ecological, and economic potential of Africa&apos;s and
             Asia&apos;s tourism sectors.

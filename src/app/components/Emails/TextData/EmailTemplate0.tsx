@@ -8,7 +8,7 @@ interface EmailTemplateProps {
   senderEmail: string;
 }
 
-export default function EmailTemplate({ username, message, senderEmail }: EmailTemplateProps) {
+export default function EmailTemplate0({ username, message, senderEmail }: EmailTemplateProps) {
   return (
     <Html>
       <Head>
