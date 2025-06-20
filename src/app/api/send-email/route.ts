@@ -6,12 +6,9 @@ import type { CreateEmailResponse } from 'resend';
 
 
 const dataKey = process.env.RESEND_API_KEZ1 ?? 'XX';
-const dataKey1 = process.env.RESEND_API_KEZ2 ?? 'XX';
-const dataKey2 = process.env.RESEND_API_KEZ3 ?? 'XX';
-console.log(dataKey);
-console.log(dataKey1);
-console.log(dataKey2);
-const resend = new Resend(dataKey);
+const dataKey2 = process.env.RESEND_API_KEZ2 ?? 'XX';
+const dataKey3 = process.env.RESEND_API_KEZ3 ?? 'XX';
+const resend = new Resend(dataKey2);
 
 interface RequestBody {
     email: string;
@@ -35,28 +32,6 @@ type ResendResponse =
     | { data?: never; error: ResendError };
 
 // 2. Type-safe email sending function
-// async function sendEmail(params: {
-//     from: string;
-//     to: string[];
-//     subject: string;
-//     react: React.ReactElement;
-// }): Promise<ResendResponse> {
-//     try {
-//         const response = await resend.emails.send(params);
-//         return response as ResendResponse;
-//     } catch (error) {
-//         return {
-//             error: {
-//                 name: "ResendError",
-//                 message: error instanceof Error ? error.message : "Unknown error",
-//                 statusCode: 500
-//             }
-//         };
-//     }
-// }
-
-
-
 async function sendEmail(params: {
     from: string;
     to: string[];
@@ -92,12 +67,13 @@ export async function POST(request: Request) {
         console.log(EMAIL_DEV)
         console.log("=========================|keys|============================")
         console.log(dataKey);
-        console.log(dataKey1);
         console.log(dataKey2);
+        console.log(dataKey3);
         console.log("=========================|keys|============55================")
 
         const result = await sendEmail({
-            from: "Acme <onboarding@resend.dev>",
+            //  from: "Acme <onboarding@resend.dev>",
+            from: 'onboarding@resend.dev',
             to: [EMAIL_TEST],
             subject: "Welcome! " + email.toUpperCase(),
             react: EmailTemplate({ username, message }),
