@@ -140,11 +140,11 @@ const App: React.FC = () => {
           <ReviewSection />
         </div>
 
-        <div style={menuStyles}>
+        <div ref={contactsRef} style={menuStyles}>
           <SendEmailForm />
         </div>
 
-        <div ref={contactsRef} style={menuStyles}>
+        <div style={menuStyles}>
           <SocialSection />
         </div>
 

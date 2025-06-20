@@ -15,3 +15,8 @@ export const EMAIL_DEV = 'linosnchena@gmail.com'
 
 export const DOMAIN2X = 'https://slghana.com/'
 export const DOMAIN1X = 'https://slghana.com/tourism'
+
+
+export const dataKey1 = process.env.RESEND_API_KEZ1 ?? 'XX';
+export const dataKey2 = process.env.RESEND_API_KEZ2 ?? 'XX';
+export const dataKey3 = process.env.RESEND_API_KEZ3 ?? 'XX';
