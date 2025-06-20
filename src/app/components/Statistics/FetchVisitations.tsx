@@ -2,7 +2,8 @@
 
 import { useEffect, useState } from "react";
 import { collection, getDocs } from "firebase/firestore";
-import { db } from "@/app/Libraries/firebaseClient";
+import { db } from "@/app/composables/firebaseClient";
+
 
 interface Visit {
   ip: string;

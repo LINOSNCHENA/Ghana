@@ -1,6 +1,6 @@
 import { useEffect } from "react";
 import { collection, addDoc } from "firebase/firestore";
-import { db } from "@/app/Libraries/firebaseClient";
+import { db } from "@/app/composables/firebaseClient";
 
 function NewsletterVisits() {
   useEffect(() => {

@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
-import { ISubscription } from "@/app/types/Models.subscriptions";
-import { supabase } from "@/app/Libraries/supabaseClient";
 import { BUTTONS } from "@/app/utils/stylesData";
+import { supabase } from "@/app/composables/supabaseClient";
+import { ISubscription } from "@/app/types/Models.subscriptions";
 
 function NewsletterSubscription() {
   const [form, setForm] = useState({ name: "", email: "", location: "", address: {}, compound: "", district: "" });

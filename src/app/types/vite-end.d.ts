@@ -19,7 +19,10 @@ interface ImportMetaEnv {
     readonly VITE_SUPABASE_ANON_KEZ2: string;
     readonly VITE_SUPABASE_URL2: string;
 
+
     // Add more env vars here as needed
+    readonly RESENT_API_KEZ1: string;
+    readonly RESENT_API_KEZ2: string;
 }
 
 interface ImportMeta {
