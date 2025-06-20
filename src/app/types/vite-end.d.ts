@@ -3,6 +3,7 @@
 /// <reference types="next/image-types/global" />
 
 interface ImportMetaEnv {
+
     readonly VITE_FIREBASE_API_KEZ: string;
     readonly VITE_FIREBASE_DOMAIZ: string;
     readonly VITE_DATABASE_URL: string;//3
@@ -12,17 +13,18 @@ interface ImportMetaEnv {
     readonly VITE_FIREBASE_APP_ID: string;//7
     readonly VITE_FIREBASE_MEASUREMENT_ID: string;
 
-    // other env vars...
-    readonly VITE_SUPABASE_URL: string;
-    readonly VITE_SUPABASE_ANON_KEZ: string;
+    // First & Second SUPABASE ...
 
-    readonly VITE_SUPABASE_ANON_KEZ2: string;
+    readonly VITE_SUPABASE_URL: string;
     readonly VITE_SUPABASE_URL2: string;
 
+    readonly VITE_SUPABASE_ANON_KEZ: string;
+    readonly VITE_SUPABASE_ANON_KEZ2: string;
 
     // Add more env vars here as needed
-    readonly RESENT_API_KEZ1: string;
-    readonly RESENT_API_KEZ2: string;
+    readonly RESEND_API_KEZ1: string;
+    readonly RESEND_API_KEZ2: string;
+    readonly RESEND_API_KEZ3: string;
 }
 
 interface ImportMeta {
@@ -30,9 +32,3 @@ interface ImportMeta {
 }
 
 
-// types/resend.d.ts
-declare module "resend" {
-    interface CreateEmailResponse {
-        id: string;
-    }
-}
