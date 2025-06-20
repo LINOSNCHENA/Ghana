@@ -249,4 +249,17 @@ export const sectors = [
         poster: "/videos/images/4.jpg",
         commentary: `“Moving minerals, people, and ideas—our logistics network is the backbone of trade across Africa. With bonded warehouses in Zambia and optimized routes to Dar es Salaam and Durban, we ensure secure and timely delivery.”`,
     },
+
+    {
+        title: "Education",
+        src: "/videos/5.mp4",
+        poster: "/videos/images/5.jpg",
+        commentary: `“Education is our bridge to the future. With partnerships in China, Ghana, and the U.S., we’re training the next generation of leaders in technology, policy, and innovation.”`,
+    },
+    {
+        title: "Logistics",
+        src: "/videos/6.mp4",
+        poster: "/videos/images/6.jpg",
+        commentary: `“Moving minerals, people, and ideas—our logistics network is the backbone of trade across Africa. With bonded warehouses in Zambia and optimized routes to Dar es Salaam and Durban, we ensure secure and timely delivery.”`,
+    },
 ];

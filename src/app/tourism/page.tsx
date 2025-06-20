@@ -1,64 +1,75 @@
-// "use client";
-
-// import React from "react";
-// import VideoPlayer from "../components/Multimedia/VideoPalyer";
-// import { sectors } from "../utils/constants";
-
-// export default function SectorsShowcase() {
-//   return (
-//     <section className="max-w-7xl mx-auto px-4 md:px-10 py-12 space-y-12">
-//       <h1 className="text-3xl md:text-4xl font-bold text-center text-gray-800">Our Impact Across Key Sectors</h1>
-//       <p className="text-center text-gray-600 max-w-3xl mx-auto">
-//         Discover how we’re creating value through mining, tourism, education, and logistics—with stories that reflect our mission of growth, connection, and transformation.
-//       </p>
-
-//       <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
-//         {sectors.map((sector, idx) => (
-//           <div key={idx} className="p-4 bg-white rounded-xl shadow-md hover:shadow-lg transition">
-//             <h2 className="text-xl font-semibold text-indigo-700 mb-4">{sector.title}</h2>
-//             <VideoPlayer src={sector.src} autoPlay={false} loop={false} muted={false} controls poster={sector.poster} width="640" height="360" className="rounded-xl shadow" />
-//             <p className="mt-4 text-gray-700 text-sm italic">“{sector.commentary}”</p>
-//           </div>
-//         ))}
-//       </div>
-//     </section>
-//   );
-// }
-
-"use client";
+// app/tourism/page.tsx
 
 import React from "react";
-import { useRouter } from "next/navigation";
-import VideoPlayer from "../components/Multimedia/VideoPalyer";
-import { sectors } from "../utils/constants";
 
-export default function SectorsShowcase() {
-  const router = useRouter();
-
-  const goHome = () => {
-    router.push("/");
-  };
-
+export default function TourismPage() {
   return (
-    <section className="max-w-7xl mx-auto px-4 md:px-10 py-12 space-y-12">
-      <button onClick={goHome} className="mb-6 px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700 transition">
-        Go Back to Home Page
-      </button>
+    <main className="min-h-screen bg-white text-gray-900 px-6 py-12">
+      <div className="max-w-5xl mx-auto">
+        <h1 className="text-4xl font-bold mb-4 text-center">Tourism Services at Sir Louis & Gao Company Limited</h1>
+        <p className="text-center text-lg text-gray-600 mb-10">Creating Destinations. Connecting Cultures. Delivering Experiences.</p>
 
-      <h1 className="text-3xl md:text-4xl font-bold text-center text-gray-800">Our Impact Across Key Sectors</h1>
-      <p className="text-center text-gray-600 max-w-3xl mx-auto">
-        Discover how we’re creating value through mining, tourism, education, and logistics—with stories that reflect our mission of growth, connection, and transformation.
-      </p>
+        <p className="mb-6">
+          At <strong>Sir Louis & Gao Company Limited</strong>, our Tourism Services Division is dedicated to unlocking the rich cultural, ecological, and economic potential of
+          Africa’s and Asia’s tourism sectors. We offer end-to-end tourism development and management services, designed to elevate local destinations to international standards
+          while creating meaningful and memorable experiences for travelers.
+        </p>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
-        {sectors.map((sector, idx) => (
-          <div key={idx} className="p-4 bg-white rounded-xl shadow-md hover:shadow-lg transition">
-            <h2 className="text-xl font-semibold text-indigo-700 mb-4">{sector.title}</h2>
-            <VideoPlayer src={sector.src} autoPlay={false} loop={false} muted={false} controls poster={sector.poster} width="640" height="360" className="rounded-xl shadow" />
-            <p className="mt-4 text-gray-700 text-sm italic">“{sector.commentary}”</p>
-          </div>
-        ))}
+        <h2 className="text-2xl font-semibold mt-10 mb-4">🌍 What We Do</h2>
+        <p className="mb-6">
+          We provide a full spectrum of tourism-related services, catering to governments, private investors, tour operators, and international development partners.
+        </p>
+
+        <h2 className="text-2xl font-semibold mb-4">🏞 Our Core Tourism Services Include:</h2>
+        <ul className="list-disc list-inside mb-8 space-y-3">
+          <li>
+            <strong>Tourism Investment Facilitation:</strong> Connecting international tourism investors with local governments and private sector partners across Africa.
+          </li>
+          <li>
+            <strong>Hospitality Development Support:</strong> Assisting in the planning, design, and operational setup of hotels, eco-lodges, resorts, and cultural centers.
+          </li>
+          <li>
+            <strong>Inbound & Outbound Tour Coordination:</strong>
+            <ul className="ml-6 list-disc mt-1">
+              <li>Eco-tourism</li>
+              <li>Cultural heritage tours</li>
+              <li>Business and diplomatic travel</li>
+              <li>Luxury and group travel</li>
+            </ul>
+          </li>
+          <li>
+            <strong>Logistics & Travel Management:</strong> Providing seamless logistics solutions including transport, accommodation, guides, and itineraries for individual and
+            group travelers.
+          </li>
+          <li>
+            <strong>Destination Marketing & Promotion:</strong> Helping underrepresented destinations build visibility on the global tourism stage through strategic branding and
+            partnerships.
+          </li>
+        </ul>
+
+        <hr className="my-10 border-gray-300" />
+
+        <h2 className="text-2xl font-semibold mb-4">🧭 Our Advantage</h2>
+        <ul className="list-disc list-inside mb-8 space-y-1">
+          <li>Deep understanding of local cultures, infrastructure, and policies</li>
+          <li>Strong international business networks across China, Ghana, and other emerging markets</li>
+          <li>Proven experience in cross-border investment and logistics</li>
+        </ul>
+
+        <h2 className="text-2xl font-semibold mb-4">💼 Client Commitment</h2>
+        <ul className="list-disc list-inside mb-12 space-y-1">
+          <li>Tourism development is sustainable</li>
+          <li>Local communities benefit economically</li>
+          <li>Travelers enjoy safe, authentic, and premium experiences</li>
+        </ul>
+
+        <div className="border-t pt-6 text-center">
+          <p className="text-lg font-medium">
+            Whether you’re a government agency aiming to boost national tourism, or a global investor looking to enter a growing market,{" "}
+            <strong>Sir Louis & Gao Company Limited</strong> is your trusted partner in tourism innovation, infrastructure, and investment.
+          </p>
+        </div>
       </div>
-    </section>
+    </main>
   );
 }

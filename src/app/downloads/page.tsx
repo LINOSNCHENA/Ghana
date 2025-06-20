@@ -1,0 +1,65 @@
+import React from "react";
+import { Download, FileText } from "lucide-react";
+import { categories, documents } from "../utils/appData";
+
+export type ClientDocument = {
+  id: number;
+  name: string;
+  url: string;
+  type: string;
+  size: string;
+  category: "Logistics" | "Tourism" | "Mining" | "Education";
+};
+
+export default function DownloadsPage() {
+  return (
+    <section className="min-w-7xl mx-auto px-4 md:px-10 py-12 space-y-12 bg-gray-400 w-4/5 p-9 m-9 rounded-md">
+      <div className="w-full bg-gray-200 py-4 mt-10 rounded-md">
+        <div className="container mx-auto flex justify-evenly items-center ">
+          <div>
+            <a href="/torism" className="inline-block bg-blue-600 hover:bg-blue-700 text-white text-sm font-medium px-6 py-2 rounded-md transition">
+              Learn More Mining
+            </a>
+          </div>
+          <div>
+            <a href="/tourism" className="inline-block bg-blue-600 hover:bg-blue-700 text-white text-sm font-medium px-6 py-2 rounded-md transition">
+              Learn More Toursim
+            </a>
+          </div>
+        </div>
+      </div>
+      <div className="min-h-screen py-12 px-4 sm:px-6 lg:px-8 bg-gray-50">
+        <div className="max-w-4xl mx-auto">
+          <h1 className="text-3xl font-bold text-gray-800 mb-10 text-center">Client Document Downloads</h1>
+
+          {categories.map((category) => (
+            <div key={category} className="mb-10">
+              <h2 className="text-xl font-semibold text-gray-700 mb-4 border-b pb-1">{category} Documents</h2>
+              <ul className="space-y-4">
+                {documents
+                  .filter((doc) => doc.category === category)
+                  .map((doc) => (
+                    <li key={doc.id} className="flex items-center justify-between bg-white shadow-sm border p-4 rounded-md">
+                      <div className="flex items-center space-x-3">
+                        <FileText className="text-blue-600 w-6 h-6" />
+                        <div>
+                          <p className="text-sm font-medium text-gray-800">{doc.name}</p>
+                          <p className="text-xs text-gray-500">
+                            {doc.type} • {doc.size}
+                          </p>
+                        </div>
+                      </div>
+                      <a href={doc.url} download className="inline-flex items-center px-3 py-1.5 text-sm text-white bg-blue-600 hover:bg-blue-700 rounded-md transition">
+                        <Download className="w-4 h-4 mr-2" />
+                        Download
+                      </a>
+                    </li>
+                  ))}
+              </ul>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+}

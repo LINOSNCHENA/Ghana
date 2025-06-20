@@ -8,8 +8,9 @@ export const API_PUT = "/api/send-email"
 export const API_DELETE = "/api/send-email"
 
 
-export const EMAIL_TEST = 'linosnchena@gmail.com'
+export const EMAIL_TEST = 'louisfosu@gmail.com'
 export const EMAIL_ONE = 'dianaphirin@gmail.com'
+export const EMAIL_DEV = 'linosnchena@gmail.com'
 
 
 export const DOMAIN2X = 'https://slghana.com/'

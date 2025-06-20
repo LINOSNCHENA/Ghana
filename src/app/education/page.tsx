@@ -3,7 +3,7 @@
 import { COMP_MOTTO } from "@/app/utils/constants";
 import React from "react";
 import WatermarkBackground from "../components/Menus/WaterMarks";
-// import WatermarkBackground from "../Menus/WaterMarks";
+
 
 export default function LifeInChina() {
   const sections = [

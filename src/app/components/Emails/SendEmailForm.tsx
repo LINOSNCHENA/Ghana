@@ -106,7 +106,7 @@ const SendEmailForm = () => {
               onChange={handleChange}
               className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
               required
-              placeholder="your.email@example.com"
+              placeholder="for example muleng.gates@yahoo.com"
             />
           </div>
 
@@ -132,7 +132,7 @@ const SendEmailForm = () => {
               id="message"
               value={formData.message}
               onChange={handleChange}
-              rows={5}
+              rows={3}
               className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
               required
               placeholder="How can we help you?"

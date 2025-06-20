@@ -11,14 +11,14 @@ import LifeInChina from "./components/Departments/EducationChina";
 import MiningServices from "./components/Departments/MiningOpportunities";
 import ServicesSection from "./components/Departments/ServicesDept";
 import TourismServices from "./components/Departments/TourismOpportunities";
-import CeoProfileWithPhoto from "./components/Multimedia/CEOBiography";
-import { AcademicAchievement } from "./components/Multimedia/CEOEducation";
-import { GalaryFotos } from "./components/Multimedia/GalaryFotos";
 import ReviewSection from "./components/Statistics/ReviewPage";
 import { WEB_MASTER } from "./utils/constants";
 import LogisticsSection from "./components/Departments/LogisticsServices";
-import { CompanySlides } from "./components/Multimedia/GalaxySlides";
 import SendEmailForm from "./components/Emails/SendEmailForm";
+import CeoProfileWithPhoto from "./components/Gallary/CEOBiography";
+import { AcademicAchievement } from "./components/Gallary/CEOEducation";
+import { GalaryFotos } from "./components/Gallary/GalaryFotos";
+import { CompanySlides } from "./components/Gallary/GalaxySlides";
 
 const App: React.FC = () => {
   const headRef = useRef<HTMLDivElement>(null!);
