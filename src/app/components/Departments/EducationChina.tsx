@@ -70,7 +70,7 @@ It is important to work with legal or immigration consultants if you’re doing 
   return (
     <section className="max-w-7xl mx-auto px-6 md:px-12 py-10 space-y-10 relative">
       <WatermarkBackground altText={COMP_MOTTO} />
-      <h1 className="text-3xl font-bold text-center text-gray-800 mb-6">Life in China as a Foreigner: A Professional Perspective</h1>
+      <h1 className="text-3xl font-bold text-center text-gray-800 mb-6">Edeucation: Life in China as a Foreigner: A Professional Perspective</h1>
 
       {sections.map((sec, idx) => (
         <div key={idx} className="bg-white rounded-xl shadow p-6 transition hover:shadow-lg">
