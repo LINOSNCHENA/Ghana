@@ -11,8 +11,8 @@ const LogisticsDetails = () => {
       <Head>
         <title>Logistics Services – Sir Louis & Gao Co. Ltd.</title>
       </Head>
-      {/* <main className="max-w-6xl mx-auto px-4 py-12"> */}
       <main className="min-h-screen bg-white text-gray-900 px-6 py-12">
+      <div className="max-w-7xl mx-auto bg-gray-200 p-9">
               <WatermarkBackground altText={COMP_MOTTO} />
  
       <div className="w-full bg-gray-200 py-4 mt-10 rounded-md">
@@ -97,7 +97,7 @@ const LogisticsDetails = () => {
           <a href="/contact" className="inline-block bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-md text-base font-medium transition">
             Contact Us for a Custom Logistics Plan
           </a>
-        </div>
+        </div></div>
       </main>
     </>
   );

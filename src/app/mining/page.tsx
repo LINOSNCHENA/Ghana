@@ -13,8 +13,8 @@ const MiningProfilePage = () => {
       </Head>
       {/* <main className="min-h-screen bg-white px-6 py-12 max-w-8xl mx-auto"> */}
 
-
       <main className="min-h-screen bg-white text-gray-900 px-6 py-12">
+      <div className="max-w-7xl mx-auto bg-gray-200 p-9">
         <WatermarkBackground altText={COMP_MOTTO} />
 
         <div className="w-full bg-gray-200 py-4 mt-10 rounded-md">
@@ -54,7 +54,7 @@ const MiningProfilePage = () => {
             At the core of our mining operations is a commitment to quality, environmental responsibility, and client satisfaction. Through innovation, transparency, and strong
             partnerships, we continue to grow as a trusted name in Africa’s mineral industry.
           </p>
-        </section>
+        </section></div>
       </main>
     </>
   );

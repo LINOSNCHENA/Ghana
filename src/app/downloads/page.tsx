@@ -17,7 +17,7 @@ export default function DownloadsPage() {
       <div className="w-full bg-gray-200 py-4 mt-10 rounded-md">
         <div className="container mx-auto flex justify-evenly items-center ">
           <div>
-            <a href="/torism" className="inline-block bg-blue-600 hover:bg-blue-700 text-white text-sm font-medium px-6 py-2 rounded-md transition">
+            <a href="/mining" className="inline-block bg-blue-600 hover:bg-blue-700 text-white text-sm font-medium px-6 py-2 rounded-md transition">
               Learn More Mining
             </a>
           </div>
