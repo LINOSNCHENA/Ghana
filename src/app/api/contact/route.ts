@@ -1,4 +1,5 @@
 // app/api/contact/route.ts
+import ContactFormEmail from '@/app/components/Emails/ContactFormEmail';
 import { EMAIL_DEV, dataKey1 } from '@/app/utils/ApiRoutes';
 import { Resend } from 'resend';
 const email = EMAIL_DEV
@@ -24,7 +25,12 @@ Subject: ${subject}
 Message:
 ${message}
       `,
-        });
+
+            react: ContactFormEmail({ name, email, subject, message }),
+        }
+
+
+        );
 
         return new Response(JSON.stringify({ success: true, data }), { status: 200 });
     } catch (error) {
