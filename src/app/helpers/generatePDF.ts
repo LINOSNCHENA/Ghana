@@ -3,7 +3,12 @@ import { PDFDocument, rgb, StandardFonts } from "pdf-lib";
 export async function generatePdfFromTxt(fileName: string, title: string) {
     try {
         const res = await fetch(`/docs/${fileName}.txt`);
+        console.log(fileName)
+        console.log(title);
+
         const textContent = await res.text();
+        console.log(res)
+        console.log(textContent)
 
         const pdfDoc = await PDFDocument.create();
         let page = pdfDoc.addPage(); // use let instead of const
