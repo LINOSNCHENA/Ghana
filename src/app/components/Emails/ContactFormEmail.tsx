@@ -1,5 +1,6 @@
 // emails/ContactFormEmail.tsx
-import { COMP_ICON_URL } from "@/app/utils/constants";
+import { COMP_SITE } from "@/app/utils/ApiRoutes";
+import { COMP_EMAIL, COMP_ICON_URL, COMP_NAME } from "@/app/utils/constants";
 import { Html, Head, Preview, Body, Container, Section, Img, Text } from "@react-email/components";
 
 interface ContactFormEmailProps {
@@ -38,8 +39,13 @@ export const ContactFormEmail = ({ name, email, subject, message }: ContactFormE
 
           {/* Footer */}
           <Section style={footer}>
-            <Text style={footerText}>Sir Louis & Gao Co. Ltd.</Text>
-            <Text style={footerText}>info@sirlouisgao.com • www.sirlouisgao.com</Text>
+            {/* <Text style={footerText}>Sir Louis & Gao Co. Ltd.</Text>
+            <Text style={footerText}>info@sirlouisgao.com • www.sirlouisgao.com</Text> */}
+
+            <Text style={footerText}>{COMP_NAME}</Text>
+            <Text style={footerText}>
+              {COMP_EMAIL} • {COMP_SITE}
+            </Text>
           </Section>
         </Container>
       </Body>
@@ -51,9 +57,9 @@ export default ContactFormEmail;
 
 // ========== STYLES ==========
 const main = {
-  //   backgroundColor: "#f6f9fc",
+  backgroundColor: "#f6f9fc",
   fontFamily: "Arial, sans-serif",
-  backgroundColor: "#009688",
+  //   backgroundColor: "#009688",
 };
 
 const container = {
@@ -61,8 +67,8 @@ const container = {
   borderRadius: "8px",
   margin: "20px auto",
   padding: "20px",
-  maxWidth: "1100px",
-  width: "900px",
+  maxWidth: "800px",
+  width: "700px",
   minWidth: "600px",
   border: "1px solid #e1e1e1",
   backgroundColor: "#FFF176",

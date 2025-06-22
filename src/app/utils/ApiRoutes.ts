@@ -8,13 +8,13 @@ export const API_PUT = "/api/send-email"
 export const API_DELETE = "/api/send-email"
 
 
-export const EMAIL_TEST = 'louisfosu@gmail.com'
-export const EMAIL_ONE = 'dianaphirin@gmail.com'
+export const EMAIL_MASTER = 'louisfosu@gmail.com'
 export const EMAIL_DEV = 'linosnchena@gmail.com'
+export const EMAIL_MASTER1 = 'christinadolonina@gmail.com'
 
 
-export const DOMAIN2X = 'https://slghana.com/'
-export const DOMAIN1X = 'https://slghana.com/tourism'
+export const COMP_TOURISM = 'https://slghana.com/tourism'
+export const COMP_SITE = 'https://slghana.com/'
 
 
 export const dataKey1 = process.env.RESEND_API_KEZ1 ?? 'XX';

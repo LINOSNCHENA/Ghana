@@ -1,5 +1,5 @@
-import { DOMAIN1X } from "@/app/utils/ApiRoutes";
-import { COMP_ADDRESS, COMP_MOTTO, COMP_NAME, COMP_URL } from "@/app/utils/constants";
+import { COMP_SITE } from "@/app/utils/ApiRoutes";
+import { COMP_ADDRESS, COMP_ICON_URL, COMP_MOTTO, COMP_NAME } from "@/app/utils/constants";
 import { Html, Button, Text, Head, Body, Container, Section, Row, Column, Img, Hr } from "@react-email/components";
 
 interface EmailTemplateProps {
@@ -21,7 +21,7 @@ export default function EmailTemplate0({ username, message, senderEmail }: Email
             <Row>
               <Column align="center">
                 <Img
-                  src={COMP_URL} // Replace with your logo URL
+                  src={COMP_ICON_URL} // Replace with your logo URL
                   width="120"
                   height="auto"
                   alt={COMP_MOTTO}
@@ -51,13 +51,13 @@ export default function EmailTemplate0({ username, message, senderEmail }: Email
 
             {/* Action Buttons */}
             <Section style={buttonContainer}>
-              <Button href={`${DOMAIN1X}/resources`} style={primaryButton}>
+              <Button href={`${COMP_SITE}/resources`} style={primaryButton}>
                 Explore Resources
               </Button>
-              <Button href={`${DOMAIN1X}/support`} style={secondaryButton}>
+              <Button href={`${COMP_SITE}/support`} style={secondaryButton}>
                 Visit Support Center
               </Button>
-              <Button href={`${DOMAIN1X}/contact`} style={secondaryButton}>
+              <Button href={`${COMP_SITE}/contact`} style={secondaryButton}>
                 Contact Us Again
               </Button>
             </Section>
@@ -73,15 +73,15 @@ export default function EmailTemplate0({ username, message, senderEmail }: Email
               © {new Date().getFullYear()} {COMP_NAME}. All rights reserved.
             </Text>
             <Text style={footerLinks}>
-              <a href={`${DOMAIN1X}/privacy`} style={link}>
+              <a href={`${COMP_SITE}/privacy`} style={link}>
                 Privacy Policy
               </a>{" "}
               |
-              <a href={`${DOMAIN1X}/terms`} style={link}>
+              <a href={`${COMP_SITE}/terms`} style={link}>
                 Terms of Service
               </a>{" "}
               |
-              <a href={`${DOMAIN1X}/unsubscribe`} style={link}>
+              <a href={`${COMP_SITE}/unsubscribe`} style={link}>
                 Unsubscribe
               </a>
             </Text>

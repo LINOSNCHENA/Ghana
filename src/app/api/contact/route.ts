@@ -1,9 +1,10 @@
 // app/api/contact/route.ts
+
 import ContactFormEmail from '@/app/components/Emails/ContactFormEmail';
-import { EMAIL_DEV, dataKey1 } from '@/app/utils/ApiRoutes';
+import { EMAIL_MASTER, dataKey3 } from '@/app/utils/ApiRoutes';
 import { Resend } from 'resend';
-const email = EMAIL_DEV
-const key = dataKey1
+const email = EMAIL_MASTER
+const key = dataKey3
 // ==================================================
 const idData = { email, key }
 const resend = new Resend(idData.key);

@@ -2,13 +2,13 @@
 // Data
 //
 
-import { dataKey3, EMAIL_TEST } from "@/app/utils/ApiRoutes";
+import { dataKey3, EMAIL_MASTER } from "@/app/utils/ApiRoutes";
 import { NextResponse } from "next/server";
 import { Resend } from "resend";
 import { EmailResponse } from "./types";
 import EmailTemplate from "@/app/components/Emails/TextData/EmailTemplate";
 import EmailTemplate0 from "@/app/components/Emails/TextData/EmailTemplate0";
-const email = EMAIL_TEST
+const email = EMAIL_MASTER
 const key = dataKey3
 // ==================================================
 const idData = { email, key }
