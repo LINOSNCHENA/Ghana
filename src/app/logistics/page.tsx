@@ -18,47 +18,10 @@ const LogisticsDetails = () => {
         <div className="max-w-7xl mx-auto bg-gray-200 p-9">
           <WatermarkBackground altText={COMP_MOTTO} />
 
-          <div className="max-w-7xl mx-auto bg-gray-200 p-3">
-            <div className="container mx-auto flex justify-evenly items-center ">
-              <div>
-                <a href="" className="inline-block bg-blue-600 hover:bg-blue-700 text-white text-sm font-medium px-6 py-1 rounded-md transition">
-                  Home Page
-                </a>
-              </div>
-
-              <div>
-                <a href="/videos" className="inline-block bg-blue-600 hover:bg-blue-700 text-white text-sm font-medium px-6 py-1 rounded-md transition">
-                  Videos
-                </a>
-              </div>
-              <div>
-                <a href="/downloads" className="inline-block bg-blue-600 hover:bg-blue-700 text-white text-sm font-medium px-6 py-1 rounded-md transition">
-                  Downloads
-                </a>
-              </div>
-
-              <div>
-                <a href="/eductaion" className="inline-block bg-blue-600 hover:bg-blue-700 text-white text-sm font-medium px-6 py-1 rounded-md transition">
-                  Education
-                </a>
-              </div>
-              <div>
-                <a href="/mining" className="inline-block bg-blue-600 hover:bg-blue-700 text-white text-sm font-medium px-6 py-1 rounded-md transition">
-                  Mining
-                </a>
-              </div>
-              <div>
-                <a href="/tourism" className="inline-block bg-blue-600 hover:bg-blue-700 text-white text-sm font-medium px-6 py-1 rounded-md transition">
-                  Toursim
-                </a>
-              </div>
-            </div>
-          </div>
-
-          <div className="container mx-auto flex justify-evenly items-center flex-wrap gap-2">
+          <div className="container mx-auto flex justify-evenly items-center flex-wrap gap-2 bg-gray-400 p-3">
             <div>
               <Link href="/" className="inline-flex items-center gap-2 bg-blue-600 hover:bg-blue-700 text-white text-sm font-medium px-6 py-1 rounded-md transition">
-                <Home size={ICON_SIZE} /> Home Page
+                <Home size={ICON_SIZE} /> Home
               </Link>
             </div>
             <div>
@@ -88,7 +51,7 @@ const LogisticsDetails = () => {
             </div>
           </div>
 
-          <h1 className="text-4xl font-bold text-gray-800 mb-6">Comprehensive Logistics Services Across Africa and Beyond</h1>
+          <h1 className="text-4xl font-bold text-gray-800 mt-5  mb-5">Comprehensive Logistics Services Across Africa and Beyond</h1>
           <p className="text-gray-700 text-lg mb-6 leading-relaxed">
             At <strong>Sir Louis & Gao Company Limited</strong>, logistics is not just about moving cargo—it’s about delivering confidence, creating trade connections, and enabling
             economic transformation. From the industrial zones of <strong>Lagos</strong> and <strong>Chongqing</strong>, to the copperbelt in <strong>Zambia</strong> and expanding
@@ -153,7 +116,7 @@ const LogisticsDetails = () => {
               Whether you are importing machinery from China, exporting goods across ECOWAS, or transporting educational materials into Africa&apos;s rural regions — Sir Louis &
               Gao delivers.
             </p>
-            <a href="/contact" className="inline-block bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-md text-base font-medium transition">
+            <a href="/contact" className="inline-block bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 rounded-md text-base font-medium transition">
               Contact Us for a Custom Logistics Plan
             </a>
           </div>

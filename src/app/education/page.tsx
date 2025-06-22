@@ -71,46 +71,9 @@ It is important to work with legal or immigration consultants if you’re doing 
   ];
 
   return (
-    <section className="min-w-7xl mx-auto px-4 md:px-10 py-12 space-y-12 bg-gray-900 w-4/5 p-4 m-4 rounded-md">
-      {/* <div className="max-w-7xl mx-auto bg-gray-200 p-3">
-        <div className="container mx-auto flex justify-evenly items-center ">
-          <div>
-            <a href="" className="inline-block bg-blue-600 hover:bg-blue-700 text-white text-sm font-medium px-6 py-1 rounded-md transition">
-              Home Page
-            </a>
-          </div>
-
-          <div>
-            <a href="/videos" className="inline-block bg-blue-600 hover:bg-blue-700 text-white text-sm font-medium px-6 py-1 rounded-md transition">
-              Videos
-            </a>
-          </div>
-          <div>
-            <a href="/downloads" className="inline-block bg-blue-600 hover:bg-blue-700 text-white text-sm font-medium px-6 py-1 rounded-md transition">
-              Downloads
-            </a>
-          </div>
-
-          <div>
-            <a href="/logistics" className="inline-block bg-blue-600 hover:bg-blue-700 text-white text-sm font-medium px-6 py-1 rounded-md transition">
-              Logistics
-            </a>
-          </div>
-          <div>
-            <a href="/mining" className="inline-block bg-blue-600 hover:bg-blue-700 text-white text-sm font-medium px-6 py-1 rounded-md transition">
-              Mining
-            </a>
-          </div>
-          <div>
-            <a href="/tourism" className="inline-block bg-blue-600 hover:bg-blue-700 text-white text-sm font-medium px-6 py-1 rounded-md transition">
-              Toursim
-            </a>
-          </div>
-        </div>
-      </div> */}
-
-      <div className="max-w-7xl mx-auto bg-gray-200 p-3">
-        <div className="container mx-auto flex justify-evenly items-center ">
+    <section className="min-w-7xl mx-auto px-4 md:px-10 py-12 space-y-12 bg-gray-200 w-4/5 p-1 m-2 rounded-md">
+      <div className="max-w-7xl mx-auto p-1">
+        <div className="container mx-auto flex justify-evenly items-center bg-gray-400 p-2">
           <div>
             <Link href="/" className="inline-flex items-center gap-2 bg-blue-600 hover:bg-blue-700 text-white text-sm font-medium px-6 py-1 rounded-md transition">
               <Home size={ICON_SIZE} /> Home Page

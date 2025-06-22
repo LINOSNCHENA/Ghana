@@ -6,7 +6,6 @@ import { COMP_ADDRESS, COMP_EMAIL, COMP_FB, COMP_ICON, COMP_MOBILE, COMP_SHORT, 
 
 const TopBar: React.FC = () => {
   return (
-    // <div className="fixed top-0 w-full h-8 bg-gray-800 text-white text-xs z-50 flex items-center justify-between px-4">
     <div className="fixed top-0 left-0 w-full h-[3vh] bg-gray-800 text-white text-xs z-[60] flex items-center justify-between px-4">
       {/* </div> */}
       <div className="flex items-center gap-2">
@@ -33,12 +32,12 @@ const TopBar: React.FC = () => {
 
           <div className="flex items-center gap-1">
             <SiFacebook size={14} />
-            <span>{COMP_FB}</span>
+            <span>{COMP_FB.toLowerCase()}</span>
           </div>
 
           <div className="flex items-center gap-1">
             <SiTiktok size={14} />
-            <span>{COMP_TIKTOK}</span>
+            <span>{COMP_TIKTOK.toLowerCase()}</span>
           </div>
 
           <div className="hidden md:flex items-center gap-1">

@@ -85,11 +85,11 @@ export default function SectorsShowcase() {
       {/* Bottom Navigation */}
       <div className="w-full bg-gray-200 py-4 rounded-md">
         <div className="flex flex-wrap justify-center gap-4">
-          <Link href="/" passHref legacyBehavior>
-            <a className="bg-blue-600 hover:bg-blue-700 text-white text-sm font-medium px-6 py-1 rounded-md transition">Home</a>
+          <Link href="/" className="bg-blue-600 hover:bg-blue-700 text-white text-sm font-medium px-6 py-1 rounded-md transition">
+            Home
           </Link>
-          <Link href="/contact" passHref legacyBehavior>
-            <a className="bg-blue-600 hover:bg-blue-700 text-white text-sm font-medium px-6 py-1 rounded-md transition">Contact Us</a>
+          <Link href="/contact" className="bg-blue-600 hover:bg-blue-700 text-white text-sm font-medium px-6 py-1 rounded-md transition">
+            Contact Us
           </Link>
         </div>
       </div>

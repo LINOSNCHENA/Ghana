@@ -4,16 +4,16 @@ import React from "react";
 import WatermarkBackground from "../components/Menus/WaterMarks";
 import { COMP_MOTTO } from "../utils/constants";
 import { Home, Video, Download, Truck, GraduationCap, Globe2 } from "lucide-react";
-import Link from "next/link"; 
+import Link from "next/link";
 import { ICON_SIZE } from "../utils/stylesData";
 
 export default function TourismPage() {
   return (
-    <main className="min-h-screen bg-white text-gray-900 px-6 py-12">
+    <main className="min-h-screen bg-gray-400 text-black px-6 py-12">
       <div className="max-w-7xl mx-auto bg-gray-200 p-9">
         <WatermarkBackground altText={COMP_MOTTO} />
 
-        <div className="container mx-auto flex justify-evenly items-center flex-wrap gap-2">
+        <div className="container mx-auto flex justify-evenly items-center flex-wrap gap-2 p-5 bg-gray-300">
           <div>
             <Link href="/" className="inline-flex items-center gap-2 bg-blue-600 hover:bg-blue-700 text-white text-sm font-medium px-6 py-1 rounded-md transition">
               <Home size={ICON_SIZE} /> Home Page
@@ -46,7 +46,7 @@ export default function TourismPage() {
           </div>
         </div>
 
-        <h1 className="text-4xl font-bold mb-4 text-center">Tourism Services at Sir Louis & Gao Company Limited</h1>
+        <h1 className="text-2xl font-bold mb-4 mt-4 text-center">Tourism Services at Sir Louis & Gao Company Limited</h1>
         <p className="text-center text-lg text-gray-600 mb-10">Creating Destinations. Connecting Cultures. Delivering Experiences.</p>
 
         <p className="mb-6">
@@ -111,10 +111,7 @@ export default function TourismPage() {
         </div>
 
         <div className="mt-10 text-center">
-          {/* <a href="/mining" className="inline-block bg-blue-600 hover:bg-blue-700 text-white text-sm font-medium px-6 py-2 rounded-md transition">
-          Learn More mining
-        </a> */}
-          <a href="/contact" className="inline-block bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-md text-base font-medium transition">
+          <a href="/contact" className="inline-block bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 rounded-md text-base font-medium transition">
             Contact Us for our Tourism Services
           </a>
         </div>
