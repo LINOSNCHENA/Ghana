@@ -5,7 +5,7 @@ import React from "react";
 import WatermarkBackground from "../components/Menus/WaterMarks";
 import { Home, Video, Download, Truck, GraduationCap, Globe2 } from "lucide-react";
 import { ICON_SIZE } from "../utils/stylesData";
-import Link from "next/link"; 
+import Link from "next/link";
 
 export default function LifeInChina() {
   const sections = [
@@ -72,7 +72,7 @@ It is important to work with legal or immigration consultants if you’re doing 
 
   return (
     <section className="min-w-7xl mx-auto px-4 md:px-10 py-12 space-y-12 bg-gray-900 w-4/5 p-4 m-4 rounded-md">
-      <div className="max-w-7xl mx-auto bg-gray-200 p-3">
+      {/* <div className="max-w-7xl mx-auto bg-gray-200 p-3">
         <div className="container mx-auto flex justify-evenly items-center ">
           <div>
             <a href="" className="inline-block bg-blue-600 hover:bg-blue-700 text-white text-sm font-medium px-6 py-1 rounded-md transition">
@@ -107,38 +107,40 @@ It is important to work with legal or immigration consultants if you’re doing 
             </a>
           </div>
         </div>
-      </div>
+      </div> */}
 
-      <div className="container mx-auto flex justify-evenly items-center flex-wrap gap-2">
-        <div>
-          <Link href="/" className="inline-flex items-center gap-2 bg-blue-600 hover:bg-blue-700 text-white text-sm font-medium px-6 py-1 rounded-md transition">
-            <Home size={ICON_SIZE} /> Home Page
-          </Link>
-        </div>
-        <div>
-          <a href="/videos" className="inline-flex items-center gap-2 bg-blue-600 hover:bg-blue-700 text-white text-sm font-medium px-6 py-1 rounded-md transition">
-            <Video size={ICON_SIZE} /> Videos
-          </a>
-        </div>
-        <div>
-          <a href="/downloads" className="inline-flex items-center gap-2 bg-blue-600 hover:bg-blue-700 text-white text-sm font-medium px-6 py-1 rounded-md transition">
-            <Download size={ICON_SIZE} /> Downloads
-          </a>
-        </div>
-        <div>
-          <a href="/logistics" className="inline-flex items-center gap-2 bg-blue-600 hover:bg-blue-700 text-white text-sm font-medium px-6 py-1 rounded-md transition">
-            <Truck size={ICON_SIZE} /> Logistics
-          </a>
-        </div>
-        <div>
-          <a href="/education" className="inline-flex items-center gap-2 bg-blue-600 hover:bg-blue-700 text-white text-sm font-medium px-6 py-1 rounded-md transition">
-            <GraduationCap size={ICON_SIZE} /> Education
-          </a>
-        </div>
-        <div>
-          <a href="/tourism" className="inline-flex items-center gap-2 bg-blue-600 hover:bg-blue-700 text-white text-sm font-medium px-6 py-1 rounded-md transition">
-            <Globe2 size={ICON_SIZE} /> Tourism
-          </a>
+      <div className="max-w-7xl mx-auto bg-gray-200 p-3">
+        <div className="container mx-auto flex justify-evenly items-center ">
+          <div>
+            <Link href="/" className="inline-flex items-center gap-2 bg-blue-600 hover:bg-blue-700 text-white text-sm font-medium px-6 py-1 rounded-md transition">
+              <Home size={ICON_SIZE} /> Home Page
+            </Link>
+          </div>
+          <div>
+            <a href="/videos" className="inline-flex items-center gap-2 bg-blue-600 hover:bg-blue-700 text-white text-sm font-medium px-6 py-1 rounded-md transition">
+              <Video size={ICON_SIZE} /> Videos
+            </a>
+          </div>
+          <div>
+            <a href="/downloads" className="inline-flex items-center gap-2 bg-blue-600 hover:bg-blue-700 text-white text-sm font-medium px-6 py-1 rounded-md transition">
+              <Download size={ICON_SIZE} /> Downloads
+            </a>
+          </div>
+          <div>
+            <a href="/logistics" className="inline-flex items-center gap-2 bg-blue-600 hover:bg-blue-700 text-white text-sm font-medium px-6 py-1 rounded-md transition">
+              <Truck size={ICON_SIZE} /> Logistics
+            </a>
+          </div>
+          <div>
+            <a href="/education" className="inline-flex items-center gap-2 bg-blue-600 hover:bg-blue-700 text-white text-sm font-medium px-6 py-1 rounded-md transition">
+              <GraduationCap size={ICON_SIZE} /> Education
+            </a>
+          </div>
+          <div>
+            <a href="/tourism" className="inline-flex items-center gap-2 bg-blue-600 hover:bg-blue-700 text-white text-sm font-medium px-6 py-1 rounded-md transition">
+              <Globe2 size={ICON_SIZE} /> Tourism
+            </a>
+          </div>
         </div>
       </div>
 

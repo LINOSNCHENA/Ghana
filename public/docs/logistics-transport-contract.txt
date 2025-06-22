@@ -1,0 +1,32 @@
+TRANSPORT SERVICE AGREEMENT
+
+This Transport Service Agreement ("Agreement") is made effective as of [Date], by and between:
+
+[Client Name], with address at [Client Address] ("Client"),
+
+and
+
+[Transport Company Name], with address at [Transport Company Address] ("Carrier").
+
+1. Services Provided
+Carrier agrees to provide transportation services for the Client's goods, subject to the terms and conditions herein.
+
+2. Term
+This Agreement shall commence on [Start Date] and shall continue until terminated by either party with 30 days written notice.
+
+3. Payment Terms
+The Client agrees to pay Carrier the agreed fee of [Amount] per shipment or as per agreed schedule.
+
+4. Liability
+Carrier shall be responsible for loss or damage of goods caused by its negligence.
+
+5. Governing Law
+This Agreement shall be governed by the laws of [Jurisdiction].
+
+Signed:
+
+________________________
+Client Name and Signature
+
+________________________
+Carrier Name and Signature

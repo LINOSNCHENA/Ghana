@@ -6,7 +6,7 @@ import WatermarkBackground from "../components/Menus/WaterMarks";
 import { COMP_MOTTO } from "../utils/constants";
 import { Home, Video, Download, Truck, GraduationCap, Globe2 } from "lucide-react";
 import { ICON_SIZE } from "../utils/stylesData";
-import Link from "next/link"; 
+import Link from "next/link";
 
 const LogisticsDetails = () => {
   return (
