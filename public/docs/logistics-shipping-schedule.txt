@@ -1,0 +1,76 @@
+LOGISTICS SCHEDULE
+Project/Operation Name: ______________________
+Date Created: ______________________
+
+--------------------------------------------------
+1. PREPARATION PHASE
+--------------------------------------------------
+Task: Identify required materials/resources
+Responsible: Logistics Coordinator
+Start Date: _____________
+End Date: _____________
+
+Task: Vendor/Supplier confirmation
+Responsible: Procurement Team
+Start Date: _____________
+End Date: _____________
+
+Task: Inventory check
+Responsible: Warehouse Supervisor
+Start Date: _____________
+End Date: _____________
+
+--------------------------------------------------
+2. TRANSPORTATION PLANNING
+--------------------------------------------------
+Task: Select transport mode (air/road/sea)
+Responsible: Transport Manager
+Date: _____________
+
+Task: Schedule pickup/delivery
+Responsible: Dispatch Team
+Pickup Date: _____________
+Delivery Date: _____________
+
+--------------------------------------------------
+3. DOCUMENTATION
+--------------------------------------------------
+Task: Prepare shipping documents (invoice, BOL, etc.)
+Responsible: Admin Officer
+Date Due: _____________
+
+Task: Customs clearance (if applicable)
+Responsible: Customs Agent
+Deadline: _____________
+
+--------------------------------------------------
+4. EXECUTION PHASE
+--------------------------------------------------
+Task: Load goods onto transport
+Responsible: Loading Team
+Date: _____________
+
+Task: Transport monitoring
+Responsible: Logistics Supervisor
+Duration: From _____________ to _____________
+
+--------------------------------------------------
+5. RECEIVING & FOLLOW-UP
+--------------------------------------------------
+Task: Unload and verify items
+Responsible: Receiving Clerk
+Date: _____________
+
+Task: Final report and feedback
+Responsible: Logistics Manager
+Submission Date: _____________
+
+--------------------------------------------------
+COPY PAGE
+(Use this page to replicate schedule for additional logistics tasks)
+
+LOGISTICS SCHEDULE COPY
+Project/Operation Name: ______________________
+Date Created: ______________________
+
+[Repeat the structure as needed]

@@ -77,11 +77,6 @@ export default function DownloadsPage() {
                       </div>
 
                       <div className="flex space-x-2">
-                        <a href={doc.url} download className="inline-flex items-center px-3 py-1.5 text-sm text-white bg-blue-600 hover:bg-blue-700 rounded-md transition">
-                          <Download className="w-4 h-4 mr-2" />
-                          Download
-                        </a>
-
                         <button onClick={() => generatePdfFromTxt(doc.url, doc.name)} className="bg-green-600 text-sm text-white px-3 py-1.5 rounded hover:bg-green-700">
                           <FileText className="w-4 h-4 mr-2 inline" />
                           PDF
