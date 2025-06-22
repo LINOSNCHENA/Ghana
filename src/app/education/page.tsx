@@ -68,29 +68,46 @@ It is important to work with legal or immigration consultants if you’re doing 
   ];
 
   return (
-    <section className="min-w-7xl mx-auto px-4 md:px-10 py-12 space-y-12 bg-gray-400 w-4/5 p-9 m-9 rounded-md">
-      <div className="max-w-7xl mx-auto bg-gray-200 p-9">
+    <section className="min-w-7xl mx-auto px-4 md:px-10 py-12 space-y-12 bg-gray-400 w-4/5 p-4 m-4 rounded-md">
+      <div className="max-w-7xl mx-auto bg-gray-200 p-3">
         <div className="container mx-auto flex justify-evenly items-center ">
           <div>
-            <a href="" className="inline-block bg-blue-600 hover:bg-blue-700 text-white text-sm font-medium px-6 py-2 rounded-md transition">
+            <a href="" className="inline-block bg-blue-600 hover:bg-blue-700 text-white text-sm font-medium px-6 py-1 rounded-md transition">
               Home Page
             </a>
           </div>
 
           <div>
-            <a href="/logistics" className="inline-block bg-blue-600 hover:bg-blue-700 text-white text-sm font-medium px-6 py-2 rounded-md transition">
-              Learn More Logistics-1
+            <a href="/videos" className="inline-block bg-blue-600 hover:bg-blue-700 text-white text-sm font-medium px-6 py-1 rounded-md transition">
+              Videos
             </a>
           </div>
           <div>
-            <a href="/tourism" className="inline-block bg-blue-600 hover:bg-blue-700 text-white text-sm font-medium px-6 py-2 rounded-md transition">
-              Learn More Toursim-2
+            <a href="/downloads" className="inline-block bg-blue-600 hover:bg-blue-700 text-white text-sm font-medium px-6 py-1 rounded-md transition">
+              Downloads
+            </a>
+          </div>
+
+          <div>
+            <a href="/logistics" className="inline-block bg-blue-600 hover:bg-blue-700 text-white text-sm font-medium px-6 py-1 rounded-md transition">
+              Logistics
+            </a>
+          </div>
+          <div>
+            <a href="/mining" className="inline-block bg-blue-600 hover:bg-blue-700 text-white text-sm font-medium px-6 py-1 rounded-md transition">
+              Mining
+            </a>
+          </div>
+          <div>
+            <a href="/tourism" className="inline-block bg-blue-600 hover:bg-blue-700 text-white text-sm font-medium px-6 py-1 rounded-md transition">
+              Toursim
             </a>
           </div>
         </div>
       </div>
+
       <WatermarkBackground altText={COMP_MOTTO} />
-      <h1 className="text-3xl font-bold text-center text-gray-800 mb-6">Education : Life in China as a Foreigner: A Professional Perspective</h1>
+      <h1 className="text-3xl font-bold text-center text-gray-800 mb-3">Education : Life in China as a Foreigner: A Professional Perspective</h1>
 
       {sections.map((sec, idx) => (
         <div key={idx} className="bg-white rounded-xl shadow p-6 transition hover:shadow-lg">

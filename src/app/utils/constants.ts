@@ -224,28 +224,126 @@ export const sampleReviews = [
 ];
 
 export const sectors = [
+    // Mining
+    {
+        title: "Mining: Gold Exports",
+        src: "/videos/1.mp4",
+        poster: "/videos/images/1.jpg",
+        category: "Mining",
+        commentary: `“Through our responsible mineral extraction and trade operations across Africa, we’ve seen communities grow stronger and economies thrive. Our copper and gold exports set new benchmarks in both quality and sustainability.”`,
+    },
+    {
+        title: "Mining: Copper in Zambia",
+        src: "/videos/7.mp4",
+        poster: "/videos/images/7.jpg",
+        category: "Mining",
+        commentary: `“Zambia’s copper mines are central to our supply chain. We've improved working conditions and introduced environmentally responsible practices.”`,
+    },
+    {
+        title: "Mining: Sustainable Sites",
+        src: "/videos/8.mp4",
+        poster: "/videos/images/8.jpg",
+        category: "Mining",
+        commentary: `“We use sustainable mining techniques that prioritize ecological balance and long-term community benefit.”`,
+    },
+
+    // Tourism
+    {
+        title: "Tourism: East Africa Adventures",
+        src: "/videos/2.mp4",
+        poster: "/videos/images/2.jpg",
+        category: "Tourism",
+        commentary: `“Tourism is not just travel—it's transformation. From the savannas of East Africa to the coastal wonders of West Africa, we craft experiences that connect people, culture, and nature in unforgettable ways.”`,
+    },
+    {
+        title: "Tourism: Cultural Heritage",
+        src: "/videos/9.mp4",
+        poster: "/videos/images/9.jpg",
+        category: "Tourism",
+        commentary: `“Our tours showcase the rich cultural diversity of Africa—from dance and cuisine to historic landmarks.”`,
+    },
+    {
+        title: "Tourism: Eco-Safaris",
+        src: "/videos/10.mp4",
+        poster: "/videos/images/10.jpg",
+        category: "Tourism",
+        commentary: `“Eco-tourism is a growing focus, promoting wildlife conservation and sustainability education.”`,
+    },
+
+    // Education
+    {
+        title: "Education: Global Partnerships",
+        src: "/videos/3.mp4",
+        poster: "/videos/images/3.jpg",
+        category: "Education",
+        commentary: `“Education is our bridge to the future. With partnerships in China, Ghana, and the U.S., we’re training the next generation of leaders in technology, policy, and innovation.”`,
+    },
+    {
+        title: "Education: STEM Empowerment",
+        src: "/videos/11.mp4",
+        poster: "/videos/images/11.jpg",
+        category: "Education",
+        commentary: `“Our STEM programs focus on empowering young Africans with skills for the digital age.”`,
+    },
+    {
+        title: "Education: Rural Access",
+        src: "/videos/12.mp4",
+        poster: "/videos/images/12.jpg",
+        category: "Education",
+        commentary: `“We’re building internet-connected classrooms in underserved areas to bridge the knowledge gap.”`,
+    },
+
+    // Logistics
+    {
+        title: "Logistics: Trade Backbone",
+        src: "/videos/4.mp4",
+        poster: "/videos/images/4.jpg",
+        category: "Logistics",
+        commentary: `“Moving minerals, people, and ideas—our logistics network is the backbone of trade across Africa. With bonded warehouses in Zambia and optimized routes to Dar es Salaam and Durban, we ensure secure and timely delivery.”`,
+    },
+    {
+        title: "Logistics: Regional Expansion",
+        src: "/videos/6.mp4",
+        poster: "/videos/images/6.jpg",
+        category: "Logistics",
+        commentary: `“We're expanding our warehousing and transport solutions across East and Southern Africa.”`,
+    },
+    {
+        title: "Logistics: Smart Transport",
+        src: "/videos/13.mp4",
+        poster: "/videos/images/13.jpg",
+        category: "Logistics",
+        commentary: `“Using GPS and fleet automation, we reduce delays and optimize cross-border movements.”`,
+    },
+];
+  
+export const sectorxxs = [
     {
         title: "Mining",
         src: "/videos/1.mp4",
         poster: "/videos/images/1.jpg",
+        category: "Mining",
         commentary: `“Through our responsible mineral extraction and trade operations across Africa, we’ve seen communities grow stronger and economies thrive. Our copper and gold exports set new benchmarks in both quality and sustainability.”`,
     },
     {
         title: "Tourism",
         src: "/videos/2.mp4",
         poster: "/videos/images/2.jpg",
+        category: "Mining",
         commentary: `“Tourism is not just travel—it's transformation. From the savannas of East Africa to the coastal wonders of West Africa, we craft experiences that connect people, culture, and nature in unforgettable ways.”`,
     },
     {
         title: "Education",
         src: "/videos/3.mp4",
         poster: "/videos/images/3.jpg",
+        category: "Mining",
         commentary: `“Education is our bridge to the future. With partnerships in China, Ghana, and the U.S., we’re training the next generation of leaders in technology, policy, and innovation.”`,
     },
     {
         title: "Logistics",
         src: "/videos/4.mp4",
         poster: "/videos/images/4.jpg",
+        category: "Logistics",
         commentary: `“Moving minerals, people, and ideas—our logistics network is the backbone of trade across Africa. With bonded warehouses in Zambia and optimized routes to Dar es Salaam and Durban, we ensure secure and timely delivery.”`,
     },
 
@@ -253,12 +351,14 @@ export const sectors = [
         title: "Education",
         src: "/videos/5.mp4",
         poster: "/videos/images/5.jpg",
+        category: "Education",
         commentary: `“Education is our bridge to the future. With partnerships in China, Ghana, and the U.S., we’re training the next generation of leaders in technology, policy, and innovation.”`,
     },
     {
         title: "Logistics",
         src: "/videos/6.mp4",
         poster: "/videos/images/6.jpg",
+        category: "Logistics",
         commentary: `“Moving minerals, people, and ideas—our logistics network is the backbone of trade across Africa. With bonded warehouses in Zambia and optimized routes to Dar es Salaam and Durban, we ensure secure and timely delivery.”`,
     },
 ];

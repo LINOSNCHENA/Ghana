@@ -82,11 +82,19 @@ const NavigationMenu: React.FC<NavigationMenuProps> = ({ scrollToSection, refs }
               Education
             </button>
           </li>
+
+          <li>
+            <button onClick={() => handleNavClick(refs.fotoRef!)} className="hover:underline">
+              Galary
+            </button>
+          </li>
+
           <li>
             <button onClick={() => handleNavClick(refs.founderRef!)} className="hover:underline">
               Founder
             </button>
           </li>
+
           <li>
             <button onClick={() => handleNavClick(refs.reviewsRef!)} className="hover:underline">
               Reviews

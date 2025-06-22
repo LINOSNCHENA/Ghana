@@ -10,22 +10,38 @@ export default function TourismPage() {
       <div className="max-w-7xl mx-auto bg-gray-200 p-9">
         <WatermarkBackground altText={COMP_MOTTO} />
 
-        <div className="w-full bg-gray-100 py-4 mt-10 rounded-md">
+        <div className="max-w-7xl mx-auto bg-gray-200 p-3">
           <div className="container mx-auto flex justify-evenly items-center ">
             <div>
-              <a href="" className="inline-block bg-blue-600 hover:bg-blue-700 text-white text-sm font-medium px-6 py-2 rounded-md transition">
+              <a href="" className="inline-block bg-blue-600 hover:bg-blue-700 text-white text-sm font-medium px-6 py-1 rounded-md transition">
                 Home Page
               </a>
             </div>
 
             <div>
-              <a href="/mining" className="inline-block bg-blue-600 hover:bg-blue-700 text-white text-sm font-medium px-6 py-2 rounded-md transition">
-                Learn More Mining-3
+              <a href="/videos" className="inline-block bg-blue-600 hover:bg-blue-700 text-white text-sm font-medium px-6 py-1 rounded-md transition">
+                Videos
               </a>
             </div>
             <div>
-              <a href="/education" className="inline-block bg-blue-600 hover:bg-blue-700 text-white text-sm font-medium px-6 py-2 rounded-md transition">
-                Learn More Education
+              <a href="/downloads" className="inline-block bg-blue-600 hover:bg-blue-700 text-white text-sm font-medium px-6 py-1 rounded-md transition">
+                Downloads
+              </a>
+            </div>
+
+            <div>
+              <a href="/logistics" className="inline-block bg-blue-600 hover:bg-blue-700 text-white text-sm font-medium px-6 py-1 rounded-md transition">
+                Logistics
+              </a>
+            </div>
+            <div>
+              <a href="/mining" className="inline-block bg-blue-600 hover:bg-blue-700 text-white text-sm font-medium px-6 py-1 rounded-md transition">
+                Mining
+              </a>
+            </div>
+            <div>
+              <a href="/education" className="inline-block bg-blue-600 hover:bg-blue-700 text-white text-sm font-medium px-6 py-1 rounded-md transition">
+                Education
               </a>
             </div>
           </div>

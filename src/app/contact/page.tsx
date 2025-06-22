@@ -18,24 +18,7 @@ const ContactPage = () => {
     setForm({ ...form, [e.target.name]: e.target.value });
   };
 
-  // const handleSubmit = async (e: React.FormEvent) => {
-  //   e.preventDefault();
-  //   setLoading(true);
-
-  //   try {
-  //     await new Promise((resolve) => setTimeout(resolve, 1000));
-  //     console.log("Form submitted:", form);
-
-  //     setSubmitted(true);
-  //     setForm({ name: "", email: "", subject: "", message: "" });
-  //   } catch (error) {
-  //     console.error("Submission error:", error);
-  //   } finally {
-  //     setLoading(false);
-  //   }
-  // };
-
-  const handleSubmit = async (e: React.FormEvent) => {
+   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setLoading(true);
 
