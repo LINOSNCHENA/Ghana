@@ -16,8 +16,6 @@ export const COMP_NAME = 'Sir Louis and Gao Company Limited';
 export const COMP_MOTTO = "Mining & Tourism Logistics Consultant";
 export const COMP_MOTTO_BIG = COMP_MOTTO + ' – Sir Louis and Gao Company Limited'
 export const COMP_COPYRIGHT = new Date().getFullYear() + COMP_MOTTO_BIG + '. All rights reserved';
-
-
 export const today = new Date().toLocaleDateString("en-US", {
     weekday: "short",
     month: "short",
@@ -29,8 +27,6 @@ export const COMP_LOGO = "/logos/3.jpg";
 export const COMP_LOGO_BIG = "/logos/2.jpg";
 export const COMP_ICON = "/logos/2.ico";
 export const COMP_ICON_URL = 'https://raw.githubusercontent.com/LINOSNCHENA/Ghana/main/public/logos/3.jpg';
-
-
 export const WEB_MASTER = "Developers: TroopersCODER | vn: 1.0.2";
 
 export const services = {
@@ -316,49 +312,4 @@ export const sectors = [
         commentary: `“Using GPS and fleet automation, we reduce delays and optimize cross-border movements.”`,
     },
 ];
-  
-export const sectorxxs = [
-    {
-        title: "Mining",
-        src: "/videos/1.mp4",
-        poster: "/videos/images/1.jpg",
-        category: "Mining",
-        commentary: `“Through our responsible mineral extraction and trade operations across Africa, we’ve seen communities grow stronger and economies thrive. Our copper and gold exports set new benchmarks in both quality and sustainability.”`,
-    },
-    {
-        title: "Tourism",
-        src: "/videos/2.mp4",
-        poster: "/videos/images/2.jpg",
-        category: "Mining",
-        commentary: `“Tourism is not just travel—it's transformation. From the savannas of East Africa to the coastal wonders of West Africa, we craft experiences that connect people, culture, and nature in unforgettable ways.”`,
-    },
-    {
-        title: "Education",
-        src: "/videos/3.mp4",
-        poster: "/videos/images/3.jpg",
-        category: "Mining",
-        commentary: `“Education is our bridge to the future. With partnerships in China, Ghana, and the U.S., we’re training the next generation of leaders in technology, policy, and innovation.”`,
-    },
-    {
-        title: "Logistics",
-        src: "/videos/4.mp4",
-        poster: "/videos/images/4.jpg",
-        category: "Logistics",
-        commentary: `“Moving minerals, people, and ideas—our logistics network is the backbone of trade across Africa. With bonded warehouses in Zambia and optimized routes to Dar es Salaam and Durban, we ensure secure and timely delivery.”`,
-    },
 
-    {
-        title: "Education",
-        src: "/videos/5.mp4",
-        poster: "/videos/images/5.jpg",
-        category: "Education",
-        commentary: `“Education is our bridge to the future. With partnerships in China, Ghana, and the U.S., we’re training the next generation of leaders in technology, policy, and innovation.”`,
-    },
-    {
-        title: "Logistics",
-        src: "/videos/6.mp4",
-        poster: "/videos/images/6.jpg",
-        category: "Logistics",
-        commentary: `“Moving minerals, people, and ideas—our logistics network is the backbone of trade across Africa. With bonded warehouses in Zambia and optimized routes to Dar es Salaam and Durban, we ensure secure and timely delivery.”`,
-    },
-];
