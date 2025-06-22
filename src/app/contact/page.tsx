@@ -39,6 +39,8 @@ const ContactPage = () => {
     e.preventDefault();
     setLoading(true);
 
+    console.log(form);
+
     try {
       const response = await fetch("/api/contact", {
         method: "POST",
@@ -47,6 +49,8 @@ const ContactPage = () => {
         },
         body: JSON.stringify(form),
       });
+
+      console.log(form);
 
       if (response.ok) {
         setSubmitted(true);

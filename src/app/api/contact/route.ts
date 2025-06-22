@@ -9,11 +9,12 @@ const resend = new Resend(idData.key);
 export async function POST(req: Request) {
     const body = await req.json();
     const { name, email, subject, message } = body;
+    console.log(body)
 
     try {
         const data = await resend.emails.send({
-            from: 'Your Company <noreply@yourdomain.com>',
-            to: ['you@example.com'], // Your receiving email
+            from: 'onboarding@resend.dev',
+            to: [idData.email],
             subject: `New Contact Form: ${subject}`,
             reply_to: email,
             text: `
