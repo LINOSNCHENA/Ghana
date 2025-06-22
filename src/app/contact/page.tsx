@@ -18,16 +18,43 @@ const ContactPage = () => {
     setForm({ ...form, [e.target.name]: e.target.value });
   };
 
+  // const handleSubmit = async (e: React.FormEvent) => {
+  //   e.preventDefault();
+  //   setLoading(true);
+
+  //   try {
+  //     await new Promise((resolve) => setTimeout(resolve, 1000));
+  //     console.log("Form submitted:", form);
+
+  //     setSubmitted(true);
+  //     setForm({ name: "", email: "", subject: "", message: "" });
+  //   } catch (error) {
+  //     console.error("Submission error:", error);
+  //   } finally {
+  //     setLoading(false);
+  //   }
+  // };
+
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setLoading(true);
 
     try {
-      await new Promise((resolve) => setTimeout(resolve, 1000));
-      console.log("Form submitted:", form);
+      const response = await fetch("/api/contact", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(form),
+      });
 
-      setSubmitted(true);
-      setForm({ name: "", email: "", subject: "", message: "" });
+      if (response.ok) {
+        setSubmitted(true);
+        setForm({ name: "", email: "", subject: "", message: "" });
+      } else {
+        const data = await response.json();
+        console.error("Email send error:", data.error);
+      }
     } catch (error) {
       console.error("Submission error:", error);
     } finally {

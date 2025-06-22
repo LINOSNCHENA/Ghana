@@ -9,17 +9,23 @@ export default function TourismPage() {
     <main className="min-h-screen bg-white text-gray-900 px-6 py-12">
       <div className="max-w-7xl mx-auto bg-gray-200 p-9">
         <WatermarkBackground altText={COMP_MOTTO} />
-        
+
         <div className="w-full bg-gray-100 py-4 mt-10 rounded-md">
           <div className="container mx-auto flex justify-evenly items-center ">
             <div>
+              <a href="" className="inline-block bg-blue-600 hover:bg-blue-700 text-white text-sm font-medium px-6 py-2 rounded-md transition">
+                Home Page
+              </a>
+            </div>
+
+            <div>
               <a href="/mining" className="inline-block bg-blue-600 hover:bg-blue-700 text-white text-sm font-medium px-6 py-2 rounded-md transition">
-                Learn More Mining
+                Learn More Mining-3
               </a>
             </div>
             <div>
-              <a href="/logistics" className="inline-block bg-blue-600 hover:bg-blue-700 text-white text-sm font-medium px-6 py-2 rounded-md transition">
-                Learn More Logistics
+              <a href="/education" className="inline-block bg-blue-600 hover:bg-blue-700 text-white text-sm font-medium px-6 py-2 rounded-md transition">
+                Learn More Education
               </a>
             </div>
           </div>
@@ -87,6 +93,15 @@ export default function TourismPage() {
             Whether you’re a government agency aiming to boost national tourism, or a global investor looking to enter a growing market,{" "}
             <strong>Sir Louis & Gao Company Limited</strong> is your trusted partner in tourism innovation, infrastructure, and investment.
           </p>
+        </div>
+
+        <div className="mt-10 text-center">
+          {/* <a href="/mining" className="inline-block bg-blue-600 hover:bg-blue-700 text-white text-sm font-medium px-6 py-2 rounded-md transition">
+          Learn More mining
+        </a> */}
+          <a href="/contact" className="inline-block bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-md text-base font-medium transition">
+            Contact Us for our Tourism Services
+          </a>
         </div>
       </div>
     </main>
