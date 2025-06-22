@@ -2,7 +2,9 @@ import { PDFDocument, rgb, StandardFonts } from "pdf-lib";
 
 export async function generatePdfFromTxt(fileName: string, title: string) {
     try {
-        const res = await fetch(`/docs/${fileName}.txt`);
+        const url = `${fileName}.txt`;
+        console.log(url);
+        const res = await fetch(url);
         console.log(fileName)
         console.log(title);
 
