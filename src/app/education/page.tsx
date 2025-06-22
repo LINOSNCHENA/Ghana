@@ -68,7 +68,7 @@ It is important to work with legal or immigration consultants if you’re doing 
   ];
 
   return (
-    <section className="min-w-7xl mx-auto px-4 md:px-10 py-12 space-y-12 bg-gray-400 w-4/5 p-4 m-4 rounded-md">
+    <section className="min-w-7xl mx-auto px-4 md:px-10 py-12 space-y-12 bg-gray-900 w-4/5 p-4 m-4 rounded-md">
       <div className="max-w-7xl mx-auto bg-gray-200 p-3">
         <div className="container mx-auto flex justify-evenly items-center ">
           <div>
@@ -120,7 +120,7 @@ It is important to work with legal or immigration consultants if you’re doing 
         {/* <a href="/mining" className="inline-block bg-blue-600 hover:bg-blue-700 text-white text-sm font-medium px-6 py-2 rounded-md transition">
           Learn More mining
         </a> */}
-        <a href="/contact" className="inline-block bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-md text-base font-medium transition">
+        <a href="/contact" className="inline-block bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 text-sm rounded-md text-base font-medium transition">
           Contact Us for our Education Services
         </a>
       </div>

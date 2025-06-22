@@ -32,3 +32,5 @@ export const COLOR_RED_LIGHT = "#f87171";   // Tailwind red-400
 
 export const BUTTONS = { smallButton, baseButton, longButton, largeButton, topButton }
 export const menuStyles = { marginBottom: 100, background: COLOR_BLUE_LIGHT, borderRadius: "8px", marginTop: 100 };
+
+export const ICON_SIZE=14;
