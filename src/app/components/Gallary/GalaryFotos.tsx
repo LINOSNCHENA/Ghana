@@ -54,14 +54,27 @@ export function GalaryFotos() {
 
       {/* Button Section Outside Grid */}
       <div className="w-full bg-gray-200 py-4 mt-10">
-        <div className="container mx-auto flex justify-evenly items-center">
+        {/* <div className="container mx-auto flex justify-evenly items-center">
           <div>
-            <a href="/videos" className="inline-block bg-blue-600 hover:bg-blue-700 text-white text-sm font-medium px-6 py-2 rounded-md transition">
+            <a href="/videos" className="inline-block bg-blue-600 hover:bg-blue-700 text-white text-sm font-italics px-6 py-1 rounded-md transition">
               Learn More Videos
             </a>
           </div>
           <div>
-            <a href="/downloads" className="inline-block bg-blue-600 hover:bg-blue-700 text-white text-sm font-medium px-6 py-2 rounded-md transition">
+            <a href="/downloads" className="inline-block bg-blue-600 hover:bg-blue-700 text-white text-sm font-normal px-6 py-1 rounded-md transition">
+              Learn More Files
+            </a>
+          </div>
+        </div> */}
+
+        <div className="container mx-auto flex justify-evenly items-center gap-2">
+          <div>
+            <a href="/videos" className="inline-block bg-blue-600 hover:bg-blue-700 text-white text-xs font-light px-3 py-2 rounded-md transition">
+              Learn More Videos
+            </a>
+          </div>
+          <div>
+            <a href="/downloads" className="inline-block bg-blue-600 hover:bg-blue-700 text-white text-xs font-light px-3 py-2 rounded-md transition">
               Learn More Files
             </a>
           </div>

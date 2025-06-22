@@ -85,7 +85,7 @@ const NavigationMenu: React.FC<NavigationMenuProps> = ({ scrollToSection, refs }
 
           <li>
             <button onClick={() => handleNavClick(refs.fotoRef!)} className="hover:underline">
-              Galary
+              Gallery
             </button>
           </li>
 

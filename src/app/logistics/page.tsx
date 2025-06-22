@@ -4,6 +4,9 @@ import React from "react";
 import Head from "next/head";
 import WatermarkBackground from "../components/Menus/WaterMarks";
 import { COMP_MOTTO } from "../utils/constants";
+import { Home, Video, Download, Truck, GraduationCap, Globe2 } from "lucide-react";
+import { ICON_SIZE } from "../utils/stylesData";
+import Link from "next/link"; 
 
 const LogisticsDetails = () => {
   return (
@@ -49,6 +52,39 @@ const LogisticsDetails = () => {
                   Toursim
                 </a>
               </div>
+            </div>
+          </div>
+
+          <div className="container mx-auto flex justify-evenly items-center flex-wrap gap-2">
+            <div>
+              <Link href="/" className="inline-flex items-center gap-2 bg-blue-600 hover:bg-blue-700 text-white text-sm font-medium px-6 py-1 rounded-md transition">
+                <Home size={ICON_SIZE} /> Home Page
+              </Link>
+            </div>
+            <div>
+              <a href="/videos" className="inline-flex items-center gap-2 bg-blue-600 hover:bg-blue-700 text-white text-sm font-medium px-6 py-1 rounded-md transition">
+                <Video size={ICON_SIZE} /> Videos
+              </a>
+            </div>
+            <div>
+              <a href="/downloads" className="inline-flex items-center gap-2 bg-blue-600 hover:bg-blue-700 text-white text-sm font-medium px-6 py-1 rounded-md transition">
+                <Download size={ICON_SIZE} /> Downloads
+              </a>
+            </div>
+            <div>
+              <a href="/logistics" className="inline-flex items-center gap-2 bg-blue-600 hover:bg-blue-700 text-white text-sm font-medium px-6 py-1 rounded-md transition">
+                <Truck size={ICON_SIZE} /> Logistics
+              </a>
+            </div>
+            <div>
+              <a href="/education" className="inline-flex items-center gap-2 bg-blue-600 hover:bg-blue-700 text-white text-sm font-medium px-6 py-1 rounded-md transition">
+                <GraduationCap size={ICON_SIZE} /> Education
+              </a>
+            </div>
+            <div>
+              <a href="/tourism" className="inline-flex items-center gap-2 bg-blue-600 hover:bg-blue-700 text-white text-sm font-medium px-6 py-1 rounded-md transition">
+                <Globe2 size={ICON_SIZE} /> Tourism
+              </a>
             </div>
           </div>
 
