@@ -42,7 +42,14 @@ const NavigationMenu: React.FC<NavigationMenuProps> = ({ scrollToSection, refs }
           priority // Ensures fast LCP
         />
 
-        <div className="text-sm sm:text-base md:text-sm lg:text-sm font-semibold tracking-wide">{COMP_SHORT}</div>
+        {/* <div className="text-sm sm:text-base md:text-sm lg:text-sm font-semibold tracking-wide">{COMP_SHORT}</div> */}
+        <div className="text-sm hidden md:flex gap-5 lg:gap-6 text-sm lg:text-xs font-normal">{COMP_SHORT}</div>
+
+        <div className="text-sm hidden md:flex gap-5 lg:gap-6 text-sm lg:text-xs font-normal">
+          <Link href="/downloads" className="hover:underline">
+            Downloads
+          </Link>
+        </div>
 
         {/* Mobile Menu Toggle */}
         <div className="md:hidden">
@@ -101,11 +108,13 @@ const NavigationMenu: React.FC<NavigationMenuProps> = ({ scrollToSection, refs }
               Reviews
             </button>
           </li>
-          <li>
+
+          {/* <li>
             <Link href="/downloads" className="hover:underline">
               Downloads
             </Link>
-          </li>
+          </li> */}
+
           <li>
             <button onClick={() => handleNavClick(refs.contactsRef!)} className="hover:underline">
               Contact

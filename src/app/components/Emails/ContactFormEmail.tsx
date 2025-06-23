@@ -56,17 +56,18 @@ export default ContactFormEmail;
 const main = {
   backgroundColor: "#f6f9fc",
   fontFamily: "Arial, sans-serif",
+  width: "75vw",
 };
 
 const container = {
   borderRadius: "8px",
   margin: "20px auto",
   padding: "20px",
-  maxWidth: "800px",
-  width: "700px",
-  minWidth: "600px",
+  maxWidth: "80vw",
+  width: "70vw",
+  minWidth: "40vw",
   border: "1px solid #e1e1e1",
-  backgroundColor: "#FFF176",
+  backgroundColor: "pink",
 };
 
 const logoSection = {
