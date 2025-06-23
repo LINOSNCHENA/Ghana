@@ -6,8 +6,10 @@ import { dataKey3, EMAIL_MASTER } from "@/app/utils/ApiRoutes";
 import { NextResponse } from "next/server";
 import { Resend } from "resend";
 import { EmailResponse } from "./types";
-import EmailTemplate from "@/app/components/Emails/TextData/EmailTemplate";
-import EmailTemplate0 from "@/app/components/Emails/TextData/EmailTemplate0";
+import EmailTemplate from "@/app/components/Emails/TemplateTexts/EmailTemplate";
+import EmailTemplate0 from "@/app/components/Emails/TemplateTexts/EmailTemplate0";
+// import EmailTemplate from "@/app/components/Emails/TextData/EmailTemplate";
+// import EmailTemplate0 from "@/app/components/Emails/TextData/EmailTemplate0";
 const email = EMAIL_MASTER
 const key = dataKey3
 // ==================================================

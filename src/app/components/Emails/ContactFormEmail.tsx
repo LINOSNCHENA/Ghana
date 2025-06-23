@@ -39,9 +39,6 @@ export const ContactFormEmail = ({ name, email, subject, message }: ContactFormE
 
           {/* Footer */}
           <Section style={footer}>
-            {/* <Text style={footerText}>Sir Louis & Gao Co. Ltd.</Text>
-            <Text style={footerText}>info@sirlouisgao.com • www.sirlouisgao.com</Text> */}
-
             <Text style={footerText}>{COMP_NAME}</Text>
             <Text style={footerText}>
               {COMP_EMAIL} • {COMP_SITE}
@@ -59,11 +56,9 @@ export default ContactFormEmail;
 const main = {
   backgroundColor: "#f6f9fc",
   fontFamily: "Arial, sans-serif",
-  //   backgroundColor: "#009688",
 };
 
 const container = {
-  //   backgroundColor: "#ffffff",
   borderRadius: "8px",
   margin: "20px auto",
   padding: "20px",

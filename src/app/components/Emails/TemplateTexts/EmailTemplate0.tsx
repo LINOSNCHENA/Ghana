@@ -51,11 +51,14 @@ export default function EmailTemplate0({ username, message, senderEmail }: Email
 
             {/* Action Buttons */}
             <Section style={buttonContainer}>
-              <Button href={`${COMP_SITE}/resources`} style={primaryButton}>
+              <Button href={`${COMP_SITE}/downloands`} style={primaryButton}>
                 Explore Resources
               </Button>
-              <Button href={`${COMP_SITE}/support`} style={secondaryButton}>
+              <Button href={`${COMP_SITE}/education`} style={secondaryButton}>
                 Visit Support Center
+              </Button>
+              <Button href={`${COMP_SITE}/videos`} style={secondaryButton}>
+                Videos Support Center
               </Button>
               <Button href={`${COMP_SITE}/contact`} style={secondaryButton}>
                 Contact Us Again
