@@ -1,6 +1,6 @@
-import { ClientDocument } from "../downloads/page";
+import { IClientDocument } from "../types/Models.subscriptions";
 
-export const documents: ClientDocument[] = [
+export const documents: IClientDocument[] = [
     // Logistics
     {
         id: 1,

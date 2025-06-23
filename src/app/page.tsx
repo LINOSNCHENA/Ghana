@@ -1,6 +1,5 @@
 "use client";
 
-// import Image from "next/image";
 import { useRef } from "react";
 import NavigationMenu from "./components/Menus/Tops/TopNavigators";
 import { SocialSection } from "./components/Menus/FooterMedia";
@@ -71,12 +70,10 @@ const App: React.FC = () => {
             homeRef,
             fotoRef,
             servicesRef,
-
             miningRef,
             educationRef,
             logisticsRef,
             tourismRef,
-
             founderRef,
             reviewsRef,
             contactsRef,

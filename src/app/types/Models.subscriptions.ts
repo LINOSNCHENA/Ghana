@@ -8,3 +8,13 @@ export interface ISubscription {
     district: string; // default 'xxx'
     compound: string; // default 'xxx'
 }
+
+
+export interface IClientDocument {
+    id: number;
+    name: string;
+    url: string;
+    type: string;
+    size: string;
+    category: string;
+  }
