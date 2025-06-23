@@ -1,0 +1,344 @@
+/* Modern, Accessible CSS with High-Contrast Themes */
+:root {
+  /* Enhanced Light Mode Colors - Professional with Personality */
+  --light-bg: #f8f5f5; /* Soft warm white with subtle pink undertone */
+  --light-card: #e8e8f0; /* Cool light gray with lavender undertone */
+  --light-text: #1a1a1a; /* Deep black for maximum contrast */
+  --light-accent: #5a67d8; /* Vibrant indigo-blue for clickable elements */
+  --light-border: #c7cad1; /* Soft neutral border color */
+  --light-meta: #4a5568; /* Dark gray-blue for secondary text */
+  --light-nav: #6b7280; /* Muted slate gray for navigation */
+  --light-shadow: 0 2px 8px rgba(99, 99, 99, 0.15); /* Subtle shadow with warmth */
+  --light-hover: #e0e4eb; /* Light blue-gray for hover states */
+  --light-button-text: #ffffff; /* Pure white for button text */
+
+  /* Dark Mode Colors - Complementary to light scheme */
+  --dark-bg: #121218; /* Deep navy-black */
+  --dark-card: #1e1e2a; /* Dark slate with blue undertone */
+  --dark-text: #f0f0f5; /* Soft white with blue tint */
+  --dark-accent: #818cf8; /* Bright periwinkle for accents */
+  --dark-border: #2d2d3a; /* Dark border with contrast */
+  --dark-meta: #a1a1b3; /* Light gray-blue for metadata */
+  --dark-nav: #252532; /* Dark navigation bar */
+  --dark-shadow: 0 2px 12px rgba(0, 0, 0, 0.4);
+  --dark-hover: #2a2a3a;
+  --dark-button-text: #ffffff;
+}
+
+/* Base Styles */
+body {
+  margin: 0;
+  font-family:
+    "Segoe UI",
+    -apple-system,
+    BlinkMacSystemFont,
+    sans-serif;
+  transition: all 0.3s ease;
+  background: var(--light-bg);
+  color: var(--light-text);
+  line-height: 1.05;
+}
+
+.nav-wrapper {
+  background: var(--light-nav);
+  color: white; /* Ensures text remains readable on nav */
+}
+
+.document-item {
+  background: var(--light-card);
+  border-color: var(--light-border);
+}
+
+.pdf-button {
+  background: var(--light-accent);
+  color: var(--light-button-text);
+}
+
+/* Hover States */
+.nav-link:hover {
+  color: var(--light-accent);
+}
+
+.document-item:hover {
+  background: var(--light-hover);
+}
+.downloads-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Dark Mode */
+body.dark-mode {
+  background-color: var(--dark-bg);
+  color: var(--dark-text);
+}
+
+/* Header & Navigation */
+.nav-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: var(--light-nav);
+  padding: 0.5rem 1.2rem;
+  box-shadow: var(--light-shadow);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+body.dark-mode .nav-wrapper {
+  background: var(--dark-nav);
+  box-shadow: var(--dark-shadow);
+}
+
+.nav-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.theme-toggle,
+.menu-toggle {
+  background: transparent;
+  border: 1px solid var(--light-border);
+  padding: 8px 16px;
+  cursor: pointer;
+  border-radius: 6px;
+  color: inherit;
+  transition: all 0.2s ease;
+  font-weight: 500;
+}
+
+body.dark-mode .theme-toggle,
+body.dark-mode .menu-toggle {
+  border-color: var(--dark-border);
+}
+
+.theme-toggle:hover,
+.menu-toggle:hover {
+  background: rgba(0, 0, 0, 0.05);
+}
+
+body.dark-mode .theme-toggle:hover,
+body.dark-mode .menu-toggle:hover {
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.nav-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-top: 0.51rem;
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .nav-container {
+    flex-wrap: nowrap;
+    margin-top: 0;
+    white-space: nowrap;
+    display: flex !important;
+  }
+}
+
+.nav-container.open {
+  display: flex;
+}
+
+.nav-link {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  text-decoration: none;
+  color: inherit;
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+.nav-link:hover {
+  color: var(--light-accent);
+}
+
+body.dark-mode .nav-link:hover {
+  color: var(--dark-accent);
+}
+
+/* Main Content */
+.documents-content {
+  flex-grow: 1;
+  padding: 0.2rem 0;
+  width: 100%;
+}
+
+.documents-wrapper {
+  width: 100%;
+}
+
+.documents-title {
+  font-size: 1.5rem;
+  text-align: center;
+  margin-bottom: 0.73rem;
+  font-weight: 300;
+  color: var(--light-accent);
+}
+
+body.dark-mode .documents-title {
+  color: var(--dark-accent);
+}
+
+.category-title {
+  font-size: 0.95rem;
+  margin-bottom: 0.5rem;
+  font-weight: 400;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid var(--light-border);
+}
+
+body.dark-mode .category-title {
+  border-bottom-color: var(--dark-border);
+}
+
+.documents-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 3rem;
+  display: grid;
+  gap: 1rem;
+}
+
+@media (min-width: 768px) {
+  .documents-list {
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  }
+}
+
+.document-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: var(--light-card);
+  padding: 1.25rem;
+  border-radius: 12px;
+  box-shadow: var(--light-shadow);
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+  border: 1px solid var(--light-border);
+}
+
+.document-item:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  background: var(--light-hover);
+}
+
+body.dark-mode .document-item {
+  background: var(--dark-card);
+  box-shadow: var(--dark-shadow);
+  border-color: var(--dark-border);
+}
+
+body.dark-mode .document-item:hover {
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+  background: var(--dark-hover);
+}
+
+.document-info {
+  display: flex;
+  gap: 1.25rem;
+  align-items: center;
+}
+
+.document-name {
+  font-weight: 600;
+  margin: 0;
+  font-size: 1.1rem;
+}
+
+.document-meta {
+  font-size: 0.9rem;
+  color: var(--light-meta);
+  margin-top: 4px;
+}
+
+body.dark-mode .document-meta {
+  color: var(--dark-meta);
+}
+
+.pdf-button {
+  background: var(--light-accent);
+  color: var(--light-button-text);
+  border: none;
+  padding: 8px 16px;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background 0.2s ease;
+}
+
+.pdf-button:hover {
+  background: #1d4ed8;
+}
+
+body.dark-mode .pdf-button {
+  background: var(--dark-accent);
+  color: var(--dark-button-text);
+}
+
+body.dark-mode .pdf-button:hover {
+  background: #1d4ed8;
+}
+
+/* Responsive Adjustments */
+@media (min-width: 768px) {
+  .menu-toggle {
+    display: none;
+  }
+
+  .nav-wrapper {
+    padding: 1.5rem 3rem;
+  }
+}
+
+/* Accessibility Overrides */
+@media (prefers-contrast: more) {
+  :root {
+    --light-text: #000000;
+    --dark-text: #ffffff;
+    --light-border: #000000;
+    --dark-border: #ffffff;
+    --light-accent: #0044cc;
+    --dark-accent: #0066ff;
+  }
+
+  .document-item {
+    border-width: 2px;
+  }
+}
+
+/* Animation Optimizations */
+@media (prefers-reduced-motion: no-preference) {
+  .document-item,
+  .pdf-button,
+  .nav-link {
+    transition: all 0.3s ease;
+  }
+
+  .document-item:hover {
+    transition:
+      transform 0.2s ease,
+      box-shadow 0.2s ease,
+      background 0.2s ease;
+  }
+}

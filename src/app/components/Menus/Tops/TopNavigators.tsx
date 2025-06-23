@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { Menu, X } from "lucide-react";
 import { COMP_ICON, COMP_SHORT } from "@/app/utils/constants";
 import Image from "next/image";
+import Link from "next/link";
 
 type NavigationMenuProps = {
   scrollToSection: (ref: React.RefObject<HTMLDivElement>) => void;
@@ -99,6 +100,11 @@ const NavigationMenu: React.FC<NavigationMenuProps> = ({ scrollToSection, refs }
             <button onClick={() => handleNavClick(refs.reviewsRef!)} className="hover:underline">
               Reviews
             </button>
+          </li>
+          <li>
+            <Link href="/downloads" className="hover:underline">
+              Downloads
+            </Link>
           </li>
           <li>
             <button onClick={() => handleNavClick(refs.contactsRef!)} className="hover:underline">
