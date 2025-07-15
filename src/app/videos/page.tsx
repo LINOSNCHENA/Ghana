@@ -1,30 +1,26 @@
 "use client";
 
+import { ICON_SIZE } from "../utils/stylesData";
 import React, { useState } from "react";
 import { sectors } from "../utils/constants";
 import VideoPlayer from "../components/Gallary/VideoPalyer";
-import { Home, Video, Download, Truck, GraduationCap, Globe2 } from "lucide-react";
-import { ICON_SIZE } from "../utils/stylesData";
+import { Home, Download, Truck, GraduationCap, Globe2 } from "lucide-react";
 import Link from "next/link";
-
+const removeTab = ["Downloads"];
 const tabs = ["All", "Mining", "Tourism", "Logistics", "Education"];
+const sectorsUpdated = sectors.filter((sector) => !removeTab.includes(sector.category));
 
 export default function SectorsShowcase() {
   const [activeTab, setActiveTab] = useState("All");
-
-  const filteredSectors = activeTab === "All" ? sectors : sectors.filter((sector) => sector.category === activeTab);
+  const filteredSectors = activeTab === "All" ? sectorsUpdated : sectorsUpdated.filter((sector) => sector.category === activeTab);
 
   return (
-    <section className="w-full max-w-7xl mx-auto px-4 sm:px-6 md:px-8 lg:px-10 py-8 sm:py-10 md:py-12 space-y-6 sm:space-y-8 md:space-y-12 bg-gray-400 rounded-md">
-      {/* Top Navigation */}
-      <div className="bg-gray-200 p-2 sm:p-3 rounded-md">
-        <div className="flex flex-wrap justify-center md:justify-evenly gap-3">
+    <section className="w-full min-w-5xl mx-auto px-4 sm:px-6 md:px-8 lg:px-10 py-2 bg-gray-400 dark:bg-gray-700 rounded-md">
+      <div className="mt-2 space-y-4 bg-green-500/20 dark:bg-green-600/20">
+        <div className="flex flex-wrap justify-center md:justify-evenly gap-2 sm:gap-3 bg-red-500/20 dark:bg-red-600/20 p-2 rounded-md">
           <Link href="/" className="inline-flex items-center gap-2 bg-blue-600 hover:bg-blue-700 text-white text-sm font-medium px-4 py-1 rounded-md transition">
             <Home size={ICON_SIZE} /> Home
           </Link>
-          <a href="/videos" className="inline-flex items-center gap-2 bg-blue-600 hover:bg-blue-700 text-white text-sm font-medium px-4 py-1 rounded-md transition">
-            <Video size={ICON_SIZE} /> Videos
-          </a>
           <a href="/downloads" className="inline-flex items-center gap-2 bg-blue-600 hover:bg-blue-700 text-white text-sm font-medium px-4 py-1 rounded-md transition">
             <Download size={ICON_SIZE} /> Downloads
           </a>

@@ -22,7 +22,7 @@ const MiningProfilePage = () => {
           <div className="container mx-auto flex justify-evenly items-center flex-wrap gap-2">
             <div>
               <Link href="/" className="inline-flex items-center gap-2 bg-blue-600 hover:bg-blue-700 text-white text-sm font-medium px-6 py-1 rounded-md transition">
-                <Home size={ICON_SIZE} /> Home Page
+                <Home size={ICON_SIZE} /> Home
               </Link>
             </div>
             <div>

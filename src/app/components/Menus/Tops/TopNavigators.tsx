@@ -31,125 +31,114 @@ const NavigationMenu: React.FC<NavigationMenuProps> = ({ scrollToSection, refs }
   };
 
   return (
-    <nav className="bg-blue-100 text-black fixed w-[92%] sm:w-[90%] md:w-[85%] lg:w-[80%] xl:w-[1200px] left-1/2 -translate-x-1/2 top-6 z-50 px-4 py-2 rounded-xl shadow-md">
+    <nav className="bg-gray-800 dark:bg-gray-900 text-white fixed w-[92%] sm:w-[90%] md:w-[85%] lg:w-[80%] xl:w-[1200px] left-1/2 -translate-x-1/2 top-6 z-50 px-4 py-2 rounded-xl shadow-md border border-gray-700">
       <div className="flex items-center justify-between">
-        <Image
-          src={COMP_ICON}
-          alt="Company Logo"
-          width={20}
-          height={20}
-          className="w-4 h-4 sm:w-5 sm:h-5 object-contain"
-          priority // Ensures fast LCP
-        />
+        <div className="flex items-center gap-2">
+          <Image src={COMP_ICON} alt="Company Logo" width={20} height={20} className="w-5 h-5 object-contain" priority />
+          <span className="text-sm font-semibold hidden sm:inline text-gray-100">{COMP_SHORT}</span>
+        </div>
 
-        {/* <div className="text-sm sm:text-base md:text-sm lg:text-sm font-semibold tracking-wide">{COMP_SHORT}</div> */}
-        <div className="text-sm hidden md:flex gap-5 lg:gap-6 text-sm lg:text-xs font-normal">{COMP_SHORT}</div>
-
-        <div className="text-sm hidden md:flex gap-5 lg:gap-6 text-sm lg:text-xs font-normal">
-          <Link href="/downloads" className="hover:underline">
+        <div className="hidden md:flex items-center gap-6">
+          <Link href="/downloads" className="text-gray-300 hover:text-white transition-colors text-sm">
             Downloads
           </Link>
+
+          {/* Desktop Menu */}
+          <ul className="flex gap-5 lg:gap-6 text-sm font-medium">
+            <li>
+              <button onClick={() => handleNavClick(refs.headRef)} className="text-gray-300 hover:text-white transition-colors">
+                Home
+              </button>
+            </li>
+            <li>
+              <button onClick={() => handleNavClick(refs.servicesRef!)} className="text-gray-300 hover:text-white transition-colors">
+                Services
+              </button>
+            </li>
+            <li>
+              <button onClick={() => handleNavClick(refs.logisticsRef!)} className="text-gray-300 hover:text-white transition-colors">
+                Logistics
+              </button>
+            </li>
+            <li>
+              <button onClick={() => handleNavClick(refs.miningRef!)} className="text-gray-300 hover:text-white transition-colors">
+                Mining
+              </button>
+            </li>
+            <li>
+              <button onClick={() => handleNavClick(refs.tourismRef!)} className="text-gray-300 hover:text-white transition-colors">
+                Tourism
+              </button>
+            </li>
+            <li>
+              <button onClick={() => handleNavClick(refs.educationRef!)} className="text-gray-300 hover:text-white transition-colors">
+                Education
+              </button>
+            </li>
+            <li>
+              <button onClick={() => handleNavClick(refs.fotoRef!)} className="text-gray-300 hover:text-white transition-colors">
+                Gallery
+              </button>
+            </li>
+            <li>
+              <button onClick={() => handleNavClick(refs.founderRef!)} className="text-gray-300 hover:text-white transition-colors">
+                Founder
+              </button>
+            </li>
+            <li>
+              <button onClick={() => handleNavClick(refs.reviewsRef!)} className="text-gray-300 hover:text-white transition-colors">
+                Reviews
+              </button>
+            </li>
+            <li>
+              <button onClick={() => handleNavClick(refs.contactsRef!)} className="text-gray-300 hover:text-white transition-colors">
+                Contact
+              </button>
+            </li>
+          </ul>
         </div>
 
         {/* Mobile Menu Toggle */}
         <div className="md:hidden">
-          <button onClick={() => setIsOpen(!isOpen)} className="text-black focus:outline-none" aria-label="Toggle menu">
-            {isOpen ? <X size={28} /> : <Menu size={28} />}
+          <button onClick={() => setIsOpen(!isOpen)} className="text-gray-300 hover:text-white focus:outline-none transition-colors p-1" aria-label="Toggle menu">
+            {isOpen ? <X size={24} /> : <Menu size={24} />}
           </button>
         </div>
-
-        {/* Desktop Menu */}
-        <ul className="hidden md:flex gap-5 lg:gap-6 text-sm lg:text-xs font-medium">
-          <li>
-            <button onClick={() => handleNavClick(refs.headRef)} className="hover:underline">
-              Home
-            </button>
-          </li>
-          <li>
-            <button onClick={() => handleNavClick(refs.servicesRef!)} className="hover:underline">
-              Services
-            </button>
-          </li>
-          <li>
-            <button onClick={() => handleNavClick(refs.logisticsRef!)} className="hover:underline">
-              Logistics
-            </button>
-          </li>
-          <li>
-            <button onClick={() => handleNavClick(refs.miningRef!)} className="hover:underline">
-              Mining
-            </button>
-          </li>
-          <li>
-            <button onClick={() => handleNavClick(refs.tourismRef!)} className="hover:underline">
-              Tourism
-            </button>
-          </li>
-          <li>
-            <button onClick={() => handleNavClick(refs.educationRef!)} className="hover:underline">
-              Education
-            </button>
-          </li>
-
-          <li>
-            <button onClick={() => handleNavClick(refs.fotoRef!)} className="hover:underline">
-              Gallery
-            </button>
-          </li>
-
-          <li>
-            <button onClick={() => handleNavClick(refs.founderRef!)} className="hover:underline">
-              Founder
-            </button>
-          </li>
-
-          <li>
-            <button onClick={() => handleNavClick(refs.reviewsRef!)} className="hover:underline">
-              Reviews
-            </button>
-          </li>
-
-          {/* <li>
-            <Link href="/downloads" className="hover:underline">
-              Downloads
-            </Link>
-          </li> */}
-
-          <li>
-            <button onClick={() => handleNavClick(refs.contactsRef!)} className="hover:underline">
-              Contact
-            </button>
-          </li>
-        </ul>
       </div>
 
       {/* Mobile Dropdown */}
       {isOpen && (
-        <div className="md:hidden mt-3 space-y-2 bg-blue-100 rounded-lg px-4 py-3 shadow-inner text-sm font-medium">
-          <button onClick={() => handleNavClick(refs.headRef)} className="block w-full text-left hover:underline">
+        <div className="md:hidden mt-3 space-y-3 bg-gray-700 dark:bg-gray-800 rounded-lg px-4 py-3 shadow-inner">
+          <button onClick={() => handleNavClick(refs.headRef)} className="block w-full text-left text-gray-300 hover:text-white transition-colors py-1">
             Home
           </button>
-          <button onClick={() => handleNavClick(refs.servicesRef!)} className="block w-full text-left hover:underline">
+          <button onClick={() => handleNavClick(refs.servicesRef!)} className="block w-full text-left text-gray-300 hover:text-white transition-colors py-1">
             Services
           </button>
-          <button onClick={() => handleNavClick(refs.servicesRef!)} className="block w-full text-left hover:underline">
-            Tourism
-          </button>
-          <button onClick={() => handleNavClick(refs.tourismRef!)} className="block w-full text-left hover:underline">
+          <button onClick={() => handleNavClick(refs.logisticsRef!)} className="block w-full text-left text-gray-300 hover:text-white transition-colors py-1">
             Logistics
           </button>
-          <button onClick={() => handleNavClick(refs.educationRef!)} className="block w-full text-left hover:underline">
+          <button onClick={() => handleNavClick(refs.miningRef!)} className="block w-full text-left text-gray-300 hover:text-white transition-colors py-1">
+            Mining
+          </button>
+          <button onClick={() => handleNavClick(refs.tourismRef!)} className="block w-full text-left text-gray-300 hover:text-white transition-colors py-1">
+            Tourism
+          </button>
+          <button onClick={() => handleNavClick(refs.educationRef!)} className="block w-full text-left text-gray-300 hover:text-white transition-colors py-1">
             Education
           </button>
-          <button onClick={() => handleNavClick(refs.servicesRef!)} className="block w-full text-left hover:underline">
-            Services
+          <button onClick={() => handleNavClick(refs.fotoRef!)} className="block w-full text-left text-gray-300 hover:text-white transition-colors py-1">
+            Gallery
           </button>
-          <button onClick={() => handleNavClick(refs.founderRef!)} className="block w-full text-left hover:underline">
+          <button onClick={() => handleNavClick(refs.founderRef!)} className="block w-full text-left text-gray-300 hover:text-white transition-colors py-1">
             Founder
           </button>
-          <button onClick={() => handleNavClick(refs.contactsRef!)} className="block w-full text-left hover:underline">
+          <button onClick={() => handleNavClick(refs.contactsRef!)} className="block w-full text-left text-gray-300 hover:text-white transition-colors py-1">
             Contact
           </button>
+          <Link href="/downloads" className="block w-full text-left text-gray-300 hover:text-white transition-colors py-1">
+            Downloads
+          </Link>
         </div>
       )}
     </nav>

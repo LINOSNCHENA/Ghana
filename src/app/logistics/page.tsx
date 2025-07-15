@@ -1,21 +1,17 @@
 "use client";
 
 import React from "react";
-import Head from "next/head";
 import WatermarkBackground from "../components/Menus/WaterMarks";
 import { COMP_MOTTO } from "../utils/constants";
-import { Home, Video, Download, Truck, GraduationCap, Globe2 } from "lucide-react";
+import { Home, Video, Download, GraduationCap, Globe2 } from "lucide-react";
 import { ICON_SIZE } from "../utils/stylesData";
 import Link from "next/link";
 
 const LogisticsDetails = () => {
   return (
-    <>
-      <Head>
-        <title>Logistics Services – Sir Louis & Gao Co. Ltd.</title>
-      </Head>
-      <main className="min-h-screen bg-white text-gray-900 px-6 py-12">
-        <div className="max-w-7xl mx-auto bg-gray-200 p-9">
+    <section className="w-full min-w-5xl mx-auto px-4 sm:px-6 md:px-8 lg:px-10 py-2 bg-gray-400 dark:bg-gray-700 rounded-md">
+      <div className="mt-2 space-y-4 bg-green-500/20 dark:bg-green-600/20">
+        <div className="min-w-7xl mx-auto bg-gray-200 p-9">
           <WatermarkBackground altText={COMP_MOTTO} />
 
           <div className="container mx-auto flex justify-evenly items-center flex-wrap gap-2 bg-gray-400 p-3">
@@ -32,11 +28,6 @@ const LogisticsDetails = () => {
             <div>
               <a href="/downloads" className="inline-flex items-center gap-2 bg-blue-600 hover:bg-blue-700 text-white text-sm font-medium px-6 py-1 rounded-md transition">
                 <Download size={ICON_SIZE} /> Downloads
-              </a>
-            </div>
-            <div>
-              <a href="/logistics" className="inline-flex items-center gap-2 bg-blue-600 hover:bg-blue-700 text-white text-sm font-medium px-6 py-1 rounded-md transition">
-                <Truck size={ICON_SIZE} /> Logistics
               </a>
             </div>
             <div>
@@ -121,8 +112,8 @@ const LogisticsDetails = () => {
             </a>
           </div>
         </div>
-      </main>
-    </>
+      </div>{" "}
+    </section>
   );
 };
 

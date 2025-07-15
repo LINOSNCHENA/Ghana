@@ -1,23 +1,24 @@
 "use client";
 
 import { useRef } from "react";
+import { WEB_MASTER } from "./utils/constants";
+import ReviewSection from "./components/Statistics/ReviewPage";
 import NavigationMenu from "./components/Menus/Tops/TopNavigators";
 import { SocialSection } from "./components/Menus/FooterMedia";
 import { HeadSection } from "./components/Menus/Tops/HeadSection";
 import { COLOR_BLACK_METALIC, COLOR_BLUE_LIGHT, menuStyles } from "./utils/stylesData";
-import { BusinessOpportunities } from "./components/Departments/BusinessOverviews";
-import LifeInChina from "./components/Departments/EducationChina";
-import MiningServices from "./components/Departments/MiningOpportunities";
-import ServicesSection from "./components/Departments/ServicesDept";
-import TourismServices from "./components/Departments/TourismOpportunities";
-import ReviewSection from "./components/Statistics/ReviewPage";
-import { WEB_MASTER } from "./utils/constants";
-import LogisticsSection from "./components/Departments/LogisticsServices";
+
 import SendEmailForm from "./components/Emails/SendEmailForm";
 import CeoProfileWithPhoto from "./components/Gallary/CEOBiography";
 import { AcademicAchievement } from "./components/Gallary/CEOEducation";
 import { GalaryFotos } from "./components/Gallary/GalaryFotos";
 import { CompanySlides } from "./components/Gallary/GalaxySlides";
+import { BusinessOpportunities } from "./components/LandingPages/BusinessOverviews";
+import LogisticsSection from "./components/LandingPages/LogisticsServices";
+import MiningServices from "./components/LandingPages/MiningOpportunities";
+import ServicesSection from "./components/LandingPages/ServicesDept";
+import TourismServices from "./components/LandingPages/TourismOpportunities";
+import LifeInChina from "./education/page";
 
 const App: React.FC = () => {
   const headRef = useRef<HTMLDivElement>(null!);

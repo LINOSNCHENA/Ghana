@@ -19,9 +19,17 @@ npm list resend typescript @types/node
 ### Testing
 
 ```
-
 NIHHTlouisdsdsdsdsfslinosnchefsfsfsfsfsfsfsfs@yahoo.com
 
 ```
+
+### Routing
+
+1. Downloads
+2. Videos- Good
+
+3. Education
+4. Logistics
+5. Tourism
 
 ## End

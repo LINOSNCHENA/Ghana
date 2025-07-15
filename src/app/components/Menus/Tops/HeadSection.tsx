@@ -24,14 +24,6 @@ export function HeadSection({ scrollToSection, contactRef }: HeadSectionProps) {
         </h1>
         <p className="text-base sm:text-2xl mb-8 max-w-xl mx-auto text-slate-600 font-medium">{COMP_MOTTO}</p>
         <LeftIcon />
-
-        {/* <button
-          onClick={() => scrollToSection(contactRef)}
-          className="bg-transparent text-xs sm:text-sm m-0 px-2 py-1 sm:px-3 sm:py-1.5 hover:bg-blue-700 text-white rounded-md shadow-sm transition"
-        >
-          c
-        </button> */}
-
         <button onClick={() => scrollToSection(contactRef)} className="hidden">
           Contact Us
         </button>
